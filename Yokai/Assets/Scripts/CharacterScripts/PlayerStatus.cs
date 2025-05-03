@@ -3,22 +3,15 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    public int maxHP = 3;
-    public int currentHP = 3;
+    [SerializeField]
+    private int hp = 2;
 
-    public bool CanTransform()
-    {
-        return currentHP > 0;
-    }
+    public int HP => hp;
+
+    public bool CanTransform() => hp > 0;
 
     public void ConsumeHP(int amount)
     {
-        currentHP = Mathf.Max(currentHP - amount, 0);
-        Debug.Log("HP消費: " + currentHP);
-    }
-
-    public void RecoverHP(int amount)
-    {
-        currentHP = Mathf.Min(currentHP + amount, maxHP);
+        hp = Mathf.Max(0, hp - amount);
     }
 }
