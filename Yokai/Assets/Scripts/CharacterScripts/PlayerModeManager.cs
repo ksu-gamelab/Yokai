@@ -14,12 +14,21 @@ public class PlayerModeManager : MonoBehaviour
 
     private PlayerModeType currentMode = PlayerModeType.Normal;
 
+    public GameObject normalModelPrefab;
+    public GameObject specialModelPrefab;
+    private GameObject currentModelInstance;
+
+
     void Start()
     {
         normalController = GetComponent<PlayerControllerNormal>();
         specialController = GetComponent<PlayerControllerSpecial>();
         status = GetComponent<PlayerStatus>();
+
+        // 初期モデルを明示的に生成しておく
+        UpdateModel(normalModelPrefab);
     }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))
@@ -59,14 +68,17 @@ public class PlayerModeManager : MonoBehaviour
     {
         currentMode = PlayerModeType.Special;
         specialModeTimer = specialModeDuration;
+        UpdateModel(specialModelPrefab);
         Debug.Log("スペシャルモードへ!");
     }
 
     void SwitchToNormal()
     {
         currentMode = PlayerModeType.Normal;
+        UpdateModel(normalModelPrefab);
         Debug.Log("ノーマルモードへ戻る");
     }
+
 
     public void NotifyGrounded(bool grounded)
     {
@@ -79,4 +91,15 @@ public class PlayerModeManager : MonoBehaviour
             specialController.SetGrounded(grounded);
         }
     }
+
+
+    void UpdateModel(GameObject newModelPrefab)
+    {
+        if (currentModelInstance != null)
+        {
+            Destroy(currentModelInstance);
+        }
+        currentModelInstance = Instantiate(newModelPrefab, transform);
+    }
+
 }
