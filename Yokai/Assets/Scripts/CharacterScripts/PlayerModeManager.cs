@@ -10,7 +10,6 @@ public class PlayerModeManager : MonoBehaviour
     private PlayerStatus status;
 
     public float specialModeDuration = 3f;
-    private float specialModeTimer = 0f;
 
     private PlayerModeType currentMode = PlayerModeType.Normal;
 
@@ -35,7 +34,6 @@ public class PlayerModeManager : MonoBehaviour
         if (currentMode == PlayerModeType.Special)
             UpdateSpecialMode();
 
-        // 入力処理
         if (currentMode == PlayerModeType.Normal)
             normalController.HandleInput();
         else
@@ -44,9 +42,9 @@ public class PlayerModeManager : MonoBehaviour
 
     void UpdateSpecialMode()
     {
-        specialModeTimer -= Time.deltaTime;
+        status.UpdateHeroTime(Time.deltaTime);
 
-        if (specialModeTimer <= 0f)
+        if (status.HeroTimeRemaining <= 0f)
         {
             string state = specialController.GetCurrentStateClipName();
             if (CanTransformBack(state))
@@ -56,15 +54,12 @@ public class PlayerModeManager : MonoBehaviour
 
     void TrySwitchToSpecial()
     {
-        if (currentMode != PlayerModeType.Normal)
-            return;
+        if (currentMode != PlayerModeType.Normal) return;
 
         string state = normalController.GetCurrentStateClipName();
-        if (!CanTransform(state))
-            return;
+        if (!CanTransform(state)) return;
 
-        if (!status.CanTransform())
-            return;
+        if (!status.CanTransform()) return;
 
         status.ConsumeHP(1);
         SwitchToSpecial();
@@ -74,13 +69,15 @@ public class PlayerModeManager : MonoBehaviour
     void SwitchToSpecial()
     {
         currentMode = PlayerModeType.Special;
-        specialModeTimer = specialModeDuration;
+        status.SetHeroTime(specialModeDuration);
+        status.SetMode(PlayerModeType.Special);
         UpdateModel(specialModelPrefab);
     }
 
     void SwitchToNormal()
     {
         currentMode = PlayerModeType.Normal;
+        status.SetMode(PlayerModeType.Normal);
         UpdateModel(normalModelPrefab);
         Debug.Log("ノーマルモードへ戻る");
     }
@@ -113,7 +110,6 @@ public class PlayerModeManager : MonoBehaviour
         }
     }
 
-    // "run" or "New State" のときだけ変身許可
     bool CanTransform(string stateName)
     {
         return stateName == "" || stateName == "N_run" || stateName == "N_New State";
@@ -124,7 +120,6 @@ public class PlayerModeManager : MonoBehaviour
         return stateName == "" || stateName == "H_run" || stateName == "H_New State";
     }
 
-    // 強制的に変身
     public void ForceTransformToSpecial()
     {
         if (currentMode == PlayerModeType.Normal)
@@ -144,7 +139,6 @@ public class PlayerModeManager : MonoBehaviour
     private void GoToGameOver()
     {
         Debug.Log("ゲームオーバー！");
-        SceneManager.LoadScene("GameOver");  // ← ゲームオーバーシーン名に合わせて変更してください
+        SceneManager.LoadScene("GameOver");
     }
-
 }
