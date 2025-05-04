@@ -157,7 +157,6 @@ RectTransform:
   - {fileID: 718910615}
   - {fileID: 182009070}
   - {fileID: 1785637852}
-  - {fileID: 1195465454}
   - {fileID: 1649399219}
   - {fileID: 739676879}
   - {fileID: 413533612}
@@ -173,6 +172,7 @@ RectTransform:
   - {fileID: 1243940923}
   - {fileID: 454225076}
   - {fileID: 2108813049}
+  - {fileID: 1195465454}
   - {fileID: 616209654}
   m_Father: {fileID: 764272055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1455,13 +1455,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kuriboh_blue
       objectReference: {fileID: 0}
+    - target: {fileID: 4177686824578380565, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847367359162918651, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_Size.y
+      value: 76.445244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847367359162918651, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_Offset.y
+      value: 28.540394
+      objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1521,7 +1533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 192
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3347,6 +3359,10 @@ PrefabInstance:
       value: 99.998
       objectReference: {fileID: 0}
     - target: {fileID: 3574072944613822478, guid: cd221758365a947f2b1068761db94620, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574072944613822478, guid: cd221758365a947f2b1068761db94620, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3776,7 +3792,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.0684433, y: 4.7501526}
+  m_Offset: {x: -5.0684433, y: 491.42282}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3787,7 +3803,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 92.232285, y: 1553.0676}
+  m_Size: {x: 92.232285, y: 2526.4133}
   m_EdgeRadius: 0
 --- !u!1001 &739676878
 PrefabInstance:
@@ -4182,13 +4198,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kuriboh_blue (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4177686824578380565, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847367359162918651, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_Size.y
+      value: 74.32263
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847367359162918651, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
+      propertyPath: m_Offset.y
+      value: 29.601702
+      objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4248,7 +4276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1243
+      value: 1192.9999
       objectReference: {fileID: 0}
     - target: {fileID: 8989928398273631483, guid: fbe393812702d4f33a74d57aad2c041b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4474,7 +4502,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.8496704, y: 20.621422}
+  m_Offset: {x: 1.8496704, y: 13.06823}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4485,7 +4513,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1285.494, y: 298.13074}
+  m_Size: {x: 1285.494, y: 283.02435}
   m_EdgeRadius: 0
 --- !u!114 &915212998
 MonoBehaviour:
@@ -6683,6 +6711,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 21917769}
     m_Modifications:
+    - target: {fileID: 4619405540964439876, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
+      propertyPath: m_Size.x
+      value: 312.70135
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619405540964439876, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
+      propertyPath: m_Offset.x
+      value: 84.49008
+      objectReference: {fileID: 0}
     - target: {fileID: 6398778451805354762, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8268,8 +8304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -526, y: 183.038}
-  m_SizeDelta: {x: 103.832, y: 1576.86}
+  m_AnchoredPosition: {x: -526, y: 682.635}
+  m_SizeDelta: {x: 103.832, y: 2576.054}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1927110420
 BoxCollider2D:
@@ -8303,7 +8339,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.0684433, y: 4.7501526}
+  m_Offset: {x: -5.0684433, y: 29.615173}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8314,7 +8350,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 92.232285, y: 1553.0676}
+  m_Size: {x: 92.232285, y: 2482.4136}
   m_EdgeRadius: 0
 --- !u!1001 &1963199764
 PrefabInstance:
@@ -8328,13 +8364,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kuriboh_green (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4442542043064149125, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8394,7 +8434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 684
+      value: 633.99994
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8407,6 +8447,14 @@ PrefabInstance:
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161363198389098407, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_Size.y
+      value: 86.657394
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161363198389098407, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_Offset.y
+      value: 27.24244
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8430,13 +8478,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kuriboh_green
       objectReference: {fileID: 0}
+    - target: {fileID: 4442542043064149125, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8496,7 +8548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 40
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8509,6 +8561,14 @@ PrefabInstance:
     - target: {fileID: 4624121640490612420, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161363198389098407, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_Size.y
+      value: 80.28971
+      objectReference: {fileID: 0}
+    - target: {fileID: 9161363198389098407, guid: f6c736f03b0f044e08cdd87cfb58126d, type: 3}
+      propertyPath: m_Offset.y
+      value: 30.426281
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8603,6 +8663,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 21917769}
     m_Modifications:
+    - target: {fileID: 4619405540964439876, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
+      propertyPath: m_Size.x
+      value: 309.19897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619405540964439876, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
+      propertyPath: m_Offset.x
+      value: -82.462906
+      objectReference: {fileID: 0}
     - target: {fileID: 6398778451805354762, guid: 65d8fcc6c4faa4470ab38ab242b1c0a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
