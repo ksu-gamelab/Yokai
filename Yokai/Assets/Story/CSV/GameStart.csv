@@ -1,3 +1,13 @@
-﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate
-1,「ここはカフェかぁ…結構おしゃれかも！」,fukurou,cafe_bg,,,,,,,
-2,「服装はメイド服？もしかしてわしがカフェ店員！？」,mainchara,cafe_bg,,,,,,,
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,「うわっ！真っ暗だ！どこなんだろうここ…」,Nagisa_story,background,storydefault,,,,,,,ナギサ
+2,「すごく帰りたい……」,Nagisa_story,background,,,,,,,,ナギサ
+3,,Hiiro_story,background,,,,,,,,
+4,「わっ誰！？」,Nagisa_story/Hiiro_story,background,,,,,,,,ナギサ
+5,「お？おまえがにんげんか！」,Nagisa_story/Hiiro_story,background,,,,,,,,？？？
+6,「誰！？本当に誰！？」,Nagisa_story/Hiiro_story,background,,,,,,,,ナギサ
+7,あ、すまんすまん,Nagisa_story/Hiiro_story,background,,,,,,,,？？？
+8,「われはヒイロ！よーかいだ！」,Nagisa_story/Hiiro_story,background,,,,,,,,ヒイロ
+9,「妖怪！？えぇ？本当に」,Nagisa_story/Hiiro_story,background,,,,,,,,ナギサ
+10,「おまえこまってるんだろ？でぐちおしえてやる！」,Nagisa_story/Hiiro_story,background,,,,,,,,ヒイロ
+11,「う、うん……ありがとう？」,Nagisa_story/Hiiro_story,background,,,,,,,,ナギサ
+,,,,,,,,Stage1,,,

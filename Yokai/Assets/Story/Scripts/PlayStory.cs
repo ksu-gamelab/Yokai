@@ -7,8 +7,9 @@ using UnityEngine.UI;
 
 public class PlayStory : MonoBehaviour
 {
-    // 0:num 1:maintext 2:charaimage 3:backimage 4:bgm 5:se 6:selecttext1 7:selecttext2 8:nextscene 9:generateobj
+    // 0:num 1:maintext 2:charaimage 3:backimage 4:bgm 5:se 6:selecttext1 7:selecttext2 8:nextscene 9:generateobj 12:name
     public Text dialogueText;
+    public Text nameText;
     public GameObject characterImage; // キャラプレハブの親（空オブジェクト）
     public Image backgroundImage;
     public GameObject generateBase;
@@ -112,6 +113,7 @@ public class PlayStory : MonoBehaviour
             changeBGM();
             changeSE();
             AnimatorSet();
+            ShowName();
 
             string selectText1 = storyData[currentLine][6];
             string selectText2 = storyData[currentLine][7];
@@ -129,6 +131,19 @@ public class PlayStory : MonoBehaviour
         else
         {
             Debug.Log("ストーリーが終了しました");
+        }
+    }
+
+    private void ShowName()
+    {
+        Debug.Log(storyData[currentLine][11]);
+        if (!string.IsNullOrEmpty(storyData[currentLine][11]))
+        {
+            nameText.text = storyData[currentLine][11];
+        }
+        else
+        {
+            nameText.text = "";
         }
     }
 
@@ -164,22 +179,32 @@ public class PlayStory : MonoBehaviour
 
     public void updateCharacter()
     {
-        string charaName = storyData[currentLine][2];
+        string charaNames = storyData[currentLine][2];
 
-        if (currentCharacter != null)
+        // すでに表示されているキャラを全て削除
+        foreach (Transform child in characterImage.transform)
         {
-            Destroy(currentCharacter);
+            Destroy(child.gameObject);
         }
 
-        if (!string.IsNullOrEmpty(charaName) && characterDictionary.ContainsKey(charaName))
+        if (!string.IsNullOrEmpty(charaNames))
         {
-            currentCharacter = Instantiate(characterDictionary[charaName], characterImage.transform);
-        }
-        else
-        {
-            Debug.LogWarning($"キャラプレハブ '{charaName}' が登録されていません");
+            string[] nameArray = charaNames.Split('/');
+
+            foreach (string name in nameArray)
+            {
+                if (characterDictionary.ContainsKey(name))
+                {
+                    Instantiate(characterDictionary[name], characterImage.transform);
+                }
+                else
+                {
+                    Debug.LogWarning($"キャラプレハブ '{name}' が登録されていません");
+                }
+            }
         }
     }
+
 
     public void updateGenerateObj()
     {
