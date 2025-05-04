@@ -8,10 +8,6 @@ public class PlayerControllerSpecial : PlayerControllerBase
         base.Start();
     }
 
-    protected override void Attack()
-    {
-        // 必要ならスペシャル攻撃処理
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,8 +17,13 @@ public class PlayerControllerSpecial : PlayerControllerBase
             if (enemy != null)
             {
                 enemy.Defeat();
+                if (attackSE != null)
+                {
+                    AudioManager.instance.PlaySE(attackSE);
+                }
                 if (characterAnim != null)
                 {
+
                     characterAnim.SetTrigger("attack1");
                     // 一定時間停止
                     StartCoroutine(StopMovementForSeconds(stopTime));

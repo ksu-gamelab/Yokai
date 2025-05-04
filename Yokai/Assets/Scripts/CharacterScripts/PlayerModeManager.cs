@@ -17,6 +17,9 @@ public class PlayerModeManager : MonoBehaviour
     public GameObject specialModelPrefab;
     private GameObject currentModelInstance;
 
+    public AudioClip specialtonormalSE;
+    public AudioClip normaltospecialSE;
+
     void Start()
     {
         normalController = GetComponent<PlayerControllerNormal>();
@@ -58,7 +61,6 @@ public class PlayerModeManager : MonoBehaviour
         if (currentMode != PlayerModeType.Normal) return;
 
         string state = normalController.GetCurrentStateClipName();
-        Debug.Log(CanTransform(state));
         if (!CanTransform(state)) return;
 
         if (!status.CanTransform()) return;
@@ -70,6 +72,9 @@ public class PlayerModeManager : MonoBehaviour
 
     void SwitchToSpecial()
     {
+        if (normaltospecialSE != null)
+            AudioManager.instance.PlaySE(normaltospecialSE);
+
         currentMode = PlayerModeType.Special;
         status.SetHeroTime(specialModeDuration);
         status.SetMode(PlayerModeType.Special);
@@ -78,6 +83,8 @@ public class PlayerModeManager : MonoBehaviour
 
     void SwitchToNormal()
     {
+        if (specialtonormalSE != null)
+            AudioManager.instance.PlaySE(specialtonormalSE);
         currentMode = PlayerModeType.Normal;
         status.SetMode(PlayerModeType.Normal);
         UpdateModel(normalModelPrefab);
@@ -115,13 +122,12 @@ public class PlayerModeManager : MonoBehaviour
     //将来的には地面に接地しているときに条件を変更したい
     bool CanTransform(string stateName)
     {
-        //Debug.Log(stateName);
         return stateName == "" || stateName == "N_run" || stateName == "N_New State" || stateName == "N_mabataki";
     }
 
     bool CanTransformBack(string stateName)
     {
-        return stateName == "" || stateName == "H_run" || stateName == "H_New State" || stateName == "H_mabataki";
+        return stateName == "" || stateName == "H_run" || stateName == "H_New State" || stateName == "H_mabataki" || stateName == "H_taiki";
     }
 
     public void ForceTransformToSpecial()

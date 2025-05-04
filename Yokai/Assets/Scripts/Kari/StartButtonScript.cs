@@ -23,6 +23,7 @@ public class StartButtonScript : MonoBehaviour
 
     public void onClicked_startbutton()
     {
+        GameStateManager.Instance.TriggerGameStart();
         AudioManager.instance.PlaySE(buttonclip);
         fadein.SetActive(true);
         Invoke("loadstart", 1.5f);

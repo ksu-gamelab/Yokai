@@ -43,11 +43,11 @@ public class GameStateManager : MonoBehaviour
                 Time.timeScale = 0f;
                 break;
             case GameState.GameOver:
-                Time.timeScale = 0f;
+                //Time.timeScale = 0f;
                 SceneManager.LoadScene("GameOver");
                 break;
             case GameState.Clear:
-                Time.timeScale = 0f;
+                //Time.timeScale = 0f;
                 SceneManager.LoadScene("GameClear");
                 break;
         }
@@ -59,6 +59,12 @@ public class GameStateManager : MonoBehaviour
         {
             SetState(GameState.GameOver);
         }
+    }
+
+    public void TriggerGameStart()
+    {
+        if (CurrentState != GameState.Playing)
+            SetState(GameState.Playing);
     }
 
     public void TriggerGameClear()

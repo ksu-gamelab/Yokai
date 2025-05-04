@@ -25,4 +25,10 @@ public class BackTitleButton : MonoBehaviour
     {
         SceneManager.LoadScene("Start");
     }
+
+    public void onClicked_returnbutton()
+    {
+        GameStateManager.Instance.TriggerGameStart();
+        SceneManager.LoadScene("Stage1");
+    }
 }

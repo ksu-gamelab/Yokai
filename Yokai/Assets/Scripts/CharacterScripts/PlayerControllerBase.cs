@@ -17,6 +17,10 @@ public abstract class PlayerControllerBase : MonoBehaviour
 
     protected bool canMove = true; // ← 移動可否フラグ
 
+    public AudioClip jumpSE;
+    public AudioClip attackSE;
+
+
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -49,6 +53,8 @@ public abstract class PlayerControllerBase : MonoBehaviour
 
             if (characterAnim != null)
             {
+                //ジャンプの効果音
+                AudioManager.instance.PlaySE(jumpSE);
                 characterAnim.SetBool("run", false);
                 characterAnim.SetBool("jump_up", true);
                 characterAnim.SetBool("jump_down", false);
