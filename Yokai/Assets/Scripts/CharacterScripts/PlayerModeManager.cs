@@ -139,6 +139,7 @@ public class PlayerModeManager : MonoBehaviour
     private void GoToGameOver()
     {
         Debug.Log("ゲームオーバー！");
-        SceneManager.LoadScene("GameOver");
+        GameStateManager.Instance.TriggerGameOver();
     }
+
 }
