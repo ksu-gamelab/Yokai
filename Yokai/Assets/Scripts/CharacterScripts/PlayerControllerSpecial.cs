@@ -20,6 +20,8 @@ public class PlayerControllerSpecial : PlayerControllerBase
             EnemyBase enemy = collision.GetComponent<EnemyBase>();
             if (enemy != null)
             {
+                //アニメーション再生
+                characterAnim.SetTrigger("attack1");
                 enemy.Defeat();
             }
         }

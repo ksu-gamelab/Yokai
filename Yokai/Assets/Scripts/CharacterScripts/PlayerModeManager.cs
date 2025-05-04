@@ -54,9 +54,11 @@ public class PlayerModeManager : MonoBehaviour
 
     void TrySwitchToSpecial()
     {
+
         if (currentMode != PlayerModeType.Normal) return;
 
         string state = normalController.GetCurrentStateClipName();
+        Debug.Log(CanTransform(state));
         if (!CanTransform(state)) return;
 
         if (!status.CanTransform()) return;
@@ -110,14 +112,16 @@ public class PlayerModeManager : MonoBehaviour
         }
     }
 
+    //将来的には地面に接地しているときに条件を変更したい
     bool CanTransform(string stateName)
     {
-        return stateName == "" || stateName == "N_run" || stateName == "N_New State";
+        //Debug.Log(stateName);
+        return stateName == "" || stateName == "N_run" || stateName == "N_New State" || stateName == "N_mabataki";
     }
 
     bool CanTransformBack(string stateName)
     {
-        return stateName == "" || stateName == "H_run" || stateName == "H_New State";
+        return stateName == "" || stateName == "H_run" || stateName == "H_New State" || stateName == "H_mabataki";
     }
 
     public void ForceTransformToSpecial()
