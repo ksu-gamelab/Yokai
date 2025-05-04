@@ -1819,6 +1819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Config
       objectReference: {fileID: 0}
+    - target: {fileID: 231694957334796440, guid: 2904d21e519294389a0a927435fb6314, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1680830409521183856, guid: 2904d21e519294389a0a927435fb6314, type: 3}
       propertyPath: seSlider
       value: 
