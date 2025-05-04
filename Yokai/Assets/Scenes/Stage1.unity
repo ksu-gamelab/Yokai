@@ -9338,7 +9338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 30
-  jumpForce: 100
+  jumpForce: 110
   maxJumpCount: 1
   stopTime: 0.7
   jumpSE: {fileID: 8300000, guid: a5efbe2d812de4073ae21cdfcafe2a82, type: 3}

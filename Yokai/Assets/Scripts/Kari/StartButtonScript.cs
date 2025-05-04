@@ -9,6 +9,7 @@ public class StartButtonScript : MonoBehaviour
     public GameObject fadein;
 
     public AudioClip buttonclip;
+    public GameObject creditPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +32,15 @@ public class StartButtonScript : MonoBehaviour
     public void loadstart()
     {
         SceneManager.LoadScene("StoryScene");
+    }
+
+    public void onClicked_opencredit()
+    {
+        creditPanel.SetActive(true);
+    }
+
+    public void onClicked_closecredit()
+    {
+        creditPanel.SetActive(false);
     }
 }
