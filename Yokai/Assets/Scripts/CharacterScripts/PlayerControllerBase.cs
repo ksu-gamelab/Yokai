@@ -8,10 +8,14 @@ public abstract class PlayerControllerBase : MonoBehaviour
     public float jumpForce;
     public int maxJumpCount = 1;
 
+    public float stopTime = 0.7f; //攻撃アニメーションのストップ時間
+
     protected Rigidbody2D rb;
     protected Animator characterAnim;
     protected bool isGrounded;
     protected int currentJumpCount = 0;
+
+    protected bool canMove = true; // ← 移動可否フラグ
 
     protected virtual void Start()
     {
@@ -20,6 +24,8 @@ public abstract class PlayerControllerBase : MonoBehaviour
 
     public virtual void HandleInput()
     {
+        if (!canMove) return;  // ← この一行を追加
+
         if (characterAnim == null)
             characterAnim = GetComponentInChildren<Animator>();
 
@@ -74,6 +80,11 @@ public abstract class PlayerControllerBase : MonoBehaviour
                 characterAnim.SetBool("jump_down", false);
             }
         }
+    }
+
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
     }
 
     public void SetAnimator(Animator anim)

@@ -48,7 +48,7 @@ public class GameStateManager : MonoBehaviour
                 break;
             case GameState.Clear:
                 Time.timeScale = 0f;
-                SceneManager.LoadScene("Clear");
+                SceneManager.LoadScene("GameClear");
                 break;
         }
     }
