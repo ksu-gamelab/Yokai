@@ -38,9 +38,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329, y: -115}
+  m_AnchoredPosition: {x: 329, y: -165}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3562928926556997284
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+  moveDirection: -1
 --- !u!61 &9161363198389098407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.2700195, y: -12.106677}
+  m_Offset: {x: 2.2700195, y: 37.855312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -162,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 60.020096, y: 67.58674}
+  m_Size: {x: 60.020096, y: 65.43165}
   m_EdgeRadius: 0
 --- !u!1 &6276410964660513082
 GameObject:
