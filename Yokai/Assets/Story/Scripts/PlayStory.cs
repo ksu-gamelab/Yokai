@@ -180,22 +180,47 @@ public class PlayStory : MonoBehaviour
     public void updateCharacter()
     {
         string charaNames = storyData[currentLine][2];
-
-        // すでに表示されているキャラを全て削除
-        foreach (Transform child in characterImage.transform)
+        // 一つ前の行と同じ場合は更新しない
+        if (currentLine > 0 && charaNames.Equals(storyData[currentLine - 1][2]))
         {
-            Destroy(child.gameObject);
+            return;
         }
 
+
+        // すでに表示されているキャラの名前を取得
+        HashSet<string> existingCharacters = new HashSet<string>();
+        foreach (Transform child in characterImage.transform)
+        {
+            existingCharacters.Add(child.name);
+        }
+
+        // 現在表示すべきキャラ名が空でなければ処理
         if (!string.IsNullOrEmpty(charaNames))
         {
             string[] nameArray = charaNames.Split('/');
 
+            // 新たに表示すべきキャラ名だけを残す
+            List<string> newCharacters = new List<string>();
+            foreach (string name in nameArray)
+            {
+                if (!existingCharacters.Contains(name))
+                {
+                    newCharacters.Add(name);
+                }
+            }
+
+            // 一旦すべて削除（再生成しないように改修する場合はこの行を削除）
+            foreach (Transform child in characterImage.transform)
+            {
+                Destroy(child.gameObject);
+            }
+
+            // 必要なキャラだけを生成
             foreach (string name in nameArray)
             {
                 if (characterDictionary.ContainsKey(name))
                 {
-                    Instantiate(characterDictionary[name], characterImage.transform);
+                    Instantiate(characterDictionary[name], characterImage.transform).name = name;
                 }
                 else
                 {
@@ -204,6 +229,7 @@ public class PlayStory : MonoBehaviour
             }
         }
     }
+
 
 
     public void updateGenerateObj()
