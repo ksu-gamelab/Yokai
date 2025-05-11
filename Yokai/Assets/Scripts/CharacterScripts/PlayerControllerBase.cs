@@ -28,7 +28,7 @@ public abstract class PlayerControllerBase : MonoBehaviour
 
     public virtual void HandleInput()
     {
-        if (!canMove) return;  // ← この一行を追加
+        if (!canMove) return;
 
         if (characterAnim == null)
             characterAnim = GetComponentInChildren<Animator>();
@@ -36,6 +36,7 @@ public abstract class PlayerControllerBase : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
 
+        // 向き変更
         if (h != 0)
         {
             Vector3 scale = transform.localScale;
@@ -43,36 +44,29 @@ public abstract class PlayerControllerBase : MonoBehaviour
             transform.localScale = scale;
         }
 
+        // ★ Animator パラメータ更新
         if (characterAnim != null)
-            characterAnim.SetBool("run", isGrounded && Mathf.Abs(rb.velocity.x) > 0.01f);
+        {
+            characterAnim.SetFloat("dx", Mathf.Abs(rb.velocity.x));
+            characterAnim.SetFloat("dy", rb.velocity.y);
+            Debug.Log(IsGrounded());
+            characterAnim.SetBool("isGround", IsGrounded());
+        }
 
+        // ジャンプ入力
         if (Input.GetKeyDown(KeyCode.Space) && currentJumpCount < maxJumpCount)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             currentJumpCount++;
-
-            if (characterAnim != null)
-            {
-                //ジャンプの効果音
-                AudioManager.instance.PlaySE(jumpSE);
-                characterAnim.SetBool("run", false);
-                characterAnim.SetBool("jump_up", true);
-                characterAnim.SetBool("jump_down", false);
-            }
+            characterAnim.SetTrigger("isJump");
+            AudioManager.instance.PlaySE(jumpSE);
         }
 
-        if (!isGrounded && rb.velocity.y < -0.1f)
-        {
-            if (characterAnim != null)
-            {
-                characterAnim.SetBool("jump_up", false);
-                characterAnim.SetBool("jump_down", true);
-            }
-        }
-
+        // 攻撃入力
         if (Input.GetKeyDown(KeyCode.F))
-            Attack();
+            Attack(); // ここで isAttacking を true にするなどの処理
     }
+
 
     public virtual void SetGrounded(bool value)
     {

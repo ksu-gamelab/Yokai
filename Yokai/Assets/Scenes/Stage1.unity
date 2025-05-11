@@ -9388,7 +9388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d98d46b3334a48d59e6576bbd92eb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialModeDuration: 10
+  specialModeDuration: 30
   normalModelPrefab: {fileID: 1860038580757700250, guid: 9e59f1edaf3ee884ab6c18d2c4c7d7b7, type: 3}
   specialModelPrefab: {fileID: 1860038580757700250, guid: 69423d7eefc0f48c4a4a3f7da89bbd42, type: 3}
   specialtonormalSE: {fileID: 8300000, guid: bf5bdcd0f9f2c4e11847f70b12605aaa, type: 3}
