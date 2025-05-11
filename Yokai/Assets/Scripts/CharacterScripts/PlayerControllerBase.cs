@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -49,7 +50,7 @@ public abstract class PlayerControllerBase : MonoBehaviour
         {
             characterAnim.SetFloat("dx", Mathf.Abs(rb.velocity.x));
             characterAnim.SetFloat("dy", rb.velocity.y);
-            Debug.Log(IsGrounded());
+            //Debug.Log(IsGrounded());
             characterAnim.SetBool("isGround", IsGrounded());
         }
 
@@ -61,10 +62,6 @@ public abstract class PlayerControllerBase : MonoBehaviour
             characterAnim.SetTrigger("isJump");
             AudioManager.instance.PlaySE(jumpSE);
         }
-
-        // 攻撃入力
-        if (Input.GetKeyDown(KeyCode.F))
-            Attack(); // ここで isAttacking を true にするなどの処理
     }
 
 
@@ -74,11 +71,6 @@ public abstract class PlayerControllerBase : MonoBehaviour
         if (isGrounded)
         {
             currentJumpCount = 0;
-            if (characterAnim != null)
-            {
-                characterAnim.SetBool("jump_up", false);
-                characterAnim.SetBool("jump_down", false);
-            }
         }
     }
 
@@ -101,5 +93,52 @@ public abstract class PlayerControllerBase : MonoBehaviour
 
     public bool IsGrounded() => isGrounded;
 
-    protected virtual void Attack() { }
+    public float GetMyXSpeed() => rb.velocity.x;
+
+    public float GetMyYSpeed() => rb.velocity.y;
+
+    public void ChangeAnimation()
+    {
+        characterAnim = GetComponentInChildren<Animator>();
+        if (!IsGrounded())
+        {
+            if (GetMyYSpeed() > 0)
+            {
+                characterAnim.Play("Jumping");
+            }
+            else
+            {
+                characterAnim.Play("Falling");
+            }
+        }
+        else
+        {
+            characterAnim.Play("Idle");
+        }
+    }
+
+    public IEnumerator StopMovementForSeconds(float duration)
+    {
+        SetCanMove(false);                // 入力禁止
+        rb.velocity = Vector2.zero;      // 慣性を止める
+
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;            // 重力を一時的に無効化
+
+        yield return new WaitForSeconds(duration);
+
+        rb.gravityScale = originalGravity; // 重力を元に戻す
+        SetCanMove(true);                 // 入力再開
+        ChangeAnimation(); // アニメーション変更
+
+    }
+
+    public void CharaMoveStop(float stopTime)
+    {
+        /*if (characterAnim != null)
+        {*/
+        StartCoroutine(StopMovementForSeconds(stopTime));
+        //}
+    }
+
 }

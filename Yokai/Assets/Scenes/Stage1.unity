@@ -9143,7 +9143,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.6216288, y: 1.2864723}
+  m_Offset: {x: -1.3727398, y: -2.228118}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9154,7 +9154,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30.92594, y: 18.887806}
+  m_Size: {x: 29.106293, y: 25.916986}
   m_EdgeRadius: 0
 --- !u!1001 &4008771902692911185
 PrefabInstance:
@@ -9467,7 +9467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d98d46b3334a48d59e6576bbd92eb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialModeDuration: 30
+  specialModeDuration: 10
   normalModelPrefab: {fileID: 1860038580757700250, guid: 9e59f1edaf3ee884ab6c18d2c4c7d7b7, type: 3}
   specialModelPrefab: {fileID: 1860038580757700250, guid: 69423d7eefc0f48c4a4a3f7da89bbd42, type: 3}
   specialtonormalSE: {fileID: 8300000, guid: bf5bdcd0f9f2c4e11847f70b12605aaa, type: 3}

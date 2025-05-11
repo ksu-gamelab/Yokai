@@ -37,8 +37,6 @@ public abstract class EnemyBase : MonoBehaviour
             col.enabled = false;
         }
 
-        if (anim != null)
-            anim.SetTrigger("defeat");
 
         Destroy(gameObject, 1f);
     }

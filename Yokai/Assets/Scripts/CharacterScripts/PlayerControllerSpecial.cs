@@ -21,32 +21,17 @@ public class PlayerControllerSpecial : PlayerControllerBase
                 {
                     AudioManager.instance.PlaySE(attackSE);
                 }
+
                 if (characterAnim != null)
                 {
-
-                    characterAnim.SetTrigger("attack1");
-                    // 一定時間停止
-                    StartCoroutine(StopMovementForSeconds(stopTime));
+                    characterAnim.Play("H_Attack");
                 }
+
+                // 一定時間停止
+                CharaMoveStop(stopTime);
+
             }
         }
     }
-
-    private IEnumerator StopMovementForSeconds(float duration)
-    {
-        SetCanMove(false);                // 入力禁止
-        rb.velocity = Vector2.zero;      // 慣性を止める
-
-        float originalGravity = rb.gravityScale;
-        rb.gravityScale = 0f;            // 重力を一時的に無効化
-
-        yield return new WaitForSeconds(duration);
-
-        rb.gravityScale = originalGravity; // 重力を元に戻す
-        SetCanMove(true);                 // 入力再開
-    }
-
-
-
 
 }

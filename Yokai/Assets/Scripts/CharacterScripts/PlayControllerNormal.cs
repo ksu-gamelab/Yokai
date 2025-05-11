@@ -11,11 +11,6 @@ public class PlayerControllerNormal : PlayerControllerBase
         modeManager = GetComponent<PlayerModeManager>();
     }
 
-    protected override void Attack()
-    {
-        // 通常モードは攻撃なし
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))

@@ -50,8 +50,6 @@ public class PlayerModeManager : MonoBehaviour
         if (status.HeroTimeRemaining <= 0f)
         {
             string state = specialController.GetCurrentStateClipName();
-            if (CanTransformBack(state))
-                SwitchToNormal();
         }
     }
 
@@ -61,9 +59,6 @@ public class PlayerModeManager : MonoBehaviour
         if (currentMode != PlayerModeType.Normal) return;
 
         string state = normalController.GetCurrentStateClipName();
-        if (!CanTransform(state)) return;
-
-        if (!status.CanTransform()) return;
 
         status.ConsumeHP(1);
         SwitchToSpecial();
@@ -88,7 +83,6 @@ public class PlayerModeManager : MonoBehaviour
         currentMode = PlayerModeType.Normal;
         status.SetMode(PlayerModeType.Normal);
         UpdateModel(normalModelPrefab);
-        Debug.Log("ノーマルモードへ戻る");
     }
 
     public void NotifyGrounded(bool grounded)
@@ -105,30 +99,11 @@ public class PlayerModeManager : MonoBehaviour
             Destroy(currentModelInstance);
 
         currentModelInstance = Instantiate(newModelPrefab, transform);
-        Animator modelAnimator = currentModelInstance.GetComponentInChildren<Animator>();
+        bool pastGrounded = currentMode == PlayerModeType.Normal ? specialController.IsGrounded() : normalController.IsGrounded();
+        NotifyGrounded(pastGrounded);
 
-        if (currentMode == PlayerModeType.Normal)
-        {
-            normalController.SetAnimator(modelAnimator);
-            normalController.SetGrounded(true);
-        }
-        else
-        {
-            specialController.SetAnimator(modelAnimator);
-            specialController.SetGrounded(true);
-        }
     }
 
-    //将来的には地面に接地しているときに条件を変更したい
-    bool CanTransform(string stateName)
-    {
-        return stateName == "" || stateName == "N_run" || stateName == "N_New State" || stateName == "N_mabataki";
-    }
-
-    bool CanTransformBack(string stateName)
-    {
-        return stateName == "" || stateName == "H_run" || stateName == "H_New State" || stateName == "H_mabataki" || stateName == "H_taiki";
-    }
 
     public void ForceTransformToSpecial()
     {
