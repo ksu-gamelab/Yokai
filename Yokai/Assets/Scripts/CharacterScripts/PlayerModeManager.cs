@@ -1,130 +1,60 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public enum PlayerModeType { Normal, Special }
 
 public class PlayerModeManager : MonoBehaviour
 {
-    private PlayerControllerNormal normalController;
-    private PlayerControllerSpecial specialController;
     private PlayerStatus status;
+    private PlayerController controller;
 
-    public float specialModeDuration = 3f;
 
-    private PlayerModeType currentMode = PlayerModeType.Normal;
-
-    public GameObject normalModelPrefab;
-    public GameObject specialModelPrefab;
-    private GameObject currentModelInstance;
-
-    public AudioClip specialtonormalSE;
-    public AudioClip normaltospecialSE;
-
-    void Start()
+    private void Start()
     {
-        normalController = GetComponent<PlayerControllerNormal>();
-        specialController = GetComponent<PlayerControllerSpecial>();
         status = GetComponent<PlayerStatus>();
-
-        UpdateModel(normalModelPrefab);
+        controller = GetComponent<PlayerController>();
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-            TrySwitchToSpecial();
-
-        if (currentMode == PlayerModeType.Special)
-            UpdateSpecialMode();
-
-        if (currentMode == PlayerModeType.Normal)
-            normalController.HandleInput();
-        else
-            specialController.HandleInput();
+        // HeroTimeが尽きていればNormalに戻す
+        UpdateMode();
     }
 
-    void UpdateSpecialMode()
+    /// <summary>
+    /// スペシャルモードへの手動変身を試みる（HPを1消費）
+    /// </summary>
+    public void TryTransformToSpecial()
     {
-        status.UpdateHeroTime(Time.deltaTime);
-
-        if (status.HeroTimeRemaining <= 0f)
-        {
-            string state = specialController.GetCurrentStateClipName();
-        }
-    }
-
-    void TrySwitchToSpecial()
-    {
-
-        if (currentMode != PlayerModeType.Normal) return;
-
-        string state = normalController.GetCurrentStateClipName();
+        if (!status.CanTransform()) return;
 
         status.ConsumeHP(1);
-        SwitchToSpecial();
-        Debug.Log("スペシャルモードへ!");
+        status.SetHeroTime(status.HeroTimeMax);
+        Debug.Log("スペシャルモードに変身！");
     }
 
-    void SwitchToSpecial()
-    {
-        if (normaltospecialSE != null)
-            AudioManager.instance.PlaySE(normaltospecialSE);
-
-        currentMode = PlayerModeType.Special;
-        status.SetHeroTime(specialModeDuration);
-        status.SetMode(PlayerModeType.Special);
-        UpdateModel(specialModelPrefab);
-    }
-
-    void SwitchToNormal()
-    {
-        if (specialtonormalSE != null)
-            AudioManager.instance.PlaySE(specialtonormalSE);
-        currentMode = PlayerModeType.Normal;
-        status.SetMode(PlayerModeType.Normal);
-        UpdateModel(normalModelPrefab);
-    }
-
-    public void NotifyGrounded(bool grounded)
-    {
-        if (currentMode == PlayerModeType.Normal)
-            normalController.SetGrounded(grounded);
-        else
-            specialController.SetGrounded(grounded);
-    }
-
-    void UpdateModel(GameObject newModelPrefab)
-    {
-        if (currentModelInstance != null)
-            Destroy(currentModelInstance);
-
-        currentModelInstance = Instantiate(newModelPrefab, transform);
-        bool pastGrounded = currentMode == PlayerModeType.Normal ? specialController.IsGrounded() : normalController.IsGrounded();
-        NotifyGrounded(pastGrounded);
-
-    }
-
-
+    /// <summary>
+    /// 敵に当たったなど、強制的にスペシャルに変身する処理（HP0ならゲームオーバー）
+    /// </summary>
     public void ForceTransformToSpecial()
     {
-        if (currentMode == PlayerModeType.Normal)
+        if (status.IsDead())
         {
-            if (status.HP <= 0)
-            {
-                GoToGameOver();
-            }
-            else
-            {
-                status.ConsumeHP(1);
-                SwitchToSpecial();
-            }
+            Debug.Log("HPが0のため、ゲームオーバー");
+            GameStateManager.Instance.TriggerGameOver();
+        }
+        else
+        {
+            TryTransformToSpecial();
         }
     }
 
-    private void GoToGameOver()
+    /// <summary>
+    /// HeroTimeが0になったら通常モードに戻す処理
+    /// </summary>
+    private void UpdateMode()
     {
-        Debug.Log("ゲームオーバー！");
-        GameStateManager.Instance.TriggerGameOver();
+        if (status.CurrentMode == PlayerModeType.Special && status.HeroTime <= 0f)
+        {
+            status.SetMode(PlayerModeType.Normal);
+            Debug.Log("スペシャルモード終了 → 通常モードへ");
+        }
     }
-
 }

@@ -39,7 +39,7 @@ public class UIStatusManager : MonoBehaviour
 
         if (isHero)
         {
-            float ratio = Mathf.Clamp01(status.HeroTimeRemaining / maxHeroTime);
+            float ratio = Mathf.Clamp01(status.HeroTime / maxHeroTime);
             heroGaugeImageMask.fillAmount = 1f - ratio;  // ←ここを逆に！
         }
         else

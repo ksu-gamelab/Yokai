@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class FootChecker : MonoBehaviour
 {
-    public PlayerModeManager modeManager;
-    public MoveStage camFollower; // カメラの親にアタッチされたスクリプト
+    public PlayerController playerController;  // 変更点
+    public MoveStage camFollower;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ground"))
         {
-            modeManager.NotifyGrounded(true);
+            playerController.SetGrounded(true);
 
-            // カメラをプレイヤーのY位置まで追従開始
             if (camFollower != null)
             {
                 camFollower.TriggerFollow();
@@ -23,7 +22,8 @@ public class FootChecker : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            modeManager.NotifyGrounded(false);
+            playerController.SetGrounded(false);
+
             if (camFollower != null)
             {
                 camFollower.StopFollowImmediately();
