@@ -8994,8 +8994,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efbfb1720f15a4d05850c665d7b0bf49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 4
-  heroTimeRemaining: 0
+  maxHP: 3
+  heroTimeMax: 3
+  transformSE: {fileID: 0}
+  revertSE: {fileID: 0}
 --- !u!1 &7244370771303307261
 GameObject:
   m_ObjectHideFlags: 0
@@ -9058,7 +9060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42cf5ee6d7ab84d6fac6cd6491174d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modeManager: {fileID: 8440067100914007824}
+  playerController: {fileID: 0}
   camFollower: {fileID: 514659161}
 --- !u!224 &7981981813521747841
 RectTransform:
@@ -9189,11 +9191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d98d46b3334a48d59e6576bbd92eb2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  specialModeDuration: 10
-  normalModelPrefab: {fileID: 1860038580757700250, guid: 9e59f1edaf3ee884ab6c18d2c4c7d7b7, type: 3}
-  specialModelPrefab: {fileID: 1860038580757700250, guid: 635fb262b0357684081eba2b9b783806, type: 3}
-  specialtonormalSE: {fileID: 0}
-  normaltospecialSE: {fileID: 0}
 --- !u!114 &8440067100914007825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9206,12 +9203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fa6a51bf4c140319ef0782b449939e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
-  jumpForce: 100
-  maxJumpCount: 1
-  stopTime: 0.7
-  jumpSE: {fileID: 0}
-  attackSE: {fileID: 0}
 --- !u!114 &8440067100914007826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9224,12 +9215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461e6c051e97b4dd9b686c18945b1774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
-  jumpForce: 90
-  maxJumpCount: 1
-  stopTime: 0.7
-  jumpSE: {fileID: 0}
-  attackSE: {fileID: 0}
 --- !u!1 &9099643150672468833
 GameObject:
   m_ObjectHideFlags: 0
