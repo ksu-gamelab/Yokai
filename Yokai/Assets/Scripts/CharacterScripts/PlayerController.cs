@@ -25,6 +25,12 @@ public class PlayerController : MonoBehaviour
     private int currentJumpCount = 0;
     private bool canMove = true;
 
+    private string[] attackAnimationName = {
+        "H_Attack",
+        "H_Attack2",
+        "H_Attack3"
+    };
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -63,6 +69,12 @@ public class PlayerController : MonoBehaviour
             viewManager.PlayTrigger("isJump");
             AudioManager.instance.PlaySE(jumpSE);
         }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            GetComponent<PlayerModeManager>()?.ForceTransformToSpecial();
+        }
+
     }
 
     private void UpdateAnimation()
@@ -100,7 +112,7 @@ public class PlayerController : MonoBehaviour
                     if (attackSE != null)
                         AudioManager.instance.PlaySE(attackSE);
 
-                    viewManager.PlayAnimation("H_Attack");
+                    viewManager.PlayAnimation(attackAnimationName[Random.Range(0, attackAnimationName.Length)]);
                     StartCoroutine(StopMovementForSeconds(stopTime));
                 }
             }

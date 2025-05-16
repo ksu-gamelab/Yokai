@@ -60,11 +60,15 @@ public class PlayerUIController : MonoBehaviour
         }
     }
 
+    /////////////ココを見ること////////////////////////////////////////////////////////////////////////
     private void UpdateHeroGauge(float time)
     {
         bool isHero = status.CurrentMode == PlayerModeType.Special;
         if (!isHero)
         {
+            //ココが通ってないよ！！！！
+            Debug.Log("通ってる");
+            heroGaugeImage.GetComponent<Image>().sprite = normalSprite;
             // 通常モード時：ゲージは全表示（＝マスクなし）
             heroGaugeImageMask.fillAmount = 0f;
             return;
