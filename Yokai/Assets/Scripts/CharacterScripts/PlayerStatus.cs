@@ -5,6 +5,8 @@ public enum PlayerModeType { Normal, Special }
 
 public class PlayerStatus : MonoBehaviour
 {
+    [Header("エフェクトマネージャー")]
+    private PlayerEffectManager effectManager;
     [Header("ステータス")]
     [SerializeField] private int maxHP = 3;
     [SerializeField] private float heroTimeMax = 3f;
@@ -33,6 +35,7 @@ public class PlayerStatus : MonoBehaviour
     void Start()
     {
         ResetStatus();
+        effectManager = GetComponent<PlayerEffectManager>();
     }
 
     void Update()
@@ -45,6 +48,7 @@ public class PlayerStatus : MonoBehaviour
 
             if (heroTime <= 0f)
             {
+                effectManager.PlayEffect("ChangeN");
                 SetMode(PlayerModeType.Normal);
             }
         }
@@ -109,6 +113,7 @@ public class PlayerStatus : MonoBehaviour
     // ======== 状態チェック用 ========
 
     public bool IsDead() => hp <= 0;
-    public bool CanTransform() => hp > 0;
+    public bool CanTransform() => hp > 0 && currentMode == PlayerModeType.Normal;
+
     public bool IsHeroMode() => currentMode == PlayerModeType.Special;
 }

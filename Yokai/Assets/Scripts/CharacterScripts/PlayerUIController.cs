@@ -15,15 +15,20 @@ public class PlayerUIController : MonoBehaviour
     public Sprite hpFullSprite;
     public Sprite hpEmptySprite;
 
+    [Header("Effect")]
+    public GameObject gaugeEffectPrefab;
+
     private PlayerStatus status;
+
 
     private void Update()
     {
-        if (status == null || status.CurrentMode != PlayerModeType.Special) return;
+        if (status == null) return;
 
-        // ヒーローゲージだけ毎フレーム更新
+        // 毎フレームゲージを更新
         UpdateHeroGauge(status.HeroTime);
     }
+
 
     public void SetStatus(PlayerStatus playerStatus)
     {
@@ -60,20 +65,18 @@ public class PlayerUIController : MonoBehaviour
         }
     }
 
-    /////////////ココを見ること////////////////////////////////////////////////////////////////////////
     private void UpdateHeroGauge(float time)
     {
         bool isHero = status.CurrentMode == PlayerModeType.Special;
         if (!isHero)
         {
-            //ココが通ってないよ！！！！
-            Debug.Log("通ってる");
+            gaugeEffectPrefab.SetActive(false);
             heroGaugeImage.GetComponent<Image>().sprite = normalSprite;
             // 通常モード時：ゲージは全表示（＝マスクなし）
             heroGaugeImageMask.fillAmount = 0f;
             return;
         }
-
+        gaugeEffectPrefab.SetActive(true);
         float ratio = Mathf.Clamp01(time / status.HeroTimeMax);
 
         heroGaugeImageMask.fillAmount = 1f - ratio; // 時間が減るとマスクが増える
@@ -88,6 +91,8 @@ public class PlayerUIController : MonoBehaviour
             heroGaugeImage.sprite = isHero ? specialSprite : normalSprite;
         }
     }
+
+
 
     private void OnDestroy()
     {

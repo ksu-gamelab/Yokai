@@ -5,17 +5,14 @@ public class PlayerModeManager : MonoBehaviour
     private PlayerStatus status;
     private PlayerController controller;
 
+    private PlayerEffectManager effectManager;
+
 
     private void Start()
     {
         status = GetComponent<PlayerStatus>();
         controller = GetComponent<PlayerController>();
-    }
-
-    private void Update()
-    {
-        // HeroTimeが尽きていればNormalに戻す
-        UpdateMode();
+        effectManager = GetComponent<PlayerEffectManager>();
     }
 
     /// <summary>
@@ -24,9 +21,9 @@ public class PlayerModeManager : MonoBehaviour
     public void TryTransformToSpecial()
     {
         if (!status.CanTransform()) return;
-
         status.ConsumeHP(1);
         status.SetHeroTime(status.HeroTimeMax);
+        effectManager.PlayEffect("ChangeH");
         Debug.Log("スペシャルモードに変身！");
     }
 
@@ -46,15 +43,4 @@ public class PlayerModeManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// HeroTimeが0になったら通常モードに戻す処理
-    /// </summary>
-    private void UpdateMode()
-    {
-        if (status.CurrentMode == PlayerModeType.Special && status.HeroTime <= 0f)
-        {
-            status.SetMode(PlayerModeType.Normal);
-            Debug.Log("スペシャルモード終了 → 通常モードへ");
-        }
-    }
 }

@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     private PlayerStatus status;
     private PlayerViewManager viewManager;
 
+    private PlayerEffectManager effectManager;
+
     private bool isGrounded = false;
     private int currentJumpCount = 0;
     private bool canMove = true;
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         status = GetComponent<PlayerStatus>();
         viewManager = GetComponent<PlayerViewManager>();
+        effectManager = GetComponent<PlayerEffectManager>();
     }
 
     private void Update()
@@ -70,8 +73,9 @@ public class PlayerController : MonoBehaviour
             AudioManager.instance.PlaySE(jumpSE);
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && !status.IsDead())
         {
+            StartCoroutine(StopMovementForSeconds(stopTime));
             GetComponent<PlayerModeManager>()?.ForceTransformToSpecial();
         }
 
@@ -113,6 +117,7 @@ public class PlayerController : MonoBehaviour
                         AudioManager.instance.PlaySE(attackSE);
 
                     viewManager.PlayAnimation(attackAnimationName[Random.Range(0, attackAnimationName.Length)]);
+                    effectManager.PlayEffect("Attack");
                     StartCoroutine(StopMovementForSeconds(stopTime));
                 }
             }
