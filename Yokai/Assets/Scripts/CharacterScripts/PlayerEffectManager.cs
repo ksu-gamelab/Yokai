@@ -33,7 +33,15 @@ public class PlayerEffectManager : MonoBehaviour
         }
 
         GameObject instance = Instantiate(prefab, this.transform); // 自身の子に生成（ローカル位置保持）
-        //instance.transform.localScale = Vector3.one;
+                                                                   // 親のscaleがマイナス（左右反転）されていたら、子で反転を打ち消す
+        Vector3 parentScale = transform.lossyScale;
+        Vector3 adjustedScale = prefab.transform.localScale;
+
+        // X軸の反転補正
+        if (parentScale.x < 0)
+            adjustedScale.x *= -1;
+
+        instance.transform.localScale = adjustedScale;
         Destroy(instance, 2f); // 寿命は必要に応じて調整
     }
 }
