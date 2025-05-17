@@ -9664,7 +9664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefabs:
   - {fileID: 4021103657954561961, guid: f751f29fcb09e5947ab4be16b63fca61, type: 3}
-  - {fileID: 8853768680566406095, guid: 8ffa61330e3e9458bbb4277300cc029f, type: 3}
+  - {fileID: 2708598583397607911, guid: a463731e6c75d45b5a1e82281eff56e5, type: 3}
   - {fileID: 5112403345868107898, guid: e1ec289a1910e5b4296cefc5713573e2, type: 3}
 --- !u!1 &9099643150672468833
 GameObject:
