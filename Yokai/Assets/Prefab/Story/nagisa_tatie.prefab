@@ -2180,7 +2180,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -237, y: 0, z: 0}
-  m_LocalScale: {x: 500, y: 500, z: 500}
+  m_LocalScale: {x: 500.06027, y: 500.06027, z: 500.06027}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5009609282752258871}
@@ -2345,12 +2345,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6015506700737104498}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0cd9e6647bfff7542acb0200ab74bdd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CubismFadeMotionList: {fileID: 0}
+  CubismFadeMotionList: {fileID: 11400000, guid: 771a7415bdb014456be90d3c44fb528f, type: 2}
 --- !u!1 &6133325933066820784
 GameObject:
   m_ObjectHideFlags: 0

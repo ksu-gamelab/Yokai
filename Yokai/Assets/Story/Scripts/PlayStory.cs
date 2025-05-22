@@ -16,7 +16,7 @@ public class PlayStory : MonoBehaviour
 
     [SerializeField] private GameObject[] characterPrefabs;
     private Dictionary<string, GameObject> characterDictionary;
-    private GameObject currentCharacter;
+    Dictionary<string, GameObject> activeCharacters = new Dictionary<string, GameObject>();
 
     [SerializeField] private Sprite[] Sprites;
     private Dictionary<string, Sprite> spriteDictionary;
@@ -180,47 +180,36 @@ public class PlayStory : MonoBehaviour
     public void updateCharacter()
     {
         string charaNames = storyData[currentLine][2];
+
         // 一つ前の行と同じ場合は更新しない
         if (currentLine > 0 && charaNames.Equals(storyData[currentLine - 1][2]))
         {
             return;
         }
 
-
-        // すでに表示されているキャラの名前を取得
-        HashSet<string> existingCharacters = new HashSet<string>();
+        // 前のキャラを全削除
         foreach (Transform child in characterImage.transform)
         {
-            existingCharacters.Add(child.name);
+            Destroy(child.gameObject);
         }
+
+        // activeCharacters辞書も初期化
+        activeCharacters.Clear();
 
         // 現在表示すべきキャラ名が空でなければ処理
         if (!string.IsNullOrEmpty(charaNames))
         {
             string[] nameArray = charaNames.Split('/');
 
-            // 新たに表示すべきキャラ名だけを残す
-            List<string> newCharacters = new List<string>();
-            foreach (string name in nameArray)
-            {
-                if (!existingCharacters.Contains(name))
-                {
-                    newCharacters.Add(name);
-                }
-            }
-
-            // 一旦すべて削除（再生成しないように改修する場合はこの行を削除）
-            foreach (Transform child in characterImage.transform)
-            {
-                Destroy(child.gameObject);
-            }
-
-            // 必要なキャラだけを生成
             foreach (string name in nameArray)
             {
                 if (characterDictionary.ContainsKey(name))
                 {
-                    Instantiate(characterDictionary[name], characterImage.transform).name = name;
+                    GameObject character = Instantiate(characterDictionary[name], characterImage.transform);
+                    character.name = name;
+
+                    // 登録（アニメーション発火で使用するため）
+                    activeCharacters[name] = character;
                 }
                 else
                 {
@@ -229,6 +218,7 @@ public class PlayStory : MonoBehaviour
             }
         }
     }
+
 
 
 
@@ -303,13 +293,40 @@ public class PlayStory : MonoBehaviour
 
     void AnimatorSet()
     {
-        if (!string.IsNullOrEmpty(storyData[currentLine][9]) && currentCharacter != null)
+        string animData = storyData[currentLine][9];      // animation列
+        string charaNames = storyData[currentLine][2];    // charaimage列
+
+        if (string.IsNullOrEmpty(animData) || string.IsNullOrEmpty(charaNames))
+            return;
+
+        string[] animTriggers = animData.Split('/');
+        string[] charaArray = charaNames.Split('/');
+
+        for (int i = 0; i < charaArray.Length; i++)
         {
-            Animator animator = currentCharacter.GetComponent<Animator>();
-            if (animator != null)
+            string charaName = charaArray[i];
+
+            if (activeCharacters.ContainsKey(charaName))
             {
-                animator.SetTrigger(storyData[currentLine][9]);
+                GameObject charaObj = activeCharacters[charaName];
+                Animator animator = charaObj.GetComponent<Animator>();
+
+                if (animator != null)
+                {
+                    // アニメーションが足りない場合は空扱い
+                    string trigger = (i < animTriggers.Length) ? animTriggers[i] : "";
+
+                    if (!string.IsNullOrEmpty(trigger))
+                    {
+                        animator.SetTrigger(trigger);
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"キャラ '{charaName}' に対するアニメーション対象が見つかりません");
             }
         }
     }
+
 }
