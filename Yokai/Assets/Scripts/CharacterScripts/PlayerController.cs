@@ -51,6 +51,8 @@ public class PlayerController : MonoBehaviour
 
     private void HandleInput()
     {
+        if (GameStateManager.Instance.IsPaused()) return;
+
         float moveSpeed = status.IsHeroMode() ? specialMoveSpeed : normalMoveSpeed;
         float jumpForce = status.IsHeroMode() ? specialJumpForce : normalJumpForce;
 
@@ -65,7 +67,7 @@ public class PlayerController : MonoBehaviour
             transform.localScale = scale;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && currentJumpCount < maxJumpCount)
+        if (Input.GetButtonDown("Jump") && currentJumpCount < maxJumpCount)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             currentJumpCount++;
@@ -73,11 +75,13 @@ public class PlayerController : MonoBehaviour
             AudioManager.instance.PlaySE(jumpSE);
         }
 
-        if (Input.GetKeyDown(KeyCode.Return) && !status.IsDead())
+        if (Input.GetButtonDown("Transform") && !status.IsDead())
         {
             StartCoroutine(StopMovementForSeconds(stopTime));
             GetComponent<PlayerModeManager>()?.ForceTransformToSpecial();
         }
+
+
 
     }
 
@@ -141,7 +145,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private IEnumerator StopMovementForSeconds(float duration)
+    public IEnumerator StopMovementForSeconds(float duration)
     {
         SetCanMove(false);
         rb.velocity = Vector2.zero;

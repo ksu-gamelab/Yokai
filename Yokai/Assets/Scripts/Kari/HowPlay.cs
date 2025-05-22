@@ -14,7 +14,9 @@ public class HowPlay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (GameStateManager.Instance.IsPaused()) return;
+
+        if (Input.GetButtonDown("Submit"))
         {
             SceneManager.LoadScene("Stage1");
         }

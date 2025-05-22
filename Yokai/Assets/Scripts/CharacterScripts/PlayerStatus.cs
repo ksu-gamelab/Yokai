@@ -48,6 +48,7 @@ public class PlayerStatus : MonoBehaviour
 
             if (heroTime <= 0f)
             {
+                StartCoroutine(this.gameObject.GetComponent<PlayerController>().StopMovementForSeconds(0.7f));
                 effectManager.PlayEffect("ChangeN");
                 SetMode(PlayerModeType.Normal);
             }

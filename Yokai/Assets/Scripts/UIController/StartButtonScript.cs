@@ -10,6 +10,7 @@ public class StartButtonScript : MonoBehaviour
 
     public AudioClip buttonclip;
     public GameObject creditPanel;
+    [SerializeField] private GenericUISelector selector;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +37,13 @@ public class StartButtonScript : MonoBehaviour
 
     public void onClicked_opencredit()
     {
+        selector.SwitchGroup("credit");
         creditPanel.SetActive(true);
     }
 
     public void onClicked_closecredit()
     {
+        selector.SwitchGroup("main");
         creditPanel.SetActive(false);
     }
 }
