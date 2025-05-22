@@ -176,10 +176,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1055636610557687444, guid: c2011ebe98fa29742afa5943ec519640, type: 3}
       propertyPath: groups.Array.data[0].uiElements.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1055636610557687444, guid: c2011ebe98fa29742afa5943ec519640, type: 3}
       propertyPath: groups.Array.data[0].uiElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 861863005}
+    - target: {fileID: 1055636610557687444, guid: c2011ebe98fa29742afa5943ec519640, type: 3}
+      propertyPath: groups.Array.data[0].uiElements.Array.data[1]
       value: 
       objectReference: {fileID: 335599047}
     - target: {fileID: 8883257096282228951, guid: c2011ebe98fa29742afa5943ec519640, type: 3}

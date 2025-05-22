@@ -55,4 +55,15 @@ public class AudioManager : MonoBehaviour
         Debug.Assert(audioClip);
         audioSourceSE.PlayOneShot(audioClip);
     }
+
+    public void SetBGMVolume(float volume)
+    {
+        audioSourceBGM.volume = volume;
+    }
+
+    public void SetSEVolume(float volume)
+    {
+        audioSourceSE.volume = volume;
+    }
+
 }

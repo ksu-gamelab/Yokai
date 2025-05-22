@@ -17,6 +17,7 @@ public class ConfigUIController : MonoBehaviour
         inputTimer = 0f;
     }
 
+
     private void Update()
     {
         if (!gameObject.activeSelf) return;

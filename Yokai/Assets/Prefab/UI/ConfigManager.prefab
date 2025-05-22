@@ -603,6 +603,7 @@ GameObject:
   - component: {fileID: 7508036526056789081}
   - component: {fileID: 4008306303732743652}
   - component: {fileID: 5701422908663297867}
+  - component: {fileID: 3925124032822172773}
   m_Layer: 5
   m_Name: ConfigPanel
   m_TagString: Untagged
@@ -688,6 +689,20 @@ MonoBehaviour:
   - {fileID: 4066141805245391783}
   - {fileID: 2769373519520414170}
   inputDelay: 0.2
+--- !u!114 &3925124032822172773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5640576337568283389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b50995a4926cdb45ac3856193d354ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmSlider: {fileID: 411398139744379162}
+  seSlider: {fileID: 4066141805245391783}
 --- !u!1 &5743614501305404757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +1035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6351789812292455976}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -43.420193, y: 60.239014, z: -0.30648258}
   m_LocalScale: {x: 4.675973, y: 4.675973, z: 4.675973}
   m_ConstrainProportionsScale: 0
