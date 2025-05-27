@@ -12,6 +12,17 @@ public class ClearChecker : MonoBehaviour
         {
             GameStateManager.Instance.TriggerGameClear();
         }
+        else if (other.CompareTag("Clear_Tutorial1"))
+        {
+            var controller = FindObjectOfType<TutorialController>();
+            if (controller != null)
+            {
+                CSVReader.SetCSV("Tutorial1End");
+
+                controller.StartNovel();
+            }
+        }
+
     }
 
 }

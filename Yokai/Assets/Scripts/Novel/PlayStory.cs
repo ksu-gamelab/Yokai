@@ -276,15 +276,36 @@ public class PlayStory : MonoBehaviour
 
     public void loadScene()
     {
-        if (storyData[currentLine][8] != "")
+        string sceneName = storyData[currentLine][8];
+
+        if (string.IsNullOrEmpty(sceneName)) return;
+
+        // チュートリアル再生用キーワード
+        if (sceneName == "Start")
         {
-            nextscene = storyData[currentLine][8];
+            // チュートリアル起動処理
+            TutorialController controller = FindObjectOfType<TutorialController>();
+            if (controller != null)
+            {
+                controller.StartTutorial();
+            }
+            else
+            {
+                Debug.LogWarning("TutorialController がシーン上に存在しません");
+            }
+        }
+        else
+        {
+            // 通常のシーン遷移
+            nextscene = sceneName;
+            CSVReader.SetCSV(nextscene);
             fadein.SetActive(true);
             AudioManager.instance.PlaySE(fadeSE);
             AudioManager.instance.audioSourceBGM.Stop();
             Invoke("waitFade", 2.0f);
         }
     }
+
 
     public void waitFade()
     {
@@ -328,5 +349,24 @@ public class PlayStory : MonoBehaviour
             }
         }
     }
+
+    public void ReloadStory()
+    {
+        StopAllCoroutines(); // 文字送りなどを止める
+        if(storyData != null)
+        {
+             storyData.Clear();
+        }
+
+        var reader = GetComponent<CSVReader>();
+        if (reader == null) return;
+
+        reader.ReloadCSV();
+        storyData = reader.GetStoryData();
+
+        currentLine = 1;
+        StartCoroutine(LoadStoryAndStart());
+    }
+
 
 }

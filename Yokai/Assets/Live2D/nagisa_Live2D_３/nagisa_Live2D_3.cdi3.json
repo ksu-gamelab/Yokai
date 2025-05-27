@@ -1,0 +1,102 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "lefteye_open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "righteye_open"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "breath"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "doubt"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "relax"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "mouse"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ナギサ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part5",
+			"Name": "髪"
+		},
+		{
+			"Id": "Part6",
+			"Name": "体"
+		},
+		{
+			"Id": "Part9",
+			"Name": "アクセ"
+		},
+		{
+			"Id": "Part10",
+			"Name": "眉R"
+		},
+		{
+			"Id": "Part15",
+			"Name": "眉L"
+		},
+		{
+			"Id": "Part11",
+			"Name": "目R"
+		},
+		{
+			"Id": "Part16",
+			"Name": "目L"
+		},
+		{
+			"Id": "Part20",
+			"Name": "口"
+		},
+		{
+			"Id": "Part12",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part13",
+			"Name": "深刻目R"
+		},
+		{
+			"Id": "Part14",
+			"Name": "普通目R"
+		},
+		{
+			"Id": "Part17",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part18",
+			"Name": "深刻目L"
+		},
+		{
+			"Id": "Part19",
+			"Name": "普通目L"
+		}
+	]
+}

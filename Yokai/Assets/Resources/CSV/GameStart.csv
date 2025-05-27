@@ -1,0 +1,13 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,「うわっ！真っ暗だ！どこなんだろうここ…」,nagisa_Live2D_2,background,storydefault,,,,,,,ナギサ
+2,「すごく帰りたい……」,nagisa_Live2D_2,background,,,,,,,,ナギサ
+3,,hiro_tatie,background,,,,,,,,
+4,「わっ誰！？」,nagisa_Live2D_2/hiro_tatie,background,,,,,,nextAnim/nextAnim,,ナギサ
+5,「お？おまえがにんげんか！」,nagisa_Live2D_2/hiro_tatie,background,,,,,,,,？？？
+6,「誰！？本当に誰！？」,nagisa_Live2D_2/hiro_tatie,background,,,,,,/nextAnim,,ナギサ
+7,あ、すまんすまん,nagisa_Live2D_2/hiro_tatie,background,,,,,,,,？？？
+8,「われはヒイロ！よーかいだ！」,nagisa_Live2D_2/hiro_tatie,background,,,,,,nextAnim/nextAnim,,ヒイロ
+9,「妖怪！？えぇ？本当に」,nagisa_Live2D_2/hiro_tatie,background,,,,,,,,ナギサ
+10,「おまえこまってるんだろ？でぐちおしえてやる！」,nagisa_Live2D_2/hiro_tatie,background,,,,,,,,ヒイロ
+11,「う、うん……ありがとう？」,nagisa_Live2D_2/hiro_tatie,background,,,,,,,,ナギサ
+,,,,,,,,HowPlay,,,

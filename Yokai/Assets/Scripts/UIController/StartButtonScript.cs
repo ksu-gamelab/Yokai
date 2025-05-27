@@ -32,7 +32,8 @@ public class StartButtonScript : MonoBehaviour
     }
     public void loadstart()
     {
-        SceneManager.LoadScene("StoryScene");
+        CSVReader.SetCSV("Tutorial1");
+        SceneManager.LoadScene("Tutorial1");
     }
 
     public void onClicked_opencredit()
