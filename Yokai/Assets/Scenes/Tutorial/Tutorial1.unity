@@ -1591,7 +1591,7 @@ GameObject:
   - component: {fileID: 616209655}
   m_Layer: 10
   m_Name: Clear
-  m_TagString: Clear_Tutorial1
+  m_TagString: Clear_Tutorial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

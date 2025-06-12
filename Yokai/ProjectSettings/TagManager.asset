@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Enemy
   - Clear
+  - Clear_Tutorial
   - Clear_Tutorial1
   layers:
   - Default

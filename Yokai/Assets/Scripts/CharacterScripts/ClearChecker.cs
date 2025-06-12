@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClearChecker : MonoBehaviour
 {
@@ -8,16 +10,20 @@ public class ClearChecker : MonoBehaviour
     {
         if (other.CompareTag("Clear"))
         {
-            GameStateManager.Instance.TriggerGameClear();
+
         }
-        else if (other.CompareTag("Clear_Tutorial1"))
+        else if (other.CompareTag("Clear_Tutorial"))
         {
             var controller = FindObjectOfType<TutorialController>();
             if (controller != null)
             {
-                // 次に再生するCSVをセット
-                CSVReader.SetCSV("Tutorial1End");
-                controller.StartNovel(TutorialStage.Stage2);
+                if(GameStateManager.Instance.CurrentTutorialStage == TutorialStage.Stage1)
+                {
+                    // 次に再生するCSVをセット
+                    CSVReader.SetCSV("Tutorial1End");
+                    controller.StartNovel(TutorialStage.Stage2);
+                }
+
             }
         }
     }

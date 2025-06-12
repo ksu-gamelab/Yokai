@@ -1,13 +1,4 @@
 ﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
-1,チュートリアルが終了しました,nagisa_Live2D_2,clear,storydefault,,,,,,,ナギサ
-2,「すごく帰りたい……」,hiro_tatie,clear,,,,,,,,ナギサ
-3,,hiro_tatie,clear,,,,,,,,
-4,「わっ誰！？」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,nextAnim/nextAnim,,ナギサ
-5,「お？おまえがにんげんか！」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,？？？
-6,「誰！？本当に誰！？」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,/nextAnim,,ナギサ
-7,あ、すまんすまん,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,？？？
-8,「われはヒイロ！よーかいだ！」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,nextAnim/nextAnim,,ヒイロ
-9,「妖怪！？えぇ？本当に」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,ナギサ
-10,「おまえこまってるんだろ？でぐちおしえてやる！」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,ヒイロ
-11,「う、うん……ありがとう？」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,ナギサ
-12,,,,,,,,Tutorial2,,,
+1,「こ、怖かった～～～！！なんだったの？アイツ.......」,nagisa_Live2D_2,clear,storydefault,,,,,,,ナギサ
+2,「とにかく！進もう！進むしかない！」,hiro_tatie,clear,,,,,,,,ナギサ
+3,,,,,,,,Tutorial2,,,

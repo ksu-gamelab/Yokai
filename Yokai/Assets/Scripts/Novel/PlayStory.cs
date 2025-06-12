@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -46,8 +47,11 @@ public class PlayStory : MonoBehaviour
     private int currentIndex = 0;
     public GameObject configPanel;
 
+    GenericUISelector genericUISelector;
+
     void Start()
     {
+        genericUISelector = FindObjectOfType<GenericUISelector>();
         // キャラプレハブ登録
         characterDictionary = new Dictionary<string, GameObject>();
         foreach (GameObject prefab in characterPrefabs)
@@ -97,6 +101,7 @@ public class PlayStory : MonoBehaviour
 
     public void ShowNextDialogue()
     {
+        if (GameStateManager.Instance.CurrentTutorialMode == TutorialMode.Play) return;
         if (isTyping)
         {
             StopCoroutine(typingCoroutine);
@@ -124,6 +129,10 @@ public class PlayStory : MonoBehaviour
                 ShowChoices(selectText1, selectText2);
                 currentLine++;
                 return;
+            } else
+            {
+                //選択肢が無いとき
+                genericUISelector.RestoreSelection();
             }
 
             typingCoroutine = StartCoroutine(TypeText(currentDialogue));
@@ -153,6 +162,8 @@ public class PlayStory : MonoBehaviour
         select1Text.text = choice1;
         select2Text.text = choice2;
         selectBack.SetActive(true);
+        
+        genericUISelector.SwitchGroup("select");
     }
 
     public void onClicked_selectbutton()
@@ -298,6 +309,16 @@ public class PlayStory : MonoBehaviour
         }
         else
         {
+            try
+            {
+                NormalStage stage = (NormalStage)Enum.Parse(typeof(NormalStage), sceneName);
+                GameStateManager.Instance.SetNormalStage(stage);
+            }
+            catch (ArgumentException)
+            {
+                Debug.LogError($"NormalStage に '{sceneName}' という名前のステージは存在しません。");
+            }
+
             // 通常のシーン遷移
             nextscene = sceneName;
             CSVReader.SetCSV(nextscene);

@@ -26,11 +26,21 @@ public enum TutorialMode
     Play
 }
 
+public enum NormalStage
+{
+    None,
+    Stage1,
+    Stage2,
+    Stage3
+}
+
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
 
     public GameState CurrentState { get; private set; } = GameState.Title;
+
+    public NormalStage CurrentNormalStage { get; private set; } = NormalStage.None;
 
     // チュートリアル情報
     public TutorialStage CurrentTutorialStage { get; private set; } = TutorialStage.None;
@@ -115,6 +125,14 @@ public class GameStateManager : MonoBehaviour
         Debug.Log("チュートリアルモード設定: " + mode);
     }
 
+    // ---------NormalStage関連------------
+    public void SetNormalStage(NormalStage stage)
+    {
+        CurrentNormalStage = stage;
+    }
+    
+
     public bool IsTutorialPlay() => CurrentTutorialMode == TutorialMode.Play;
     public bool IsTutorialNovel() => CurrentTutorialMode == TutorialMode.Novel;
+
 }
