@@ -23,6 +23,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Defeat()
     {
+        
         if (isDefeated) return;
         isDefeated = true;
 

@@ -74,6 +74,7 @@ public class PlayStory : MonoBehaviour
         }
 
         selectBack.SetActive(false);
+        if (GameStateManager.Instance.CurrentTutorialMode != TutorialMode.Novel) return;
         StartCoroutine(LoadStoryAndStart());
     }
 
@@ -283,6 +284,7 @@ public class PlayStory : MonoBehaviour
         // チュートリアル再生用キーワード
         if (sceneName == "Start")
         {
+
             // チュートリアル起動処理
             TutorialController controller = FindObjectOfType<TutorialController>();
             if (controller != null)
@@ -304,6 +306,7 @@ public class PlayStory : MonoBehaviour
             AudioManager.instance.audioSourceBGM.Stop();
             Invoke("waitFade", 2.0f);
         }
+
     }
 
 

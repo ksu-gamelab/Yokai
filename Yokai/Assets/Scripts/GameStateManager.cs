@@ -10,22 +10,41 @@ public enum GameState
     Clear
 }
 
+public enum TutorialStage
+{
+    None,
+    Stage1,
+    Stage2,
+    Stage3,
+    Complete
+}
+
+public enum TutorialMode
+{
+    None,
+    Novel,
+    Play
+}
+
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager Instance { get; private set; }
 
     public GameState CurrentState { get; private set; } = GameState.Title;
 
+    // チュートリアル情報
+    public TutorialStage CurrentTutorialStage { get; private set; } = TutorialStage.None;
+    public TutorialMode CurrentTutorialMode { get; private set; } = TutorialMode.None;
+
     void Awake()
     {
-        // Singleton化（複数生成を防ぐ）
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject); // シーンをまたいでも残す
+        DontDestroyOnLoad(gameObject);
     }
 
     public void SetState(GameState newState)
@@ -33,7 +52,6 @@ public class GameStateManager : MonoBehaviour
         CurrentState = newState;
         Debug.Log("ゲーム状態: " + newState);
 
-        // 状態に応じた処理
         switch (newState)
         {
             case GameState.Playing:
@@ -43,11 +61,9 @@ public class GameStateManager : MonoBehaviour
                 Time.timeScale = 0f;
                 break;
             case GameState.GameOver:
-                //Time.timeScale = 0f;
                 SceneManager.LoadScene("GameOver");
                 break;
             case GameState.Clear:
-                //Time.timeScale = 0f;
                 SceneManager.LoadScene("GameClear");
                 break;
         }
@@ -56,9 +72,7 @@ public class GameStateManager : MonoBehaviour
     public void TriggerGameOver()
     {
         if (CurrentState != GameState.GameOver)
-        {
             SetState(GameState.GameOver);
-        }
     }
 
     public void TriggerGameStart()
@@ -85,7 +99,22 @@ public class GameStateManager : MonoBehaviour
             SetState(GameState.Playing);
     }
 
-
     public bool IsPlaying() => CurrentState == GameState.Playing;
     public bool IsPaused() => CurrentState == GameState.Paused;
+
+    // ---------- Tutorial関連 ----------
+    public void SetTutorialStage(TutorialStage stage)
+    {
+        CurrentTutorialStage = stage;
+        Debug.Log("チュートリアルステージ設定: " + stage);
+    }
+
+    public void SetTutorialMode(TutorialMode mode)
+    {
+        CurrentTutorialMode = mode;
+        Debug.Log("チュートリアルモード設定: " + mode);
+    }
+
+    public bool IsTutorialPlay() => CurrentTutorialMode == TutorialMode.Play;
+    public bool IsTutorialNovel() => CurrentTutorialMode == TutorialMode.Novel;
 }

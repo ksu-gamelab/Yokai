@@ -1,5 +1,5 @@
 ﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
-1,次のチュートリアルです,nagisa_Live2D_2,clear,storydefault,,,,,,,ナギサ
+1,最初のストーリーです,nagisa_Live2D_2,clear,storydefault,,,,,,,ナギサ
 2,「すごく帰りたい……」,hiro_tatie,clear,,,,,,,,ナギサ
 3,,hiro_tatie,clear,,,,,,,,
 4,「わっ誰！？」,nagisa_Live2D_2/hiro_tatie,clear,,,,,,nextAnim/nextAnim,,ナギサ

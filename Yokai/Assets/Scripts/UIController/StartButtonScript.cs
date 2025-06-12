@@ -32,6 +32,9 @@ public class StartButtonScript : MonoBehaviour
     }
     public void loadstart()
     {
+        GameStateManager.Instance.SetState(GameState.Playing);
+        GameStateManager.Instance.SetTutorialStage(TutorialStage.Stage1);
+        GameStateManager.Instance.SetTutorialMode(TutorialMode.Novel);
         CSVReader.SetCSV("Tutorial1");
         SceneManager.LoadScene("Tutorial1");
     }

@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ClearChecker : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Clear"))
@@ -17,12 +15,10 @@ public class ClearChecker : MonoBehaviour
             var controller = FindObjectOfType<TutorialController>();
             if (controller != null)
             {
+                // éüÇ…çƒê∂Ç∑ÇÈCSVÇÉZÉbÉg
                 CSVReader.SetCSV("Tutorial1End");
-
-                controller.StartNovel();
+                controller.StartNovel(TutorialStage.Stage2);
             }
         }
-
     }
-
 }
