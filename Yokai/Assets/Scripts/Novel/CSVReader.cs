@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -6,9 +7,19 @@ public class CSVReader : MonoBehaviour
 {
     private static string nextCSVName; // 他シーンから渡す一時保持用
     private List<StoryLine> storyLines = new List<StoryLine>();
+    [SerializeField] private TextAsset defaultCSV; // デフォルトのCSVファイル名
+    [SerializeField] bool isDebugMode = false; // デバッグモードの有無
 
     void Start()
     {
+        if (isDebugMode)
+        {
+            GameStateManager.Instance.SetTutorialMode(TutorialMode.Novel);
+        }
+        if (defaultCSV != null)
+        {
+            nextCSVName = defaultCSV.name; // デフォルトのCSVファイル名を設定
+        }
         if (string.IsNullOrEmpty(nextCSVName))
         {
             Debug.LogError("CSVファイル名が指定されていません");

@@ -1,6 +1,6 @@
 ﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
-1,いてて…,nagisa_Live2D_4,clear,storydefault,,,,,,,ナギサ
-2,ここ......どこだろう,hiro_tatie,clear,,,,,,,,ナギサ
-3,......どこかの森かな。なんでこんなところに,hiro_tatie,clear,,,,,,,,
-4,とにかく進むしかない,nagisa_Live2D_4/hiro_tatie,clear,,,,,,,,ナギサ
+1,いてて…,nagisa_Live2D_2,clear,DarkBGM,,,,,,,ナギサ
+2,ここ……どこだろう,nagisa_Live2D_2,clear,,,,,,,,ナギサ
+3,……どこかの森かな。なんでこんなところに？,nagisa_Live2D_2,clear,,,,,,,,ナギサ
+4,……とにかく、進むしかない、か,nagisa_Live2D_2/hiro_tatie,clear,,,,,,nextAnim/nextAnim,,ナギサ
 5,,,,,,,,Start,,,
