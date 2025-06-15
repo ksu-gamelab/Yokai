@@ -122,7 +122,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 16
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &427880796141592412
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 10
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &1098681894984927234
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 28
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &1294344588075633666
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +802,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 24
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &2557801371966270114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 7
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &3647569827957471388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1321,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 32
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &3788652320653975065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1444,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 30
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &4274559670210600111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 19
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &4533965801697518151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 11
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &5157076433977981876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,7 +2020,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 27
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &5211726119267274118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 26
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &6036458557714424099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 31
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &6290004626687873875
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,7 +2512,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 18
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &6448543895123208784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,7 +2635,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 17
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &6762636996359829411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 13
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &6975738001541393374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,7 +3041,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 23
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &7041643229589846470
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,7 +3336,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 22
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &7921788402232035984
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,7 +3582,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 12
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8202617307776168121
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3828,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 14
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8442893061753973871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3951,7 +3951,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 21
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8489898316914336186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,7 +4074,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 20
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8543376504142949350
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,7 +4197,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 29
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8545408973891074580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,7 +4320,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 15
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8709143057637685979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,7 +4443,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 25
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8741911522033209210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5070,7 +5070,7 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 9
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968
 --- !u!1 &8892344789070395470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5227,4 +5227,4 @@ MonoBehaviour:
   _sortingOrder: 0
   _renderOrder: 8
   _depthOffset: 0.00001
-  _opacity: 1
+  _opacity: 0.968

@@ -1,0 +1,9 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,ふぅ……疲れた……出口 まであとどれくらい？,nagisa_Live2D/hiro_tatie,clear,,,,,,,,ナギサ
+2,えーっと……たぶん5まいくらい？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+3,ご、ごまい？何その単位……,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+4,え？1まいが7はんくらいだ！,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ヒイロ
+5,……単位が初耳 すぎる,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+6,えーとうーんと……1はんが5あつだ！,nagisa_Live2D/hiro_tatie,,,,,,,/nextAnim,,ヒイロ
+7,も、もういい！何も分からないことが分かったから！,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+8,むぅー,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ヒイロ

@@ -1,0 +1,11 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,ナギサー！こっちのみちがはやいぞ！,nagisa_Live2D/hiro_tatie,clear,,,,,,,,ヒイロ
+2,いや壁じゃん！,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+3,かべだぞ？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+4,…………,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+5,……え？よじ登るの？,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+6,まさか！ぬけるんだぞ！,nagisa_Live2D/hiro_tatie,,,,,,,/nextAnim,,ヒイロ
+7,……,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+8,……あのね、人間は壁を通り抜けられないんだ,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+9,えー？にんげんってあんがいふべんなんだな,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+10,(妖怪はすり抜けられるのか……？),nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ

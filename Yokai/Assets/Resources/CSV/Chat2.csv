@@ -1,0 +1,15 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,なんだこの紙切れ,nagisa_Live2D,clear,,,,,,,,ナギサ
+2,(お札……？),nagisa_Live2D,,,,,,,,,ナギサ
+3,ナギサ？なんかみつけたか？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+4,！,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+5,んー……,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+6,,nagisa_Live2D/hiro_tatie,,,,言う,言わない,,/nextAnim,,
+,,,,,,,,,,,
+8,この紙……,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+9,ナギサ！あっちなんかあるぞ！いこう！,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+,えっ、あっ、わ、分かった,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+,(……ま、いっか),nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+,,,,,,,,,,,
+,いや、なんでもない,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
+,？そっか,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ

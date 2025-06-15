@@ -1,0 +1,10 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,ん？,nagisa_Live2D,clear,,,,,,,,ナギサ
+2,なんだろう、これ……,nagisa_Live2D,,,,,,,,,ナギサ
+3,……骨 ？,nagisa_Live2D,,,,,,,,,ナギサ
+4,なんでこんな所に……,nagisa_Live2D,,,,,,,nextAnim/nextAnim,,ナギサ
+5,あーそれ！われのだからさわるなよ！,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+6,えっヒイロのだったんだ、ごめん,nagisa_Live2D/hiro_tatie,,,,,,,/nextAnim,,ナギサ
+7,,nagisa_Live2D/hiro_tatie,,,,(かじって遊ぶのかな……),(投げて遊ぶのかな……),,,,
+8,(んー…………),nagisa_Live2D,,,,,,,nextAnim/nextAnim,,ナギサ
+9,(犬 っぽいな……),nagisa_Live2D,,,,,,,,,ナギサ

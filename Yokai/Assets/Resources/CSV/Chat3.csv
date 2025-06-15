@@ -1,0 +1,12 @@
+﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
+1,ヒイロって好きな食 べ物とかあるの？,nagisa_Live2D/hiro_tatie,clear,,,,,,,,ナギサ
+2,たべもの？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+3,たべものにすきもきらいもあるのか？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+4,えっ逆に無いの！？,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+5,たべられればみんないっしょだろ？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+6,そ、そんな……,nagisa_Live2D/hiro_tatie,,,,,,,/nextAnim,,ナギサ
+7,ナギサはすきなたべものあるのか？,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+8,私？私は…,nagisa_Live2D/hiro_tatie,,,,,,,nextAnim/nextAnim,,ナギサ
+9,,nagisa_Live2D/hiro_tatie,,,,ハンバーグ,カレー ,,,,
+10,なんだそれ！,nagisa_Live2D/hiro_tatie,,,,,,,,,ヒイロ
+11,うーん……説明が難しいな……,nagisa_Live2D/hiro_tatie,,,,,,,,,ナギサ
