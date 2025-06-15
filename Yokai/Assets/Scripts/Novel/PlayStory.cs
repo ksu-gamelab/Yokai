@@ -1,29 +1,29 @@
+// PlayStory.cs（StoryLine対応・元機能維持バージョン）
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayStory : MonoBehaviour
 {
-    // 0:num 1:maintext 2:charaimage 3:backimage 4:bgm 5:se 6:selecttext1 7:selecttext2 8:nextscene 9:generateobj 12:name
     public Text dialogueText;
     public Text nameText;
-    public GameObject characterImage; // キャラプレハブの親（空オブジェクト）
+    public GameObject characterImage;
     public Image backgroundImage;
     public GameObject generateBase;
 
     [SerializeField] private GameObject[] characterPrefabs;
     private Dictionary<string, GameObject> characterDictionary;
-    Dictionary<string, GameObject> activeCharacters = new Dictionary<string, GameObject>();
+    private Dictionary<string, GameObject> activeCharacters = new();
 
     [SerializeField] private Sprite[] Sprites;
     private Dictionary<string, Sprite> spriteDictionary;
 
     [SerializeField] private GameObject[] generateObjects;
     private Dictionary<string, GameObject> generateObjectDictionary;
-    GameObject generatedObj;
+    private GameObject generatedObj;
 
     [SerializeField] AudioClip[] audioclips;
     [SerializeField] AudioClip fadeSE;
@@ -33,118 +33,106 @@ public class PlayStory : MonoBehaviour
     public Text select1Text;
     public Text select2Text;
 
-    private List<string[]> storyData;
+    private List<StoryLine> storyLines;
     private int currentLine = 1;
     private bool isTyping = false;
     private Coroutine typingCoroutine;
     private string currentDialogue = "";
-
     private string nextscene = "";
 
     public GameObject fadein;
     public GameObject fadeout;
-    private int currentIndex = 0;
+    private int currentIndex = 0; // 現時点では未使用
     public GameObject configPanel;
+
+    private GenericUISelector genericUISelector;
 
     void Start()
     {
-        // キャラプレハブ登録
-        characterDictionary = new Dictionary<string, GameObject>();
-        foreach (GameObject prefab in characterPrefabs)
-        {
+        genericUISelector = FindObjectOfType<GenericUISelector>();
+
+        characterDictionary = new();
+        foreach (var prefab in characterPrefabs)
             characterDictionary[prefab.name] = prefab;
-        }
 
-        spriteDictionary = new Dictionary<string, Sprite>();
-        foreach (Sprite sprite in Sprites)
-        {
+        spriteDictionary = new();
+        foreach (var sprite in Sprites)
             spriteDictionary[sprite.name] = sprite;
-        }
 
-        audioclipDictionary = new Dictionary<string, AudioClip>();
-        foreach (AudioClip audioclip in audioclips)
-        {
-            audioclipDictionary[audioclip.name] = audioclip;
-        }
+        audioclipDictionary = new();
+        foreach (var audio in audioclips)
+            audioclipDictionary[audio.name] = audio;
 
-        generateObjectDictionary = new Dictionary<string, GameObject>();
-        foreach (GameObject gameObject in generateObjects)
-        {
-            generateObjectDictionary[gameObject.name] = gameObject;
-        }
+        generateObjectDictionary = new();
+        foreach (var obj in generateObjects)
+            generateObjectDictionary[obj.name] = obj;
 
         selectBack.SetActive(false);
+
+        if (GameStateManager.Instance.CurrentTutorialMode != TutorialMode.Novel) return;
         StartCoroutine(LoadStoryAndStart());
     }
 
     private IEnumerator LoadStoryAndStart()
     {
-        yield return new WaitUntil(() => this.gameObject.GetComponent<CSVReader>().GetStoryData() != null);
-        storyData = this.gameObject.GetComponent<CSVReader>().GetStoryData();
+        var reader = GetComponent<CSVReader>();
+        yield return new WaitUntil(() => reader.GetStoryData() != null);
+        storyLines = reader.GetStoryData();
 
-        if (storyData.Count > 1)
-        {
+        if (storyLines.Count > 1)
             ShowNextDialogue();
-        }
         else
-        {
             Debug.LogError("CSVデータが正しく読み込まれていません");
-        }
     }
-
-    private void Update() { }
 
     public void ShowNextDialogue()
     {
+        if (GameStateManager.Instance.CurrentTutorialMode == TutorialMode.Play) return;
         if (isTyping)
         {
             StopCoroutine(typingCoroutine);
             dialogueText.text = currentDialogue;
             isTyping = false;
+            return;
         }
-        else if (currentLine < storyData.Count)
-        {
-            currentDialogue = storyData[currentLine][1];
 
-            updateCharacter();
-            updateGenerateObj();
-            updateBackgroud();
-            loadScene();
-            changeBGM();
-            changeSE();
-            AnimatorSet();
-            ShowName();
-
-            string selectText1 = storyData[currentLine][6];
-            string selectText2 = storyData[currentLine][7];
-
-            if (!string.IsNullOrEmpty(selectText1) && !string.IsNullOrEmpty(selectText2))
-            {
-                ShowChoices(selectText1, selectText2);
-                currentLine++;
-                return;
-            }
-
-            typingCoroutine = StartCoroutine(TypeText(currentDialogue));
-            currentLine++;
-        }
-        else
+        if (currentLine >= storyLines.Count)
         {
             Debug.Log("ストーリーが終了しました");
+            return;
         }
-    }
 
-    private void ShowName()
-    {
-        Debug.Log(storyData[currentLine][11]);
-        if (!string.IsNullOrEmpty(storyData[currentLine][11]))
+        var line = storyLines[currentLine];
+        currentDialogue = line.MainText;
+
+        UpdateCharacter(line.CharaImage);
+        UpdateGenerateObj(line.Generate);
+        UpdateBackground(line.BackImage);
+        LoadScene(line.NextScene);
+        ChangeBGM(line.BGM);
+        ChangeSE(line.SE);
+        AnimatorSet(line.Animation, line.CharaImage);
+        ShowName(line.NameText);
+
+        if (!string.IsNullOrEmpty(line.SelectText1) && !string.IsNullOrEmpty(line.SelectText2))
         {
-            nameText.text = storyData[currentLine][11];
+            ShowChoices(line.SelectText1, line.SelectText2);
+            currentLine++;
+            return;
         }
         else
         {
-            nameText.text = "";
+            genericUISelector.RestoreSelection();
         }
+
+        typingCoroutine = StartCoroutine(TypeText(currentDialogue));
+        currentLine++;
+    }
+
+    private void ShowName(string name)
+    {
+        Debug.Log(name);
+        nameText.text = string.IsNullOrEmpty(name) ? "" : name;
     }
 
     private void ShowChoices(string choice1, string choice2)
@@ -152,6 +140,7 @@ public class PlayStory : MonoBehaviour
         select1Text.text = choice1;
         select2Text.text = choice2;
         selectBack.SetActive(true);
+        genericUISelector.SwitchGroup("select");
     }
 
     public void onClicked_selectbutton()
@@ -160,11 +149,16 @@ public class PlayStory : MonoBehaviour
         ShowNextDialogue();
     }
 
+    public void onClicked_screenbutton()
+    {
+        ShowNextDialogue();
+    }
+
     private IEnumerator TypeText(string dialogue)
     {
         isTyping = true;
         dialogueText.text = "";
-        foreach (char letter in dialogue.ToCharArray())
+        foreach (char letter in dialogue)
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.05f);
@@ -172,43 +166,24 @@ public class PlayStory : MonoBehaviour
         isTyping = false;
     }
 
-    public void onClicked_screenbutton()
+    private void UpdateCharacter(string charaNames)
     {
-        ShowNextDialogue();
-    }
-
-    public void updateCharacter()
-    {
-        string charaNames = storyData[currentLine][2];
-
-        // 一つ前の行と同じ場合は更新しない
-        if (currentLine > 0 && charaNames.Equals(storyData[currentLine - 1][2]))
-        {
+        if (currentLine > 0 && charaNames == storyLines[currentLine - 1].CharaImage)
             return;
-        }
 
-        // 前のキャラを全削除
         foreach (Transform child in characterImage.transform)
-        {
             Destroy(child.gameObject);
-        }
 
-        // activeCharacters辞書も初期化
         activeCharacters.Clear();
 
-        // 現在表示すべきキャラ名が空でなければ処理
         if (!string.IsNullOrEmpty(charaNames))
         {
-            string[] nameArray = charaNames.Split('/');
-
-            foreach (string name in nameArray)
+            foreach (var name in charaNames.Split('/'))
             {
-                if (characterDictionary.ContainsKey(name))
+                if (characterDictionary.TryGetValue(name, out var prefab))
                 {
-                    GameObject character = Instantiate(characterDictionary[name], characterImage.transform);
+                    var character = Instantiate(prefab, characterImage.transform);
                     character.name = name;
-
-                    // 登録（アニメーション発火で使用するため）
                     activeCharacters[name] = character;
                 }
                 else
@@ -219,154 +194,113 @@ public class PlayStory : MonoBehaviour
         }
     }
 
-
-
-
-    public void updateGenerateObj()
+    private void UpdateGenerateObj(string objName)
     {
-        string generateObjName = storyData[currentLine][9];
-
-        if (!string.IsNullOrEmpty(generateObjName) && generateObjectDictionary.ContainsKey(generateObjName))
+        if (!string.IsNullOrEmpty(objName) && generateObjectDictionary.TryGetValue(objName, out var obj))
         {
-            generatedObj = Instantiate(generateObjectDictionary[generateObjName], generateBase.transform);
+            generatedObj = Instantiate(obj, generateBase.transform);
         }
-        else
+        else if (objName == "clear" && generatedObj != null)
         {
-            if (generateObjName == "clear" && generatedObj != null)
-            {
-                Destroy(generatedObj);
-            }
-            Debug.LogWarning($"生成オブジェクト '{generateObjName}' が登録されていません");
+            Destroy(generatedObj);
         }
     }
 
-    public void updateBackgroud()
+    private void UpdateBackground(string backgroundName)
     {
-        string backImageFile = storyData[currentLine][3];
-
-        if (!string.IsNullOrEmpty(backImageFile) && spriteDictionary.ContainsKey(backImageFile))
+        if (!string.IsNullOrEmpty(backgroundName) && spriteDictionary.TryGetValue(backgroundName, out var sprite))
         {
-            backgroundImage.sprite = spriteDictionary[backImageFile];
+            backgroundImage.sprite = sprite;
         }
-        else
+        else if (!string.IsNullOrEmpty(backgroundName))
         {
-            Debug.LogWarning($"背景画像 '{backImageFile}' が登録されていません");
+            Debug.LogWarning($"背景画像 '{backgroundName}' が登録されていません");
         }
     }
 
-    public void changeBGM()
+    private void ChangeBGM(string bgm)
     {
-        if (storyData[currentLine][4] == "stop")
-        {
+        Debug.Log($"BGMを変更: {bgm}");
+        if (bgm == "stop")
             AudioManager.instance.audioSourceBGM.Stop();
-        }
-        else if (storyData[currentLine][4] != "")
-        {
-            AudioManager.instance.PlayBGM(audioclipDictionary[storyData[currentLine][4]]);
-        }
+        else if (!string.IsNullOrEmpty(bgm))
+            AudioManager.instance.PlayBGM(audioclipDictionary[bgm]);
     }
 
-    public void changeSE()
+    private void ChangeSE(string se)
     {
-        if (storyData[currentLine][5] != "")
-        {
-            AudioManager.instance.PlaySE(audioclipDictionary[storyData[currentLine][5]]);
-        }
+        if (!string.IsNullOrEmpty(se))
+            AudioManager.instance.PlaySE(audioclipDictionary[se]);
     }
 
-    public void loadScene()
+    private void LoadScene(string sceneName)
     {
-        string sceneName = storyData[currentLine][8];
-
         if (string.IsNullOrEmpty(sceneName)) return;
 
-        // チュートリアル再生用キーワード
         if (sceneName == "Start")
         {
-            // チュートリアル起動処理
-            TutorialController controller = FindObjectOfType<TutorialController>();
+            var controller = FindObjectOfType<TutorialController>();
             if (controller != null)
-            {
                 controller.StartTutorial();
-            }
             else
-            {
                 Debug.LogWarning("TutorialController がシーン上に存在しません");
-            }
         }
         else
         {
-            // 通常のシーン遷移
+            try
+            {
+                var stage = (NormalStage)Enum.Parse(typeof(NormalStage), sceneName);
+                GameStateManager.Instance.SetNormalStage(stage);
+            }
+            catch (ArgumentException)
+            {
+                Debug.LogError($"NormalStage に '{sceneName}' は存在しません");
+            }
+
             nextscene = sceneName;
             CSVReader.SetCSV(nextscene);
             fadein.SetActive(true);
             AudioManager.instance.PlaySE(fadeSE);
             AudioManager.instance.audioSourceBGM.Stop();
-            Invoke("waitFade", 2.0f);
+            Invoke("WaitFade", 2.0f);
         }
     }
 
-
-    public void waitFade()
+    private void WaitFade()
     {
         SceneManager.LoadScene(nextscene);
     }
 
-    void AnimatorSet()
+    private void AnimatorSet(string animData, string charaNames)
     {
-        string animData = storyData[currentLine][9];      // animation列
-        string charaNames = storyData[currentLine][2];    // charaimage列
-
-        if (string.IsNullOrEmpty(animData) || string.IsNullOrEmpty(charaNames))
-            return;
+        if (string.IsNullOrEmpty(animData) || string.IsNullOrEmpty(charaNames)) return;
 
         string[] animTriggers = animData.Split('/');
         string[] charaArray = charaNames.Split('/');
 
         for (int i = 0; i < charaArray.Length; i++)
         {
-            string charaName = charaArray[i];
-
-            if (activeCharacters.ContainsKey(charaName))
-            {
-                GameObject charaObj = activeCharacters[charaName];
-                Animator animator = charaObj.GetComponent<Animator>();
-
-                if (animator != null)
-                {
-                    // アニメーションが足りない場合は空扱い
-                    string trigger = (i < animTriggers.Length) ? animTriggers[i] : "";
-
-                    if (!string.IsNullOrEmpty(trigger))
-                    {
-                        animator.SetTrigger(trigger);
-                    }
-                }
-            }
-            else
-            {
-                Debug.LogWarning($"キャラ '{charaName}' に対するアニメーション対象が見つかりません");
-            }
+            if (!activeCharacters.TryGetValue(charaArray[i], out var charaObj)) continue;
+            Animator animator = charaObj.GetComponent<Animator>();
+            if (animator == null) continue;
+            string trigger = (i < animTriggers.Length) ? animTriggers[i] : "";
+            if (!string.IsNullOrEmpty(trigger))
+                animator.SetTrigger(trigger);
         }
     }
 
     public void ReloadStory()
     {
-        StopAllCoroutines(); // 文字送りなどを止める
-        if(storyData != null)
-        {
-             storyData.Clear();
-        }
+        StopAllCoroutines();
 
         var reader = GetComponent<CSVReader>();
         if (reader == null) return;
 
-        reader.ReloadCSV();
-        storyData = reader.GetStoryData();
+        storyLines?.Clear();
 
+        reader.ReloadCSV();
+        storyLines = reader.GetStoryData();
         currentLine = 1;
         StartCoroutine(LoadStoryAndStart());
     }
-
-
-}
+} // end

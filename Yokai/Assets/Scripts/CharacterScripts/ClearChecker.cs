@@ -1,28 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ClearChecker : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Clear"))
         {
-            GameStateManager.Instance.TriggerGameClear();
+
         }
-        else if (other.CompareTag("Clear_Tutorial1"))
+        else if (other.CompareTag("Clear_Tutorial"))
         {
             var controller = FindObjectOfType<TutorialController>();
             if (controller != null)
             {
-                CSVReader.SetCSV("Tutorial1End");
+                if(GameStateManager.Instance.CurrentTutorialStage == TutorialStage.Stage1)
+                {
+                    // éüÇ…çƒê∂Ç∑ÇÈCSVÇÉZÉbÉg
+                    CSVReader.SetCSV("Tutorial1End");
+                    controller.StartNovel(TutorialStage.Stage2);
+                }
 
-                controller.StartNovel();
             }
         }
-
     }
-
 }

@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             AudioManager.instance.PlaySE(jumpSE);
         }
 
-        if (Input.GetButtonDown("Transform") && !status.IsDead())
+        if (Input.GetButtonDown("Transform") && !status.IsDead() && GameStateManager.Instance.CurrentTutorialStage != TutorialStage.Stage1)
         {
             StartCoroutine(StopMovementForSeconds(stopTime));
             GetComponent<PlayerModeManager>()?.ForceTransformToSpecial();
