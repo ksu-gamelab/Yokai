@@ -1856,6 +1856,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df94337b73154258848789f51df07a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultCSV: {fileID: 0}
+  isDebugMode: 0
 --- !u!114 &692353029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,7 +1876,7 @@ MonoBehaviour:
   backgroundImage: {fileID: 112677794}
   generateBase: {fileID: 840271572}
   characterPrefabs:
-  - {fileID: 7934834327216715880, guid: b0d77be18d7c94ba8b767b6c78751129, type: 3}
+  - {fileID: 5072221188686527392, guid: 045c63724071142ba8b45a624e726629, type: 3}
   - {fileID: 3961850446177127220, guid: 5261689677d662d4dbc0f367d0ab4910, type: 3}
   Sprites:
   - {fileID: 21300000, guid: 8b7c7b715bfc24c98b25da00c679bc04, type: 3}
@@ -1882,7 +1884,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8170837cd5265c84a8a65de0e3c889c8, type: 3}
   generateObjects: []
   audioclips:
+  - {fileID: 8300000, guid: edb3f31eebd02274089c8b6d534a4909, type: 3}
+  - {fileID: 8300000, guid: efebc15f7e3a742f8bba794aaa2146a1, type: 3}
+  - {fileID: 8300000, guid: fcff525163a9e447f83a8c8ea7d1249b, type: 3}
+  - {fileID: 8300000, guid: e52d7571e3e5e4811a0f2d2b926a0471, type: 3}
+  - {fileID: 8300000, guid: 043148354a3e4dd4fbf0f2ab7c0f80f9, type: 3}
   - {fileID: 8300000, guid: 28e3fa40d18bd484586d4046496fa979, type: 3}
+  - {fileID: 8300000, guid: 1bd82f1bae5b94d44a6f0418a3b7f86a, type: 3}
+  - {fileID: 8300000, guid: 4500d6d1817dd4c509bffbadc286267a, type: 3}
+  - {fileID: 8300000, guid: a5efbe2d812de4073ae21cdfcafe2a82, type: 3}
+  - {fileID: 8300000, guid: a109124b18f044468ae7b2bfb9ce8f92, type: 3}
+  - {fileID: 8300000, guid: bf5bdcd0f9f2c4e11847f70b12605aaa, type: 3}
+  - {fileID: 8300000, guid: 5d400675699944823977b0622bc129e2, type: 3}
+  - {fileID: 8300000, guid: dee3474669815c640970074e8e1c1751, type: 3}
   fadeSE: {fileID: 0}
   selectBack: {fileID: 1861404389}
   select1Text: {fileID: 77622697}
@@ -2796,7 +2810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 7244370771303307261}
   novelUI: {fileID: 1498960114}
-  playBGM: {fileID: 0}
+  playBGM: {fileID: 8300000, guid: efebc15f7e3a742f8bba794aaa2146a1, type: 3}
 --- !u!4 &1247232049
 Transform:
   m_ObjectHideFlags: 0

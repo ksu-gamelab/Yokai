@@ -1,50 +1,50 @@
 ﻿num,maintext,charaimage,backimage,bgm,se,selecttext1,selecttext2,nextscene,animation,generate,nametext
-1,うわっ！真っ暗！,nagisa_Live2D_2,clear,DarkBGM,,,,,,,ナギサ
-2,あ、明かりは……無いし……,nagisa_Live2D_2,clear,,,,,,,,ナギサ
-3,本当にどこなのここぉ……,nagisa_Live2D_2,clear,,,,,,,,ナギサ
-4,さっきの怖いやつもたくさんいるし……,nagisa_Live2D_2,clear,,,,,,nextAnim/nextAnim,,ナギサ
-5,……帰りたい,nagisa_Live2D_2,clear,,,,,,,,ナギサ
-6,すごく帰りたい……,nagisa_Live2D_2,clear,,,,,,/nextAnim,,ナギサ
+1,うわっ！真っ暗！,nagisa_tatie,clear,DarkBGM,,,,,,,ナギサ
+2,あ、明かりは……無いし……,nagisa_tatie,clear,,,,,,,,ナギサ
+3,本当にどこなのここぉ……,nagisa_tatie,clear,,,,,,,,ナギサ
+4,さっきの怖いやつもたくさんいるし……,nagisa_tatie,clear,,,,,,nextAnim/nextAnim,,ナギサ
+5,……帰りたい,nagisa_tatie,clear,,,,,,,,ナギサ
+6,すごく帰りたい……,nagisa_tatie,clear,,,,,,/nextAnim,,ナギサ
 7,,,clear,stop,normalTospecial,,,,,,
 8,……わっ！な、何……！？,,clear,,,,,,nextAnim/nextAnim,,ナギサ
 9,おっ？,,clear,,,,,,,,ナギサ
-10,おぉ！これがにんげんのからだ！,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,？？？
-11,誰！？……って,nagisa_Live2D_2/hiro_tatie,clear,,,,,,,,ナギサ
-12,わっ……私の体！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-13,私の体！！どうなってるの！？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-14,お？おまえがもちぬしのにんげんか！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,？？？
-15,誰！？本当に誰！？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-16,あ、すまんすまん,nagisa_Live2D_2/hiro_tatie,,,,,,,,,？？？
+10,おぉ！これがにんげんのからだ！,nagisa_tatie/hiro_tatie,clear,,,,,,,,？？？
+11,誰！？……って,nagisa_tatie/hiro_tatie,clear,,,,,,,,ナギサ
+12,わっ……私の体！,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+13,私の体！！どうなってるの！？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+14,お？おまえがもちぬしのにんげんか！,nagisa_tatie/hiro_tatie,,,,,,,,,？？？
+15,誰！？本当に誰！？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+16,あ、すまんすまん,nagisa_tatie/hiro_tatie,,,,,,,,,？？？
 17,,,,,,,,,,,
-18,われはヒイロ！狐だ！よろしくな！,nagisa_Live2D_2/hiro_tatie,,oyatu,,,,,,,ヒイロ
-19,狐！？きつね……えぇ？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-20,にんげんがいるのはめずらしくてつい「はいって」しまった！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-21,おまえ、こまってるんだろ？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-22,う、うん……ここはどこ？どこに行 けば帰れる？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-23,かえる？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-24,かえるって、どこに？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-25,に、人 間のいるところ？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-26,あと……変な怪物のいないところ……？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-27,むっ、にんげんにはこのもりはよくないんだったか,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-28,森？崖みたいに見えるけど……,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-29,よーかいのもりではこれがふつーだ！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-30,でもそうだな……ふーむ,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-31,よしわかった！われがおまえをでぐちまでつれてってやる！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-32,いいの？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-33,もちろん！にんげんはだいすきだからな！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-34,あ、ありがとう,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-35,,nagisa_Live2D_2/hiro_tatie,,,,,,,,,
-36,うわっ！そんなこんな言 ってたらさっきの怖いのがたくさん……,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-37,どどど、どうしようヒイロ！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-38,ほうほう！ではわれのちから、さっそくみせてやろう！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-39,それって……妖怪の力 ってこと？,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
+18,われはヒイロ！狐だ！よろしくな！,nagisa_tatie/hiro_tatie,,oyatu,,,,,,,ヒイロ
+19,狐！？きつね……えぇ？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+20,にんげんがいるのはめずらしくてつい「はいって」しまった！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+21,おまえ、こまってるんだろ？,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+22,う、うん……ここはどこ？どこに行 けば帰れる？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+23,かえる？,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+24,かえるって、どこに？,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+25,に、人 間のいるところ？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+26,あと……変な怪物のいないところ……？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+27,むっ、にんげんにはこのもりはよくないんだったか,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+28,森？崖みたいに見えるけど……,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+29,よーかいのもりではこれがふつーだ！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+30,でもそうだな……ふーむ,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+31,よしわかった！われがおまえをでぐちまでつれてってやる！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+32,いいの？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+33,もちろん！にんげんはだいすきだからな！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+34,あ、ありがとう,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+35,,nagisa_tatie/hiro_tatie,,,,,,,,,
+36,うわっ！そんなこんな言 ってたらさっきの怖いのがたくさん……,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+37,どどど、どうしようヒイロ！,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+38,ほうほう！ではわれのちから、さっそくみせてやろう！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+39,それって……妖怪の力 ってこと？,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
 40,,,,,,はい,いいえ,,,,
-41,お願い！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-42,うむ！ではつっこむぞ！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-43,突っ込むの！？,nagisa_Live2D_2/hiro_tatie,,,tukkomi,,,,,,ナギサ
+41,お願い！,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+42,うむ！ではつっこむぞ！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+43,突っ込むの！？,nagisa_tatie/hiro_tatie,,,tukkomi,,,,,,ナギサ
 44,,,,,,,,,,,
-45,いや、今は……自 分でなんとかしたい！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-46,そうか……,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
-47,君の力 が必要になったらまた呼ぶね！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ナギサ
-48,……！うむ！,nagisa_Live2D_2/hiro_tatie,,,,,,,,,ヒイロ
+45,いや、今は……自 分でなんとかしたい！,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+46,そうか……,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
+47,君の力 が必要になったらまた呼ぶね！,nagisa_tatie/hiro_tatie,,,,,,,,,ナギサ
+48,……！うむ！,nagisa_tatie/hiro_tatie,,,,,,,,,ヒイロ
 49,,,,,,,,Start,,,

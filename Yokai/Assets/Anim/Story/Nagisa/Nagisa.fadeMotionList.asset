@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: Nagisa.fadeMotionList
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 2ef8ffff74c0ffff
+  MotionInstanceIds: aeecffff74c0ffffd2f9ffff
   CubismFadeMotionObjects:
   - {fileID: 11400000, guid: 1c283e45301f34122936f7565a7eeb1f, type: 2}
   - {fileID: 11400000, guid: fc2266b8494ac477891922b4bd584b40, type: 2}
+  - {fileID: 11400000, guid: 5f7ebe2d732443c4d85f68e63dc25ca1, type: 2}
