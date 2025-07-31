@@ -1,0 +1,68 @@
+[
+    {
+        "commands": [
+            {
+                "type": "show_text",
+                "character": "ナギサ",
+                "text": "いてて…"
+            },
+            {
+                "type": "show_character",
+                "character": "nagisa_tatie"
+            },
+            {
+                "type": "set_background",
+                "background": "clear"
+            },
+            {
+                "type": "play_bgm",
+                "bgm": "DarkBGM"
+            }
+        ]
+    },
+    {
+        "commands": [
+            {
+                "type": "show_text",
+                "character": "ナギサ",
+                "text": "ここ……どこだろう"
+            },
+            {
+                "type": "play_animation",
+                "animation": "nextAnim",
+                "target": "nagisa_tatie"
+            }
+        ]
+    },
+    {
+        "commands": [
+            {
+                "type": "show_text",
+                "character": "ナギサ",
+                "text": "……どこかの森かな。なんでこんなところに？"
+            }
+        ]
+    },
+    {
+        "commands": [
+            {
+                "type": "show_text",
+                "character": "ナギサ",
+                "text": "……とにかく、進むしかない、か"
+            },
+            {
+                "type": "play_animation",
+                "animation": "nextAnim",
+                "target": "nagisa_tatie"
+            }
+        ]
+    },
+    {
+        "commands": [
+            {
+                "type": "change_scene",
+                "nextScene": "Start"
+            }
+        ]
+    }
+]
