@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource audioSourceBGM;
     public AudioSource audioSourceSE;
+
+    public AudioMixer bgmMixer;
+    public AudioMixer seMixer;
 
     private void Awake()
     {
@@ -27,6 +31,8 @@ public class AudioManager : MonoBehaviour
     {
         audioSourceBGM = gameObject.AddComponent<AudioSource>();
         audioSourceSE = gameObject.AddComponent<AudioSource>();
+        audioSourceBGM.outputAudioMixerGroup = bgmMixer.FindMatchingGroups("Master")[0];
+        audioSourceSE.outputAudioMixerGroup = seMixer.FindMatchingGroups("Master")[0];
         audioSourceBGM.volume = .3f;
         audioSourceBGM.loop = true;
         audioSourceSE.volume = .5f;
@@ -39,7 +45,7 @@ public class AudioManager : MonoBehaviour
     /// <param name="audioClip">音楽ファイル</param>
     public void PlayBGM(AudioClip audioClip)
     {
-        Debug.Assert(audioClip);
+        //Debug.Assert(audioClip);
         audioSourceBGM.Stop();
         audioSourceBGM.clip = audioClip;
         audioSourceBGM.Play();

@@ -1,68 +1,141 @@
-[
-    {
-        "commands": [
-            {
-                "type": "show_text",
-                "character": "ナギサ",
-                "text": "いてて…"
-            },
-            {
-                "type": "show_character",
-                "character": "nagisa_tatie"
-            },
-            {
-                "type": "set_background",
-                "background": "clear"
-            },
-            {
-                "type": "play_bgm",
-                "bgm": "DarkBGM"
-            }
-        ]
-    },
-    {
-        "commands": [
-            {
-                "type": "show_text",
-                "character": "ナギサ",
-                "text": "ここ……どこだろう"
-            },
-            {
-                "type": "play_animation",
-                "animation": "nextAnim",
-                "target": "nagisa_tatie"
-            }
-        ]
-    },
-    {
-        "commands": [
-            {
-                "type": "show_text",
-                "character": "ナギサ",
-                "text": "……どこかの森かな。なんでこんなところに？"
-            }
-        ]
-    },
-    {
-        "commands": [
-            {
-                "type": "show_text",
-                "character": "ナギサ",
-                "text": "……とにかく、進むしかない、か"
-            },
-            {
-                "type": "play_animation",
-                "animation": "nextAnim",
-                "target": "nagisa_tatie"
-            }
-        ]
-    },
-    {
-        "commands": [
-            {
-                "type": "change_scene",
-                "nextScene": "Start"
-            }
-        ]
-    }
-]
+{
+    "items": [
+        {
+            "commands": [
+                {
+                    "type": "set_background",
+                    "background": "clear"
+                },
+                {
+                    "type": "fade",
+                    "prefab": "fade_black",
+                    "wait": true
+                },
+                {
+                    "type": "play_bgm",
+                    "bgm": "DarkBGM",
+                    "bgm_volume": 0.8,
+                    "fade": "in",
+                    "fade_time": 1.5
+                },
+                {
+                    "type": "show_character",
+                    "character": "nagisa_tatie",
+                    "position": "center",
+                    "motion": "nagisa_tu_2",
+                    "is_speaking": true,
+                    "replace": true
+                },
+                {
+                    "type": "show_text",
+                    "character": "ナギサ",
+                    "text": "いてて…",
+                    "text_speed": 0.1,
+                    "wait_for_click": true,
+                    "text_ui": "fukidashi_hiro"
+                },
+                {
+                    "type": "show_effect",
+                    "effect": "sparkle",
+                    "effect_position": "center",
+                    "effect_duration": 1.5,
+                    "loop": false,
+                    "id": "entry_sparkle"
+                }
+            ]
+        },
+        {
+            "commands": [
+                {
+                    "type": "show_character",
+                    "character": "nagisa_tatie",
+                    "position": "center",
+                    "motion": "nagisa_tu3",
+                    "is_speaking": true,
+                    "replace": false
+                },
+                {
+                    "type": "show_text",
+                    "character": "ナギサ",
+                    "text": "ここ……どこだろう",
+                    "text_speed": 0.1,
+                    "wait_for_click": true,
+                    "text_ui": "fukidashi_nagisa"
+                },
+                {
+                    "type": "camera_animation",
+                    "camera_animation": "zoom_in",
+                    "camera_duration": 1.0
+                }
+            ]
+        },
+        {
+            "commands": [
+                {
+                    "type": "show_character",
+                    "character": "nagisa_tatie",
+                    "position": "center",
+                    "motion": "idle",
+                    "is_speaking": true,
+                    "replace": true
+                },
+                {
+                    "type": "show_text",
+                    "character": "ナギサ",
+                    "text": "……どこかの森かな。なんでこんなところに？",
+                    "text_speed": 0.1,
+                    "wait_for_click": true,
+                    "text_ui": "fukidashi_hiro"
+                },
+                {
+                    "type": "hide_effect",
+                    "id": "entry_sparkle"
+                }
+            ]
+        },
+        {
+            "commands": [
+                {
+                    "type": "set_background",
+                    "background": "black"
+                },
+                {
+                    "type": "show_text",
+                    "character": "ナギサ",
+                    "text": "……とにかく、進むしかない、か",
+                    "text_speed": 0.06,
+                    "wait_for_click": true,
+                    "text_ui": "fukidashi_nagisa"
+                },
+                {
+                    "type": "show_character",
+                    "character": "nagisa_tatie",
+                    "position": "center",
+                    "motion": "thinking",
+                    "is_speaking": true,
+                    "replace": true
+                }
+            ]
+        },
+        {
+            "commands": [
+                {
+                    "type": "play_bgm",
+                    "bgm": "stop",
+                    "fade": "out",
+                    "fade_time": 2.0
+                },
+                {
+                    "type": "fade",
+                    "prefab": "fade_black",
+                    "wait": true
+                },
+                {
+                    "type": "next",
+                    "mode": "scene",
+                    "next_target": "Start"
+                }
+            ]
+        }
+    ]
+}
