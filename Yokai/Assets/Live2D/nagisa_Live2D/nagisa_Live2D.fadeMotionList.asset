@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: nagisa_Live2D.fadeMotionList
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 06ebffffd0eaffffa8eaffff80eaffff58eaffff30eaffff
+  MotionInstanceIds: 720cffff5a0cffff460cffff320cffff0a0cfffff60bffffde00ffffca00ffff
   CubismFadeMotionObjects:
-  - {fileID: 11400000, guid: 7daf0afff9cd943f281881f95d42ce15, type: 2}
-  - {fileID: 11400000, guid: 0c57322711a2044ae8f69830916e3641, type: 2}
-  - {fileID: 11400000, guid: 483c216396dea4b89ba9cea69b9a37a6, type: 2}
-  - {fileID: 11400000, guid: b03d1e30025424c65a159f0cd8ed7ee0, type: 2}
-  - {fileID: 11400000, guid: ea31c774347e749d993d72c543e00010, type: 2}
-  - {fileID: 11400000, guid: 2d3f1a7417e8e41ef894b47ebaee26fc, type: 2}
+  - {fileID: 11400000, guid: 90971d514985e4108af1da86a425ac1b, type: 2}
+  - {fileID: 11400000, guid: 12716f2744d714ef095c2b4198da87f5, type: 2}
+  - {fileID: 11400000, guid: 134954ab1901846bfa49176fbad535f7, type: 2}
+  - {fileID: 11400000, guid: b10627d0ca7744c77abf67b91dfb2419, type: 2}
+  - {fileID: 11400000, guid: 4ac76d36ca37548a681bdd74d0cb36e0, type: 2}
+  - {fileID: 11400000, guid: 55f6bb67a6acc451c893942115e6fd14, type: 2}
+  - {fileID: 11400000, guid: 29486c7a9202a4f1cb16b71ca8f6b322, type: 2}
+  - {fileID: 11400000, guid: 2bc69b852521f4dceaede269662305a1, type: 2}

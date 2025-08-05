@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MotionInstanceIds: aeecffff1e71fefff670feffce70feffa670feff7e70feff5670feff
   CubismFadeMotionObjects:
-  - {fileID: 11400000, guid: 1477f0679b07d42958b875f5872f0e0c, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 7daf0afff9cd943f281881f95d42ce15, type: 2}
   - {fileID: 11400000, guid: 0c57322711a2044ae8f69830916e3641, type: 2}
   - {fileID: 11400000, guid: 483c216396dea4b89ba9cea69b9a37a6, type: 2}
