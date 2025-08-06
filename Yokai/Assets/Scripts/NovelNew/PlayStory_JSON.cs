@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayStory_JSON : MonoBehaviour
 {
-    string storyFileName = "Tutorial1";
+    public string storyFileName = "Tutorial1";
     private StoryData storyData;
     private int currentIndex = 0;
 
