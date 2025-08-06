@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Kuriboh : EnemyBase
+public class Kuriboh1_bk : EnemyBase
 {
     public float moveSpeed = 1f;
     public int moveDirection = -1;
@@ -9,7 +9,7 @@ public class Kuriboh : EnemyBase
 
     protected override void Move()
     {
-        //rb.velocity = new Vector2(moveSpeed * moveDirection, 0);
+        rb.velocity = new Vector2(moveSpeed * moveDirection, 0);
 
         if (!isOnGround)
         {
