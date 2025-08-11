@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "こ、怖かった〜〜！！なんだったの？アイツ……",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": true
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "とにかく！進もう！進むしかない！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "next",
+          "mode": "scene",
+          "next_target": ""
+        }
+      ]
+    }
+  ]
+}
