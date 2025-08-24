@@ -10,6 +10,7 @@ TagManager:
   - Clear
   - Clear_Tutorial
   - Clear_Tutorial1
+  - PlayOn
   layers:
   - Default
   - TransparentFX

@@ -16,7 +16,7 @@
                     "bgm": "DarkBGM",
                     "bgm_volume": 0.8,
                     "fade": "in",
-                    "fade_time": 1.5
+                    "fade_time": 3
                 },
                 {
                     "type": "show_character",
@@ -156,7 +156,7 @@
                 },
                 {
                     "type": "next",
-                    "mode": "scene",
+                    "mode": "game",
                     "next_target": "Start"
                 }
             ]

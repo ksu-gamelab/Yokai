@@ -1,68 +1,68 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class TutorialController : MonoBehaviour
 {
-    [SerializeField] private GameObject playerObject;
-    [SerializeField] private GameObject novelUI;
+    [Header("ストーリー再生コンポーネント")]
+    public PlayStory_JSON storyPlayer;
 
-    public AudioClip playBGM;
+    [Header("ゲーム状態マネージャー（任意）")]
+    public GameStateManager gameStateManager;
 
+    // 再生済みシナリオの記録
+    private HashSet<string> playedStories = new HashSet<string>();
+
+    // Start時にチュートリアルを確認して再生する
     void Start()
     {
-        // 起動時の状態に応じて表示を切り替え
-        if (GameStateManager.Instance.IsTutorialNovel())
-        {
-            ActivateNovelMode();
-        }
-        else if (GameStateManager.Instance.IsTutorialPlay())
-        {
-            ActivatePlayMode();
-        }
     }
 
-    public void StartNovel(TutorialStage stage)
+    // 初回のみチュートリアル再生
+    public void PlayTutorialIfFirstTime()
     {
-        Debug.Log($"チュートリアルノベル開始: {stage}");
-        GameStateManager.Instance.SetTutorialStage(stage);
-        GameStateManager.Instance.SetTutorialMode(TutorialMode.Novel);
-        ActivateNovelMode();
-
-        var story = FindObjectOfType<PlayStory>();
-        if (story != null)
+        if (!PlayerPrefs.HasKey("tutorial_played"))
         {
-            story.ReloadStory(); // CSVが事前にセットされている前提
+            PlayStory("Tutorial1");
+            PlayerPrefs.SetInt("tutorial_played", 1);
         }
     }
 
-    public void StartTutorial()
+    // 任意のストーリー再生（何度も再生されない）
+    public void PlayStory(string storyFileName)
     {
-        GameStateManager.Instance.SetTutorialStage(GameStateManager.Instance.CurrentTutorialStage);
-        GameStateManager.Instance.SetTutorialMode(TutorialMode.Play);
-        ActivatePlayMode();
+        Debug.Log("よばれた");
+        if (playedStories.Contains(storyFileName))
+        {
+            Debug.Log($"ストーリー '{storyFileName}' はすでに再生済みです。");
+            return;
+        }
+
+        if (gameStateManager != null)
+        {
+            gameStateManager.SetState(GameState.InScenario);  // 状態を「ストーリー中」に変更
+        }
+
+        storyPlayer.PlayNewStory(storyFileName);  // 実際の再生処理
+        playedStories.Add(storyFileName);         // 再生記録
     }
 
-    private void ActivateNovelMode()
+    // ストーリー再生が完了したときに呼ばれる（PlayStory_JSON から呼び出す）
+    public void OnStoryFinished()
     {
-        if (novelUI != null) novelUI.SetActive(true);
-        if (playerObject != null) playerObject.SetActive(false);
+        if (gameStateManager != null)
+        {
+            gameStateManager.SetState(GameState.Playing);  // 通常状態に戻す
+        }
     }
 
-    private void ActivatePlayMode()
+    // 強制的に再生させたいとき用（再生済みチェックを無視）
+    public void ForcePlayStory(string storyFileName)
     {
-        AudioManager.instance.PlayBGM(playBGM);
-        if (novelUI != null) novelUI.SetActive(false);
-        if (playerObject != null) playerObject.SetActive(true);
-    }
+        if (gameStateManager != null)
+        {
+            gameStateManager.SetState(GameState.InScenario);
+        }
 
-    public void RestartTutorial()
-    {
-        Debug.Log("チュートリアルを再読み込みします");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void OnPlayerFailed()
-    {
-        RestartTutorial();
+        storyPlayer.PlayNewStory(storyFileName);
     }
 }

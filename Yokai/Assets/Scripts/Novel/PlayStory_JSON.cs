@@ -1,43 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayStory_JSON : MonoBehaviour
 {
-    public string storyFileName = "Tutorial1";
+    public string storyFileName;
     private StoryData storyData;
     private int currentIndex = 0;
 
     private TextManager textManager;
     private BackgroundManager backgroundManager;
     private CharacterManager characterManager;
+    private BGMManager bgmManager;
+    private SEManager seManager;
+    private NextCommandHandler nextHandler;
 
     public Button screenButton;
     private bool screenButtonClicked = false;
+
+    private Coroutine storyCoroutine;  // 現在のストーリー再生を記録
+
+    [SerializeField] private bool debugMode = false;
+
 
     void Start()
     {
         textManager = GetComponent<TextManager>();
         backgroundManager = GetComponent<BackgroundManager>();
         characterManager = GetComponent<CharacterManager>();
-
-        storyData = StoryLoader.LoadStory("JSON/" + storyFileName);
+        bgmManager = GetComponent<BGMManager>();
+        seManager = GetComponent<SEManager>();
+        nextHandler = GetComponent<NextCommandHandler>();
 
         if (screenButton != null)
         {
             screenButton.onClick.AddListener(() => screenButtonClicked = true);
         }
 
-        if (storyData != null && storyData.items.Count > 0)
+        if (debugMode)
         {
-            StartCoroutine(PlayStory());
-        }
-        else
-        {
-            Debug.LogError("ストーリーデータの読み込みに失敗したか、データが空です。");
+            LoadAndStartStory();  // デバッグ時のみ起動直後に再生
         }
     }
+
 
     IEnumerator PlayStory()
     {
@@ -49,6 +57,7 @@ public class PlayStory_JSON : MonoBehaviour
         }
 
         Debug.Log("ストーリーの再生が完了しました。");
+
     }
 
     IEnumerator ExecuteCommands(List<Command> commands)
@@ -83,7 +92,15 @@ public class PlayStory_JSON : MonoBehaviour
             case "show_character":
                 characterManager.ShowCharacter(cmd);
                 yield break;
-
+            case "play_bgm":
+                bgmManager.Handle(cmd);
+                yield break;
+            case "play_se":
+                seManager.Handle(cmd);
+                yield break;
+            case "next":
+                nextHandler.Handle(cmd);
+                yield break;
             default:
                 Debug.LogWarning($"未対応のコマンド: {cmd.type}");
                 yield break;
@@ -122,4 +139,46 @@ public class PlayStory_JSON : MonoBehaviour
             }
         }
     }
+    public void LoadAndStartStory()
+    {
+        // 現在の再生を止める
+        if (storyCoroutine != null)
+        {
+            StopCoroutine(storyCoroutine);
+            storyCoroutine = null;
+        }
+
+        // インデックスとステータスのリセット
+        currentIndex = 0;
+        screenButtonClicked = false;
+
+        // 新しいストーリーデータを読み込み
+        storyData = StoryLoader.LoadStory("JSON/" + storyFileName);
+
+        if (storyData != null && storyData.items.Count > 0)
+        {
+            storyCoroutine = StartCoroutine(PlayStory());
+        }
+        else
+        {
+            Debug.LogError("新しいストーリーデータの読み込みに失敗、またはデータが空です。");
+        }
+    }
+
+    public void PlayNewStory(string fileName)
+    {
+        if (debugMode)
+        {
+            // デバッグモード時は外部からの上書きを無視して初期値を使う
+            Debug.Log("[DebugMode] 外部からのストーリー変更を無視し、" + storyFileName + " を再生します");
+            LoadAndStartStory(); // 初期設定のファイル名で再生
+        }
+        else
+        {
+            storyFileName = fileName;
+            LoadAndStartStory();
+        }
+    }
+
+
 }

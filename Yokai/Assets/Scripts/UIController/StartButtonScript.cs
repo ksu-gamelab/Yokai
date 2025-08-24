@@ -30,14 +30,19 @@ public class StartButtonScript : MonoBehaviour
         fadein.SetActive(true);
         Invoke("loadstart", 1.5f);
     }
+
     public void loadstart()
     {
-        GameStateManager.Instance.SetState(GameState.Playing);
-        GameStateManager.Instance.SetTutorialStage(TutorialStage.Stage1);
-        GameStateManager.Instance.SetTutorialMode(TutorialMode.Novel);
-        CSVReader.SetCSV("Tutorial1");
-        SceneManager.LoadScene("Tutorial1");
+        GameStateManager.Instance.SetPhase(GamePhase.Tutorial1); // フェーズ設定
+        GameStateManager.Instance.TriggerScenario();             // 状態をInScenarioに切り替え（時刻停止）
+
+        SceneManager.LoadScene("NovelTest");                     // シーンをロード
+
+        // ※Tutorial1のシーン内でScenarioController.Instance.StartScenarioForCurrentPhase()が呼ばれます
     }
+
+
+
 
     public void onClicked_opencredit()
     {

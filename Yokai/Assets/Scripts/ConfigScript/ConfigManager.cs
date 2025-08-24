@@ -20,7 +20,7 @@ public class ConfigManager : MonoBehaviour
         if (Input.GetButtonDown("Setting"))
         {
             ConfigPanel.SetActive(true);
-            GameStateManager.Instance.TriggerGamePause();
+            GameStateManager.Instance.TriggerPause();
         }
     }
 }

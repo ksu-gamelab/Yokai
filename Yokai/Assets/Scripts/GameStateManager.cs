@@ -5,33 +5,19 @@ public enum GameState
 {
     Title,
     Playing,
+    InScenario,
     Paused,
     GameOver,
     Clear
 }
 
-public enum TutorialStage
+public enum GamePhase
 {
-    None,
+    Tutorial1,
+    Tutorial2,
     Stage1,
     Stage2,
-    Stage3,
-    Complete
-}
-
-public enum TutorialMode
-{
-    None,
-    Novel,
-    Play
-}
-
-public enum NormalStage
-{
-    None,
-    Stage1,
-    Stage2,
-    Stage3
+    // 必要に応じて追加
 }
 
 public class GameStateManager : MonoBehaviour
@@ -39,14 +25,11 @@ public class GameStateManager : MonoBehaviour
     public static GameStateManager Instance { get; private set; }
 
     public GameState CurrentState { get; private set; } = GameState.Title;
+    public GamePhase CurrentPhase { get; private set; } = GamePhase.Tutorial1;
 
-    public NormalStage CurrentNormalStage { get; private set; } = NormalStage.None;
+ 
 
-    // チュートリアル情報
-    public TutorialStage CurrentTutorialStage { get; private set; } = TutorialStage.None;
-    public TutorialMode CurrentTutorialMode { get; private set; } = TutorialMode.None;
-
-    void Awake()
+    private void Awake()
     {
         if (Instance != null && Instance != this)
         {
@@ -66,73 +49,85 @@ public class GameStateManager : MonoBehaviour
         {
             case GameState.Playing:
                 Time.timeScale = 1f;
+                ActivatePlayOnObjects();
                 break;
             case GameState.Paused:
                 Time.timeScale = 0f;
                 break;
+            case GameState.InScenario:
+            case GameState.Title:
+                Time.timeScale = 1f;
+                break;
             case GameState.GameOver:
+                Time.timeScale = 1f;
                 SceneManager.LoadScene("GameOver");
                 break;
             case GameState.Clear:
+                Time.timeScale = 1f;
                 SceneManager.LoadScene("GameClear");
                 break;
         }
     }
 
-    public void TriggerGameOver()
+    // フェーズ設定
+    public void SetPhase(GamePhase phase)
     {
-        if (CurrentState != GameState.GameOver)
-            SetState(GameState.GameOver);
+        CurrentPhase = phase;
     }
 
-    public void TriggerGameStart()
-    {
-        if (CurrentState != GameState.Playing)
-            SetState(GameState.Playing);
-    }
+    // 状態遷移トリガー
+    public void TriggerGameStart() => SetState(GameState.Playing);
+    public void TriggerScenario() => SetState(GameState.InScenario);
+    public void TriggerGameOver() => SetState(GameState.GameOver);
+    public void TriggerGameClear() => SetState(GameState.Clear);
+    public void TriggerPause() { if (IsPlaying()) SetState(GameState.Paused); }
+    public void ResumeGame() { if (IsPaused()) SetState(GameState.Playing); }
 
-    public void TriggerGameClear()
-    {
-        if (CurrentState != GameState.Clear)
-            SetState(GameState.Clear);
-    }
-
-    public void TriggerGamePause()
-    {
-        if (CurrentState != GameState.Paused)
-            SetState(GameState.Paused);
-    }
-
-    public void ResumeGame()
-    {
-        if (CurrentState == GameState.Paused)
-            SetState(GameState.Playing);
-    }
-
+    // 状態チェック
     public bool IsPlaying() => CurrentState == GameState.Playing;
     public bool IsPaused() => CurrentState == GameState.Paused;
+    public bool IsScenario() => CurrentState == GameState.InScenario;
+    public bool IsTitle() => CurrentState == GameState.Title;
+    public bool IsGameOver() => CurrentState == GameState.GameOver;
+    public bool IsClear() => CurrentState == GameState.Clear;
 
-    // ---------- Tutorial関連 ----------
-    public void SetTutorialStage(TutorialStage stage)
+    // 次のフェーズに進む（任意の順序ロジック）
+    public void AdvancePhase()
     {
-        CurrentTutorialStage = stage;
-        Debug.Log("チュートリアルステージ設定: " + stage);
+        switch (CurrentPhase)
+        {
+            case GamePhase.Tutorial1:
+                SetPhase(GamePhase.Tutorial2);
+                break;
+            case GamePhase.Tutorial2:
+                SetPhase(GamePhase.Stage1);
+                break;
+            case GamePhase.Stage1:
+                SetPhase(GamePhase.Stage2);
+                break;
+            case GamePhase.Stage2:
+                Debug.Log("全フェーズ完了");
+                break;
+        }
     }
 
-    public void SetTutorialMode(TutorialMode mode)
+    private void ActivatePlayOnObjects()
     {
-        CurrentTutorialMode = mode;
-        Debug.Log("チュートリアルモード設定: " + mode);
+
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("PlayOn") && !obj.activeSelf)
+            {
+                // シーン上のオブジェクトに限定する
+                if (obj.scene.IsValid() && obj.hideFlags == HideFlags.None)
+                {
+                    obj.SetActive(true);
+                    Debug.Log($"[GameStateManager] 非アクティブPlayOnオブジェクト有効化: {obj.name}");
+                }
+            }
+        }
     }
 
-    // ---------NormalStage関連------------
-    public void SetNormalStage(NormalStage stage)
-    {
-        CurrentNormalStage = stage;
-    }
-    
-
-    public bool IsTutorialPlay() => CurrentTutorialMode == TutorialMode.Play;
-    public bool IsTutorialNovel() => CurrentTutorialMode == TutorialMode.Novel;
 
 }

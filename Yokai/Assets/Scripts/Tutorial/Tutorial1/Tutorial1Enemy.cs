@@ -10,7 +10,7 @@ public class Tutorial1Enemy : EnemyBase
 
     protected override void Move()
     {
-
+        // 任意の移動処理を記述（必要に応じて）
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,10 +31,21 @@ public class Tutorial1Enemy : EnemyBase
 
     public override void Defeat()
     {
-        GameStateManager.Instance.SetTutorialMode(TutorialMode.Play);
-        SceneManager.LoadScene("Tutorial1");
-        
+        // 死んだ時に、現在の GamePhase を見て同じシーンを再ロード
+        var currentPhase = GameStateManager.Instance.CurrentPhase;
+
+        switch (currentPhase)
+        {
+            case GamePhase.Tutorial1:
+                SceneManager.LoadScene("NovelTest");
+                break;
+            case GamePhase.Tutorial2:
+                SceneManager.LoadScene("Tutorial2");
+                break;
+            // 他にもチュートリアルが増えるなら追加
+            default:
+                Debug.LogWarning("チュートリアル以外でのDefeatが呼ばれました。");
+                break;
+        }
     }
-
 }
-

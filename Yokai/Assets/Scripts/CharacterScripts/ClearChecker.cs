@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ClearChecker : MonoBehaviour
 {
@@ -10,20 +6,27 @@ public class ClearChecker : MonoBehaviour
     {
         if (other.CompareTag("Clear"))
         {
-
+            // 例：通常ステージ1クリア → ステージ2開始シナリオ再生へ
+            if (GameStateManager.Instance.CurrentPhase == GamePhase.Stage1)
+            {
+                GameStateManager.Instance.SetPhase(GamePhase.Stage2); // 次のフェーズに更新
+                var controller = FindObjectOfType<ScenarioController>();
+                if (controller != null)
+                {
+                    controller.StartScenarioForCurrentPhase(); // ステージ2のシナリオを再生
+                }
+            }
         }
         else if (other.CompareTag("Clear_Tutorial"))
         {
-            var controller = FindObjectOfType<TutorialController>();
-            if (controller != null)
+            if (GameStateManager.Instance.CurrentPhase == GamePhase.Tutorial1)
             {
-                if(GameStateManager.Instance.CurrentTutorialStage == TutorialStage.Stage1)
+                GameStateManager.Instance.SetPhase(GamePhase.Tutorial2); // チュートリアル2へ
+                var controller = FindObjectOfType<ScenarioController>();
+                if (controller != null)
                 {
-                    // 次に再生するCSVをセット
-                    CSVReader.SetCSV("Tutorial1End");
-                    controller.StartNovel(TutorialStage.Stage2);
+                    controller.StartScenarioForCurrentPhase(); // チュートリアル2のシナリオを再生
                 }
-
             }
         }
     }

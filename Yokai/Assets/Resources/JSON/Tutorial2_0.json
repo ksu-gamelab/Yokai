@@ -143,7 +143,7 @@
           "text": "おっ？",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_others"
+          "text_ui": "fukidashi_hiro"
         },
         {
           "type": "show_character",

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -12,6 +11,10 @@ public class AudioManager : MonoBehaviour
 
     public AudioMixer bgmMixer;
     public AudioMixer seMixer;
+
+    [Header("グループ名はAudioMixerに登録されたExpose名と一致させてください")]
+    public string bgmFadeGroupName = "BGMFadeVolume";
+    public string seGroupName = "SEVolume";
 
     private void Awake()
     {
@@ -31,31 +34,41 @@ public class AudioManager : MonoBehaviour
     {
         audioSourceBGM = gameObject.AddComponent<AudioSource>();
         audioSourceSE = gameObject.AddComponent<AudioSource>();
-        audioSourceBGM.outputAudioMixerGroup = bgmMixer.FindMatchingGroups("Master")[0];
-        audioSourceSE.outputAudioMixerGroup = seMixer.FindMatchingGroups("Master")[0];
-        audioSourceBGM.volume = .3f;
+
+        // ✅ BGM用のMixerGroupを設定（存在確認付き）
+        AudioMixerGroup[] bgmGroups = bgmMixer.FindMatchingGroups(bgmFadeGroupName);
+        if (bgmGroups.Length > 0)
+        {
+            audioSourceBGM.outputAudioMixerGroup = bgmGroups[0];
+        }
+        else
+        {
+            Debug.LogError($"[AudioManager] BGM Mixer Group '{bgmFadeGroupName}' が見つかりません");
+        }
+
+        // ✅ SE用のMixerGroupを設定（存在確認付き）
+        AudioMixerGroup[] seGroups = seMixer.FindMatchingGroups(seGroupName);
+        if (seGroups.Length > 0)
+        {
+            audioSourceSE.outputAudioMixerGroup = seGroups[0];
+        }
+        else
+        {
+            Debug.LogError($"[AudioManager] SE Mixer Group '{seGroupName}' が見つかりません");
+        }
+
+        audioSourceBGM.volume = 0.3f; // 恒常音量（設定スライダーで調整）
         audioSourceBGM.loop = true;
-        audioSourceSE.volume = .5f;
+        audioSourceSE.volume = 0.5f;
     }
 
-    /// <summary>
-    /// BGMを再生します.
-    /// </summary>
-    /// <remarks>引数にAudioClipを渡してください.現在のBGMの再生を停止してから新たに再生します</remarks>
-    /// <param name="audioClip">音楽ファイル</param>
     public void PlayBGM(AudioClip audioClip)
     {
-        //Debug.Assert(audioClip);
         audioSourceBGM.Stop();
         audioSourceBGM.clip = audioClip;
         audioSourceBGM.Play();
     }
 
-    /// <summary>
-    /// SEを再生します.
-    /// </summary>
-    /// <remarks>引数にAudioClipを渡してください.</remarks>
-    /// <param name="audioClip">音楽ファイル</param>
     public void PlaySE(AudioClip audioClip)
     {
         Debug.Assert(audioClip);
@@ -71,5 +84,4 @@ public class AudioManager : MonoBehaviour
     {
         audioSourceSE.volume = volume;
     }
-
 }
