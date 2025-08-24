@@ -21,7 +21,6 @@ public class PlayerModeManager : MonoBehaviour
     public void TryTransformToSpecial()
     {
         if (!status.CanTransform()) return;
-        StartCoroutine(controller.StopMovementForSeconds(0.7f));
         status.ConsumeHP(1);
         status.SetHeroTime(status.HeroTimeMax);
         effectManager.PlayEffect("ChangeH");

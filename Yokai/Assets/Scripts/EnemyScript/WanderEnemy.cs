@@ -20,7 +20,7 @@ public class WanderEnemy : EnemyBase
             spriteTransform = transform.GetChild(0); // スプライトのある子オブジェクトを取得
         }
 
-        // スプライトの向きを反転（子オブジェクトの localScale を変更）
+        /*// スプライトの向きを反転（子オブジェクトの localScale を変更）
         if (spriteTransform != null)
         {
             Vector3 spriteScale = spriteTransform.localScale;
@@ -29,8 +29,8 @@ public class WanderEnemy : EnemyBase
             else
                 spriteScale.x = Mathf.Abs(spriteScale.x);   // 左はデフォルト
             spriteTransform.localScale = spriteScale;
-        }
+        }*/
 
-        rb.velocity = new Vector2(moveSpeed * moveDirection, 0);
+        rb.velocity = new Vector2(0, moveSpeed * moveDirection);
     }
 }

@@ -56,30 +56,30 @@ namespace Live2D.Cubism.Editor.Inspectors
 
             EditorGUI.BeginChangeCheck();
 
-            // Display OverrideColorForPartMultiplyColors.
+            // Display OverwriteColorForPartMultiplyColors.
             using (var scope = new EditorGUI.ChangeCheckScope())
             {
-                var overrideColorForPartMultiplyColors = EditorGUILayout.Toggle("OverrideColorForPartMultiplyColors", blendColorEditor.OverrideColorForPartMultiplyColors);
+                var overwriteColorForPartMultiplyColors = EditorGUILayout.Toggle("OverwriteColorForPartMultiplyColors", blendColorEditor.OverwriteColorForPartMultiplyColors);
 
                 if (scope.changed)
                 {
                     foreach (CubismPartColorsEditor partBlendColorEditor in targets)
                     {
-                        partBlendColorEditor.OverrideColorForPartMultiplyColors = overrideColorForPartMultiplyColors;
+                        partBlendColorEditor.OverwriteColorForPartMultiplyColors = overwriteColorForPartMultiplyColors;
                     }
                 }
             }
 
-            // Display OverrideColorForPartScreenColors.
+            // Display OverwriteColorForPartScreenColors.
             using (var scope = new EditorGUI.ChangeCheckScope())
             {
-                var overrideColorForPartScreenColors = EditorGUILayout.Toggle("OverrideColorForPartScreenColors", blendColorEditor.OverrideColorForPartScreenColors);
+                var overwriteColorForPartScreenColors = EditorGUILayout.Toggle("OverwriteColorForPartScreenColors", blendColorEditor.OverwriteColorForPartScreenColors);
 
                 if (scope.changed)
                 {
                     foreach (CubismPartColorsEditor partBlendColorEditor in targets)
                     {
-                        partBlendColorEditor.OverrideColorForPartScreenColors = overrideColorForPartScreenColors;
+                        partBlendColorEditor.OverwriteColorForPartScreenColors = overwriteColorForPartScreenColors;
                     }
                 }
             }

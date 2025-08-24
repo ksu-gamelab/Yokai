@@ -85,64 +85,42 @@ namespace Live2D.Cubism.Rendering
         }
 
         /// <summary>
-        /// <see cref="OverrideFlagForDrawableMultiplyColors"/> backing field.
+        /// <see cref="OverwriteFlagForDrawableMultiplyColors"/> backing field.
         /// </summary>
         [SerializeField, HideInInspector]
-        private bool _isOverriddenDrawableMultiplyColors;
+        private bool _isOverwrittenDrawableMultiplyColors;
 
         /// <summary>
-        /// Whether to override with multiply color from the model.
-        ///
-        /// This property is deprecated due to a naming change. Use <see cref="OverrideFlagForDrawableMultiplyColors"/> instead.
+        /// Whether to overwrite with multiply color from the model.
         /// </summary>
         public bool OverwriteFlagForDrawableMultiplyColors
         {
-            get { return OverrideFlagForDrawableMultiplyColors; }
-            set { OverrideFlagForDrawableMultiplyColors = value; }
+            get { return _isOverwrittenDrawableMultiplyColors; }
+            set { _isOverwrittenDrawableMultiplyColors = value; }
         }
 
         /// <summary>
-        /// Whether to override with multiply color from the model.
-        /// </summary>
-        public bool OverrideFlagForDrawableMultiplyColors
-        {
-            get { return _isOverriddenDrawableMultiplyColors; }
-            set { _isOverriddenDrawableMultiplyColors = value; }
-        }
-
-        /// <summary>
-        /// Last <see cref="OverrideFlagForDrawableMultiplyColors"/>.
+        /// Last <see cref="OverwriteFlagForDrawableMultiplyColors"/>.
         /// </summary>
         public bool LastIsUseUserMultiplyColor { get; set; }
 
         /// <summary>
-        /// <see cref="OverrideFlagForDrawableScreenColors"/> backing field.
+        /// <see cref="OverwriteFlagForDrawableScreenColors"/> backing field.
         /// </summary>
         [SerializeField, HideInInspector]
-        private bool _isOverriddenDrawableScreenColors;
+        private bool _isOverwrittenDrawableScreenColors;
 
         /// <summary>
-        /// Whether to override with screen color from the model.
-        ///
-        /// This property is deprecated due to a naming change. Use <see cref="OverrideFlagForDrawableScreenColors"/> instead.
+        /// Whether to overwrite with screen color from the model.
         /// </summary>
         public bool OverwriteFlagForDrawableScreenColors
         {
-            get { return OverrideFlagForDrawableScreenColors; }
-            set { OverrideFlagForDrawableScreenColors = value; }
+            get { return _isOverwrittenDrawableScreenColors; }
+            set { _isOverwrittenDrawableScreenColors = value; }
         }
 
         /// <summary>
-        /// Whether to override with screen color from the model.
-        /// </summary>
-        public bool OverrideFlagForDrawableScreenColors
-        {
-            get { return _isOverriddenDrawableScreenColors; }
-            set { _isOverriddenDrawableScreenColors = value; }
-        }
-
-        /// <summary>
-        /// Last <see cref="OverrideFlagForDrawableScreenColors"/>.
+        /// Last <see cref="OverwriteFlagForDrawableScreenColors"/>.
         /// </summary>
         public bool LastIsUseUserScreenColors { get; set; }
 
@@ -159,7 +137,7 @@ namespace Live2D.Cubism.Rendering
         {
             get
             {
-                if (OverrideFlagForDrawableMultiplyColors || RenderController.OverrideFlagForModelMultiplyColors)
+                if (OverwriteFlagForDrawableMultiplyColors || RenderController.OverwriteFlagForModelMultiplyColors)
                 {
                     return _multiplyColor;
                 }
@@ -200,7 +178,7 @@ namespace Live2D.Cubism.Rendering
         {
             get
             {
-                if (OverrideFlagForDrawableScreenColors || RenderController.OverrideFlagForModelScreenColors)
+                if (OverwriteFlagForDrawableScreenColors || RenderController.OverwriteFlagForModelScreenColors)
                 {
                     return _screenColor;
                 }

@@ -84,7 +84,7 @@ namespace Live2D.Cubism.Core
         /// <summary>
         /// <see cref="Bytes"/> backing field.
         /// </summary>
-        [SerializeField, HideInInspector]
+        [SerializeField]
         private byte[] _bytes;
 
         /// <summary>

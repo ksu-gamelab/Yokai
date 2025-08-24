@@ -59,12 +59,8 @@ namespace Live2D.Cubism.Framework.Physics
 
         public void OnLateUpdate()
         {
-            if (!enabled)
-            {
-                return;
-            }
-
             var deltaTime = Time.deltaTime;
+
 
             // Use fixed delta time if required.
             if (CubismPhysics.UseFixedDeltaTime)

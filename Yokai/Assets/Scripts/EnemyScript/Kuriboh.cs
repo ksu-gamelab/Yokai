@@ -9,7 +9,7 @@ public class Kuriboh : EnemyBase
 
     protected override void Move()
     {
-        rb.velocity = new Vector2(moveSpeed * moveDirection, 0);
+        //rb.velocity = new Vector2(moveSpeed * moveDirection, 0);
 
         if (!isOnGround)
         {

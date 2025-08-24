@@ -1,0 +1,47 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "左目　開閉"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "右目　開閉"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "呼吸"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ヒイロ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part5",
+			"Name": "体"
+		},
+		{
+			"Id": "Part6",
+			"Name": "しっぽ"
+		},
+		{
+			"Id": "Part3",
+			"Name": "目R"
+		},
+		{
+			"Id": "Part4",
+			"Name": "目L"
+		}
+	]
+}

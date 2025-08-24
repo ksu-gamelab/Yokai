@@ -46,5 +46,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSourceBGM: {fileID: 0}
   audioSourceSE: {fileID: 0}
-  bgmMixer: {fileID: 24100000, guid: c561bab4b87174226b8621cc2f458130, type: 2}
-  seMixer: {fileID: 24100000, guid: a83275f22f6e243d0ab2cef1a20155a6, type: 2}

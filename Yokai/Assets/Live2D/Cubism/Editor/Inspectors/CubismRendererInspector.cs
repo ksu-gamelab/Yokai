@@ -52,30 +52,30 @@ namespace Live2D.Cubism.Editor.Inspectors
 
             EditorGUI.BeginChangeCheck();
 
-            // Display OverrideFlagForDrawableMultiplyColors.
+            // Display OverwriteFlagForDrawableMultiplyColors.
             using (var scope = new EditorGUI.ChangeCheckScope())
             {
-                var overrideFlagForDrawableMultiplyColors = EditorGUILayout.Toggle("OverrideFlagForDrawableMultiplyColors", renderer.OverrideFlagForDrawableMultiplyColors);
+                var overwriteFlagForDrawableMultiplyColors = EditorGUILayout.Toggle("OverwriteFlagForDrawableMultiplyColors", renderer.OverwriteFlagForDrawableMultiplyColors);
 
                 if (scope.changed)
                 {
                     foreach (CubismRenderer cubismRenderer in targets)
                     {
-                        cubismRenderer.OverrideFlagForDrawableMultiplyColors = overrideFlagForDrawableMultiplyColors;
+                        cubismRenderer.OverwriteFlagForDrawableMultiplyColors = overwriteFlagForDrawableMultiplyColors;
                     }
                 }
             }
 
-            // Display OverrideFlagForDrawableScreenColors.
+            // Display OverwriteFlagForDrawableScreenColors.
             using (var scope = new EditorGUI.ChangeCheckScope())
             {
-                var overrideFlagForDrawableScreenColors = EditorGUILayout.Toggle("OverrideFlagForDrawableScreenColors", renderer.OverrideFlagForDrawableScreenColors);
+                var overwriteFlagForDrawableScreenColors = EditorGUILayout.Toggle("OverwriteFlagForDrawableScreenColors", renderer.OverwriteFlagForDrawableScreenColors);
 
                 if (scope.changed)
                 {
                     foreach (CubismRenderer cubismRenderer in targets)
                     {
-                        cubismRenderer.OverrideFlagForDrawableScreenColors = overrideFlagForDrawableScreenColors;
+                        cubismRenderer.OverwriteFlagForDrawableScreenColors = overwriteFlagForDrawableScreenColors;
                     }
                 }
             }

@@ -1,0 +1,162 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "breath"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "lefteye_open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "righteye_open"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "",
+			"Name": "mou_A&I"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "",
+			"Name": "mou_U&E"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "",
+			"Name": "mou_O&upset"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "",
+			"Name": "mou_close&wow"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "",
+			"Name": "eye&mou_relax"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "",
+			"Name": "eye_jito"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "",
+			"Name": "eye_doubt&mad"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "",
+			"Name": "eye_smaile"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "blow_mad"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "blow_sad"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "",
+			"Name": "eye_surprise"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "sweat1"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "sweat1"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "",
+			"Name": "tear"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "pale"
+		}
+	],
+	"ParameterGroups": [],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ナギサ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part5",
+			"Name": "髪"
+		},
+		{
+			"Id": "Part6",
+			"Name": "体"
+		},
+		{
+			"Id": "Part9",
+			"Name": "アクセ"
+		},
+		{
+			"Id": "Part10",
+			"Name": "眉R"
+		},
+		{
+			"Id": "Part15",
+			"Name": "眉L"
+		},
+		{
+			"Id": "Part11",
+			"Name": "目R"
+		},
+		{
+			"Id": "Part16",
+			"Name": "目L"
+		},
+		{
+			"Id": "Part20",
+			"Name": "口"
+		},
+		{
+			"Id": "Part12",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part13",
+			"Name": "深刻目R"
+		},
+		{
+			"Id": "Part14",
+			"Name": "普通目R"
+		},
+		{
+			"Id": "Part17",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part18",
+			"Name": "深刻目L"
+		},
+		{
+			"Id": "Part19",
+			"Name": "普通目L"
+		}
+	]
+}

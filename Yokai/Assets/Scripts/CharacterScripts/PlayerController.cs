@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Transform") && !status.IsDead() && GameStateManager.Instance.CurrentTutorialStage != TutorialStage.Stage1)
         {
-            //StartCoroutine(StopMovementForSeconds(stopTime));
+            StartCoroutine(StopMovementForSeconds(stopTime));
             GetComponent<PlayerModeManager>()?.ForceTransformToSpecial();
         }
 
