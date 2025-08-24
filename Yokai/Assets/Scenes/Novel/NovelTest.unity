@@ -1804,6 +1804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c474d37beee3e40d5bb62bbfdb4c4997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyFileName: edited
   screenButton: {fileID: 1093789706}
 --- !u!114 &692353032
 MonoBehaviour:

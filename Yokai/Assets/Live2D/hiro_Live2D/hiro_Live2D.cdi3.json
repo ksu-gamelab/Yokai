@@ -1,0 +1,252 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "breath"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup",
+			"Name": "eyeL_open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup",
+			"Name": "eyeR_open"
+		},
+		{
+			"Id": "ParamEyeLOpen2",
+			"GroupId": "ParamGroup",
+			"Name": "eyeL_smile"
+		},
+		{
+			"Id": "ParamEyeROpen2",
+			"GroupId": "ParamGroup",
+			"Name": "eyeR_smile"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup",
+			"Name": "eye_yasei"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "ParamGroup",
+			"Name": "eye_surprise"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "ParamGroup",
+			"Name": "eye_><"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup",
+			"Name": "eye_maru"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "ParamGroup",
+			"Name": "eye_nagomi"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup",
+			"Name": "eye_kiri"
+		},
+		{
+			"Id": "Param24",
+			"GroupId": "",
+			"Name": "hitomi_x"
+		},
+		{
+			"Id": "Param25",
+			"GroupId": "",
+			"Name": "hitomi_y"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "blow_komari"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "blow_mad"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "earR"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "earL"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup2",
+			"Name": "tereearR"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup2",
+			"Name": "tareearL"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_open&pu"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_i&u"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_e&o"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_awa&he"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_nya&wa"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "ParamGroup3",
+			"Name": "mou_niko&magao"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "",
+			"Name": "pale"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "",
+			"Name": "sweat"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "",
+			"Name": "pale2"
+		},
+		{
+			"Id": "Param22",
+			"GroupId": "",
+			"Name": "cheek"
+		},
+		{
+			"Id": "Param23",
+			"GroupId": "",
+			"Name": "cheek2"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "ear"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "mouse"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ヒイロ"
+		},
+		{
+			"Id": "Part8",
+			"Name": "腕R"
+		},
+		{
+			"Id": "Part2",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part5",
+			"Name": "体"
+		},
+		{
+			"Id": "Part6",
+			"Name": "しっぽ"
+		},
+		{
+			"Id": "Part3",
+			"Name": "目R"
+		},
+		{
+			"Id": "Part4",
+			"Name": "目L"
+		},
+		{
+			"Id": "Part14",
+			"Name": "口"
+		},
+		{
+			"Id": "Part10",
+			"Name": "アクセ"
+		},
+		{
+			"Id": "Part15",
+			"Name": "耳R"
+		},
+		{
+			"Id": "Part11",
+			"Name": "耳L"
+		},
+		{
+			"Id": "Part17",
+			"Name": "腕L"
+		},
+		{
+			"Id": "Part18",
+			"Name": "しっぽ"
+		},
+		{
+			"Id": "Part7",
+			"Name": "しっぽ4"
+		},
+		{
+			"Id": "Part9",
+			"Name": "しっぽ3"
+		},
+		{
+			"Id": "Part12",
+			"Name": "しっぽ2"
+		},
+		{
+			"Id": "Part13",
+			"Name": "しっぽ1"
+		},
+		{
+			"Id": "Part16",
+			"Name": "しっぽ0"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"Param24",
+			"Param25"
+		]
+	]
+}
