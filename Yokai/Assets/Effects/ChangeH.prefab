@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2708598583165999484}
   - component: {fileID: 2708598583165999486}
   - component: {fileID: 2708598583165999487}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4867,7 +4867,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4910,7 +4910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2708598583372993826}
   - component: {fileID: 2708598583372993827}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5006,7 +5006,7 @@ GameObject:
   - component: {fileID: 2708598583397607897}
   - component: {fileID: 2708598583397607910}
   - component: {fileID: 2708598583397607899}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: ChangeH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5073,7 +5073,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5082,7 +5082,7 @@ ParticleSystemRenderer:
   m_CameraVelocityScale: 0
   m_VelocityScale: 1
   m_LengthScale: 0
-  m_SortingFudge: 0
+  m_SortingFudge: 10
   m_NormalDirection: 1
   m_ShadowBias: 0
   m_RenderAlignment: 0
@@ -9929,7 +9929,7 @@ GameObject:
   - component: {fileID: 2708598584241629779}
   - component: {fileID: 2708598584241629781}
   - component: {fileID: 2708598584241629778}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14785,7 +14785,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -14829,7 +14829,7 @@ GameObject:
   - component: {fileID: 2708598584738834257}
   - component: {fileID: 2708598584738834259}
   - component: {fileID: 2708598584738834256}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19685,7 +19685,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
