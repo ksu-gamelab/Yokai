@@ -3693,6 +3693,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2122772969}
+    - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: debugMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: storyFileName
+      value: Tutorial1_2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
