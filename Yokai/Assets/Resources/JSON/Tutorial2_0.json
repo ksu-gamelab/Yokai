@@ -143,7 +143,7 @@
           "text": "おっ？",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_hiro"
+          "text_ui": "fukidashi_others"
         },
         {
           "type": "show_character",
@@ -169,27 +169,11 @@
           "text": "おぉ！これがにんげんのからだ！",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_hiro"
-        },
-        {
-          "type": "show_character",
-          "character": "hiro_Live2D",
-          "position": "right",
-          "motion": "nagisa_tu_1",
-          "is_speaking": true,
-          "replace": false
-        },
-        {
-          "type": "show_character",
-          "character": "nagisa_Live2D",
-          "position": "left",
-          "motion": "nagisa_tu_1",
-          "is_speaking": false,
-          "replace": false
+          "text_ui": "fukidashi_others"
         },
         {
           "type": "set_background",
-          "background": "clear"
+          "background": "tutorial"
         }
       ]
     },
@@ -202,22 +186,6 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
-        },
-        {
-          "type": "show_character",
-          "character": "nagisa_Live2D",
-          "position": "left",
-          "motion": "nagisa_tu_1",
-          "is_speaking": true,
-          "replace": false
-        },
-        {
-          "type": "show_character",
-          "character": "hiro_Live2D",
-          "position": "right",
-          "motion": "nagisa_tu_1",
-          "is_speaking": false,
-          "replace": false
         }
       ]
     },
@@ -230,6 +198,357 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "私の体！！どうなってるの！？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "お？おまえがもちぬしのにんげんか！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_others"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "誰！？本当に誰！？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "あ、すまんすまん",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_others"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "われはヒイロ！きつねだ！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "set_background",
+          "background": "clear"
+        },
+        {
+          "type": "play_bgm",
+          "bgm": "oyatu",
+          "fade": "",
+          "fade_time": 1,
+          "bgm_volume": 1
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "狐！？きつね……え、えぇ？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "にんげんがいるのはめずらしくてつい「はいって」しまった！おまえこまってるんだろ？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "う、うん……ここはどこ？どこに行けば帰れる？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "a_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "かえる？どこに",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "に、人間のいるところ？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "むっ、にんげんにはここはよくないんだったか",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "よしわかった！われがおまえをでぐちまでつれてってやる！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "right",
+          "motion": "hiro_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "いいの？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "もちろん！にんげんはすきだからな！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "あ、ありがとう",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
         },
         {
           "type": "show_character",
@@ -254,7 +573,35 @@
         {
           "type": "show_text",
           "character": "ナギサ",
-          "text": "私の体！！どうなってるの！？",
+          "text": "うわっ！そんなこんな言ってたらさっきの怖いのがたくさん……",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "どどど、どうしようヒイロ！",
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
@@ -281,11 +628,11 @@
       "commands": [
         {
           "type": "show_text",
-          "character": "？？？",
-          "text": "お？おまえがもちぬしのにんげんか！",
+          "character": "ヒイロ",
+          "text": "ほうほう！ではわれのちから、さっそくみせてやろう！",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_nagisa"
+          "text_ui": "fukidashi_hiro"
         },
         {
           "type": "show_character",
