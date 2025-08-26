@@ -40,7 +40,7 @@
           "position": "center",
           "motion": "nagisa_tu_1",
           "is_speaking": true,
-          "replace": true
+          "replace": false
         }
       ]
     },
@@ -119,14 +119,6 @@
           "background": "Black"
         },
         {
-          "type": "show_character",
-          "character": "nagisa_Live2D",
-          "position": "center",
-          "motion": "nagisa_tu_1",
-          "is_speaking": true,
-          "replace": false
-        },
-        {
           "type": "play_bgm",
           "bgm": "stop",
           "fade": "",
@@ -143,15 +135,7 @@
           "text": "おっ？",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_others"
-        },
-        {
-          "type": "show_character",
-          "character": "hiro_Live2D",
-          "position": "center",
-          "motion": "nagisa_tu_1",
-          "is_speaking": true,
-          "replace": true
+          "text_ui": "fukidashi_hiro"
         },
         {
           "type": "play_se",
@@ -169,7 +153,7 @@
           "text": "おぉ！これがにんげんのからだ！",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_others"
+          "text_ui": "fukidashi_hiro"
         },
         {
           "type": "set_background",
@@ -221,7 +205,7 @@
           "text": "お？おまえがもちぬしのにんげんか！",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_others"
+          "text_ui": "fukidashi_hiro"
         }
       ]
     },
@@ -245,7 +229,17 @@
           "text": "あ、すまんすまん",
           "text_speed": 0.05,
           "wait_for_click": true,
-          "text_ui": "fukidashi_others"
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "play_se",
+          "se": "specialTonormal",
+          "se_volume": 1,
+          "delay": 0
         }
       ]
     },
@@ -265,7 +259,7 @@
           "position": "left",
           "motion": "nagisa_tu_1",
           "is_speaking": false,
-          "replace": false
+          "replace": true
         },
         {
           "type": "show_character",
@@ -273,7 +267,7 @@
           "position": "right",
           "motion": "hiro_tu_1",
           "is_speaking": true,
-          "replace": false
+          "replace": true
         },
         {
           "type": "set_background",
@@ -448,7 +442,7 @@
         },
         {
           "type": "show_character",
-          "character": "nagisa_Live2D",
+          "character": "hiro_Live2D",
           "position": "right",
           "motion": "hiro_tu_1",
           "is_speaking": true,
@@ -476,7 +470,7 @@
         },
         {
           "type": "show_character",
-          "character": "nagisa_Live2D",
+          "character": "hiro_Live2D",
           "position": "right",
           "motion": "hiro_tu_1",
           "is_speaking": true,
@@ -504,7 +498,7 @@
         },
         {
           "type": "show_character",
-          "character": "nagisa_Live2D",
+          "character": "hiro_Live2D",
           "position": "right",
           "motion": "nagisa_tu_1",
           "is_speaking": false,
@@ -593,6 +587,13 @@
           "motion": "nagisa_tu_1",
           "is_speaking": false,
           "replace": false
+        },
+        {
+          "type": "play_bgm",
+          "bgm": "",
+          "fade": "",
+          "fade_time": 1,
+          "bgm_volume": 1
         }
       ]
     },
@@ -616,7 +617,7 @@
         },
         {
           "type": "show_character",
-          "character": "nagisa_Live2D",
+          "character": "hiro_Live2D",
           "position": "right",
           "motion": "nagisa_tu_1",
           "is_speaking": false,
@@ -649,6 +650,96 @@
           "motion": "nagisa_tu_1",
           "is_speaking": true,
           "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "う、うん！お願い！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "うむ！ではつっこむぞ！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "突っ込むの！？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "play_se",
+          "se": "tukkomi",
+          "se_volume": 1,
+          "delay": 0
         }
       ]
     }
