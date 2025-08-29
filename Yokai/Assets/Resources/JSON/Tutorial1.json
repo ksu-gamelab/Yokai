@@ -16,22 +16,14 @@
           "bgm": "DarkBGM",
           "bgm_volume": 0.8,
           "fade": "in",
-          "fade_time": 3
+          "fade_time": 1
         },
         {
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
-          "is_speaking": false,
-          "replace": true
-        },
-        {
-          "type": "show_character",
-          "character": "nagisa_Live2Dred",
-          "position": "left",
-          "motion": "nagisa_tu4",
-          "is_speaking": false,
+          "motion": "nagisa_tu1",
+          "is_speaking": true,
           "replace": true
         },
         {
@@ -41,14 +33,6 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
-        },
-        {
-          "type": "show_effect",
-          "effect": "sparkle",
-          "effect_position": "center",
-          "effect_duration": 1.5,
-          "loop": false,
-          "id": "entry_sparkle"
         }
       ]
     },
@@ -58,7 +42,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_2",
+          "motion": "nagisa_tu2",
           "is_speaking": true,
           "replace": false
         },
@@ -84,14 +68,6 @@
           "character": "nagisa_Live2D",
           "position": "center",
           "motion": "nagisa_tu3",
-          "is_speaking": false,
-          "replace": false
-        },
-        {
-          "type": "show_character",
-          "character": "nagisa_Live2Dred",
-          "position": "left",
-          "motion": "nagisa_tu5",
           "is_speaking": true,
           "replace": false
         },
@@ -125,14 +101,6 @@
           "position": "center",
           "motion": "nagisa_tu4",
           "is_speaking": true,
-          "replace": false
-        },
-        {
-          "type": "show_character",
-          "character": "nagisa_Live2Dred",
-          "position": "left",
-          "motion": "nagisa_tu6",
-          "is_speaking": false,
           "replace": false
         }
       ]

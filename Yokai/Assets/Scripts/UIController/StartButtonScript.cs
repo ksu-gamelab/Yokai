@@ -26,6 +26,7 @@ public class StartButtonScript : MonoBehaviour
     public void onClicked_startbutton()
     {
         GameStateManager.Instance.TriggerGameStart();
+        GameStateManager.Instance.SetPhase(GamePhase.Tutorial1);
         AudioManager.instance.PlaySE(buttonclip);
         fadein.SetActive(true);
         Invoke("loadstart", 1.5f);
@@ -36,7 +37,7 @@ public class StartButtonScript : MonoBehaviour
         GameStateManager.Instance.SetPhase(GamePhase.Tutorial1); // フェーズ設定
         GameStateManager.Instance.TriggerScenario();             // 状態をInScenarioに切り替え（時刻停止）
 
-        SceneManager.LoadScene("NovelTest");                     // シーンをロード
+        SceneManager.LoadScene("Tutorial1");                     // シーンをロード
 
         // ※Tutorial1のシーン内でScenarioController.Instance.StartScenarioForCurrentPhase()が呼ばれます
     }

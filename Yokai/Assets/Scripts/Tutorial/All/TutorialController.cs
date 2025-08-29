@@ -30,7 +30,6 @@ public class TutorialController : MonoBehaviour
     // 任意のストーリー再生（何度も再生されない）
     public void PlayStory(string storyFileName)
     {
-        Debug.Log("よばれた");
         if (playedStories.Contains(storyFileName))
         {
             Debug.Log($"ストーリー '{storyFileName}' はすでに再生済みです。");

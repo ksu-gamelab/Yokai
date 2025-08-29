@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
+  m_Name: hiro_Live2D 1.fadeMotionList
+  m_EditorClassIdentifier: 
+  MotionInstanceIds: 7400ffff3e00ffff1600ffffeefffeffc6fffeff9efffeff76fffeff4efffeff26fffefffefefeffd6fefeffaefefeff86fefeff5efefeff34f3feff0cf3feffe4f2feff
+  CubismFadeMotionObjects:
+  - {fileID: 11400000, guid: 26ecc302035b41343afb6cb241251d35, type: 2}
+  - {fileID: 11400000, guid: b814e501ab247c34887f04c7af6a6b08, type: 2}
+  - {fileID: 11400000, guid: a7889c1904d0a1a449930d5935ef39ce, type: 2}
+  - {fileID: 11400000, guid: 22c3b0bb68ae40e4a9517b17a4b176a7, type: 2}
+  - {fileID: 11400000, guid: 08ed8130504f6104d9e515aa8fb03744, type: 2}
+  - {fileID: 11400000, guid: a606bb94ca10d964b97bf96591832073, type: 2}
+  - {fileID: 11400000, guid: 8ae8f3bb76cb009469d1ceaec81b4fab, type: 2}
+  - {fileID: 11400000, guid: d36ce3ae51908994993823203ee69175, type: 2}
+  - {fileID: 11400000, guid: da4dc8373a607a6488aeb20939445613, type: 2}
+  - {fileID: 11400000, guid: 842c49fc3a87d954d8a10b5d9821a9cf, type: 2}
+  - {fileID: 11400000, guid: c425a24848cb84541bc5422965ff3322, type: 2}
+  - {fileID: 11400000, guid: 5da6b0e942a02674f8d9780730787277, type: 2}
+  - {fileID: 11400000, guid: de9b101b88fff7f41ae533a2db3884a5, type: 2}
+  - {fileID: 11400000, guid: 814a1467f8fc44341b55a675412d4a33, type: 2}
+  - {fileID: 11400000, guid: 4c1401ecbccb3cb4bbf4046fdc0f9354, type: 2}
+  - {fileID: 11400000, guid: 38ff3bf0dec5922498a0b0dc04de7d7a, type: 2}
+  - {fileID: 11400000, guid: 3000379df466fad4db5e64d36c779899, type: 2}

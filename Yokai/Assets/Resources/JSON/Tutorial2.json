@@ -3,6 +3,13 @@
     {
       "commands": [
         {
+          "type": "play_bgm",
+          "bgm": "DarkBGM",
+          "bgm_volume": 0.8,
+          "fade": "in",
+          "fade_time": 1
+        },
+        {
           "type": "show_text",
           "character": "ナギサ",
           "text": "うわっ！真っ暗だ！",
@@ -14,7 +21,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_1",
           "is_speaking": true,
           "replace": true
         },
@@ -38,7 +45,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_2",
           "is_speaking": true,
           "replace": false
         }
@@ -58,7 +65,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_3",
           "is_speaking": true,
           "replace": false
         }
@@ -78,7 +85,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_4",
           "is_speaking": true,
           "replace": false
         }
@@ -98,7 +105,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_5",
           "is_speaking": true,
           "replace": false
         }
@@ -122,9 +129,18 @@
           "type": "play_bgm",
           "bgm": "stop",
           "fade": "",
-          "fade_time": 1,
+          "fade_time": 0,
           "bgm_volume": 1
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2_6",
+          "is_speaking": true,
+          "replace": false
         }
+
       ]
     },
     {
@@ -142,6 +158,14 @@
           "se": "normalTospecial",
           "se_volume": 1,
           "delay": 0
+        },
+        {
+          "type": "show_character",
+          "character": "",
+          "position": "center",
+          "motion": "",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -157,7 +181,15 @@
         },
         {
           "type": "set_background",
-          "background": "tutorial"
+          "background": "clear"
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "center",
+          "motion": "hiro_tu1",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -170,6 +202,14 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2_7",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -182,7 +222,16 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2_8",
+          "is_speaking": true,
+          "replace": false
         }
+        
       ]
     },
     {
@@ -194,6 +243,14 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2_9",
+          "is_speaking": true,
+          "replace": false
         }
       ]
     },
@@ -206,6 +263,14 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -218,6 +283,14 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "center",
+          "motion": "nagisa_tu2_10",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -230,6 +303,14 @@
           "text_speed": 0.05,
           "wait_for_click": true,
           "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "center",
+          "motion": "hiro_tu3",
+          "is_speaking": true,
+          "replace": true
         }
       ]
     },
@@ -257,15 +338,23 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_10",
           "is_speaking": false,
+          "replace": true
+        },
+        {
+          "type": "show_character",
+          "character": "",
+          "position": "center",
+          "motion": "",
+          "is_speaking": true,
           "replace": true
         },
         {
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu4",
           "is_speaking": true,
           "replace": true
         },
@@ -296,7 +385,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_11",
           "is_speaking": true,
           "replace": false
         },
@@ -304,7 +393,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu4",
           "is_speaking": false,
           "replace": false
         }
@@ -324,7 +413,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_12",
           "is_speaking": false,
           "replace": false
         },
@@ -332,7 +421,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu5",
           "is_speaking": true,
           "replace": false
         }
@@ -352,7 +441,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_13",
           "is_speaking": true,
           "replace": false
         },
@@ -360,7 +449,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "a_tu_1",
+          "motion": "hiro_tu5",
           "is_speaking": false,
           "replace": false
         }
@@ -380,7 +469,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_13",
           "is_speaking": false,
           "replace": false
         },
@@ -388,7 +477,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu5",
           "is_speaking": true,
           "replace": false
         }
@@ -408,7 +497,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_14",
           "is_speaking": true,
           "replace": false
         },
@@ -416,7 +505,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu5",
           "is_speaking": false,
           "replace": false
         }
@@ -436,7 +525,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_14",
           "is_speaking": false,
           "replace": false
         },
@@ -444,7 +533,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu6",
           "is_speaking": true,
           "replace": false
         }
@@ -464,7 +553,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_14",
           "is_speaking": false,
           "replace": false
         },
@@ -472,7 +561,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu_1",
+          "motion": "hiro_tu7",
           "is_speaking": true,
           "replace": false
         }
@@ -492,7 +581,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_15",
           "is_speaking": true,
           "replace": false
         },
@@ -500,7 +589,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu7",
           "is_speaking": false,
           "replace": false
         }
@@ -520,7 +609,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_15",
           "is_speaking": false,
           "replace": false
         },
@@ -528,7 +617,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu8",
           "is_speaking": true,
           "replace": false
         }
@@ -548,7 +637,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_16",
           "is_speaking": true,
           "replace": false
         },
@@ -556,7 +645,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu8",
           "is_speaking": false,
           "replace": false
         }
@@ -576,7 +665,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_17",
           "is_speaking": true,
           "replace": false
         },
@@ -584,7 +673,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu8",
           "is_speaking": false,
           "replace": false
         },
@@ -611,7 +700,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_18",
           "is_speaking": true,
           "replace": false
         },
@@ -619,7 +708,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu8",
           "is_speaking": false,
           "replace": false
         }
@@ -639,7 +728,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_18",
           "is_speaking": false,
           "replace": false
         },
@@ -647,7 +736,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu9",
           "is_speaking": true,
           "replace": false
         }
@@ -667,7 +756,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_19",
           "is_speaking": true,
           "replace": false
         },
@@ -675,7 +764,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu9",
           "is_speaking": false,
           "replace": false
         }
@@ -695,7 +784,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_19",
           "is_speaking": false,
           "replace": false
         },
@@ -703,7 +792,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu10",
           "is_speaking": true,
           "replace": false
         }
@@ -723,7 +812,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_20",
           "is_speaking": true,
           "replace": false
         },
@@ -731,7 +820,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu10",
           "is_speaking": false,
           "replace": false
         },
@@ -740,6 +829,15 @@
           "se": "tukkomi",
           "se_volume": 1,
           "delay": 0
+        }
+      ]
+    },
+    {
+      "commands":[
+        {
+          "type": "next",
+          "mode": "game",
+          "next_target": "Start"
         }
       ]
     }

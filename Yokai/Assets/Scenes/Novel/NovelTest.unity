@@ -1524,6 +1524,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 158.65161, y: 7.795822}
   m_EdgeRadius: 0
+--- !u!1 &663499243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 912210579108656604, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+  m_PrefabInstance: {fileID: 182837105563177023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &682088704
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,21 +3690,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: NovelSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 912210579108656604, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 912210579108656604, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_TagString
+      value: Story
+      objectReference: {fileID: 0}
     - target: {fileID: 4265270003410485862, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2122772969}
+    - target: {fileID: 4265270003410485862, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4892295163591734531, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2122772969}
-    - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
-      propertyPath: debugMode
+    - target: {fileID: 4892295163591734531, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: debugMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: StorySystem
+      value: 
+      objectReference: {fileID: 663499243}
+    - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: storyFileName
-      value: Tutorial1_2
+      value: Tutorial1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -25,6 +25,8 @@ public class PlayStory_JSON : MonoBehaviour
 
     [SerializeField] private bool debugMode = false;
 
+    [SerializeField] GameObject StorySystem;
+
 
     void Start()
     {
@@ -34,6 +36,17 @@ public class PlayStory_JSON : MonoBehaviour
         bgmManager = GetComponent<BGMManager>();
         seManager = GetComponent<SEManager>();
         nextHandler = GetComponent<NextCommandHandler>();
+        if (!GameStateManager.Instance.IsScenario())
+        {
+            GameStateManager.Instance.TriggerGameStart();
+            // ストーリー再生しない（たとえば敵にぶつかって再読み込みされた時など）
+            StorySystem.SetActive(false);
+        } else
+        {
+            GameStateManager.Instance.TriggerScenario();
+        }
+
+
 
         if (screenButton != null)
         {

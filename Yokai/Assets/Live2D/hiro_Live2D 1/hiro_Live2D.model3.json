@@ -1,0 +1,23 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "hiro_Live2D.moc3",
+		"Textures": [
+			"hiro_Live2D.1024/texture_00.png",
+			"hiro_Live2D.1024/texture_01.png"
+		],
+		"DisplayInfo": "hiro_Live2D.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

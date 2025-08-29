@@ -21,12 +21,8 @@ public class ClearChecker : MonoBehaviour
         {
             if (GameStateManager.Instance.CurrentPhase == GamePhase.Tutorial1)
             {
-                GameStateManager.Instance.SetPhase(GamePhase.Tutorial2); // チュートリアル2へ
-                var controller = FindObjectOfType<ScenarioController>();
-                if (controller != null)
-                {
-                    controller.StartScenarioForCurrentPhase(); // チュートリアル2のシナリオを再生
-                }
+                GameStateManager.Instance.IsScenario();
+                ScenarioController.Instance.ReloadScenario("Tutorial1_2");
             }
         }
     }

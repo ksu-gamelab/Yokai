@@ -55,6 +55,9 @@ public class GameStateManager : MonoBehaviour
                 Time.timeScale = 0f;
                 break;
             case GameState.InScenario:
+                ActivePlayStoryObjects();
+                Time.timeScale = 1f;
+                break;
             case GameState.Title:
                 Time.timeScale = 1f;
                 break;
@@ -117,13 +120,54 @@ public class GameStateManager : MonoBehaviour
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         foreach (GameObject obj in allObjects)
         {
-            if (obj.CompareTag("PlayOn") && !obj.activeSelf)
+            if (obj.CompareTag("PlayOn"))
             {
                 // シーン上のオブジェクトに限定する
                 if (obj.scene.IsValid() && obj.hideFlags == HideFlags.None)
                 {
                     obj.SetActive(true);
                     Debug.Log($"[GameStateManager] 非アクティブPlayOnオブジェクト有効化: {obj.name}");
+                }
+            }
+        }
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Story"))
+            {
+                // シーン上のオブジェクトに限定する
+                if (obj.scene.IsValid() && obj.hideFlags == HideFlags.None)
+                {
+                    obj.SetActive(false);
+                }
+            }
+        }
+    }
+
+    private void ActivePlayStoryObjects()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Story"))
+            {
+                // シーン上のオブジェクトに限定する
+                if (obj.scene.IsValid() && obj.hideFlags == HideFlags.None)
+                {
+                    obj.SetActive(true);
+                    Debug.Log($"[GameStateManager] 非アクティブPlayOnオブジェクト有効化: {obj.name}");
+                }
+            }
+        }
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("PlayOn"))
+            {
+                // シーン上のオブジェクトに限定する
+                if (obj.scene.IsValid() && obj.hideFlags == HideFlags.None)
+                {
+                    obj.SetActive(false);
                 }
             }
         }

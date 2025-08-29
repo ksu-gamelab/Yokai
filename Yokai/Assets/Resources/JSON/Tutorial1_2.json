@@ -2,6 +2,13 @@
   "items": [
     {
       "commands": [
+          {
+          "type": "play_bgm",
+          "bgm": "DarkBGM",
+          "bgm_volume": 0.8,
+          "fade": "in",
+          "fade_time": 1
+        },
         {
           "type": "show_text",
           "character": "ナギサ",
@@ -14,7 +21,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu5",
           "is_speaking": true,
           "replace": true
         }
@@ -34,14 +41,18 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu6",
           "is_speaking": true,
           "replace": false
-        },
+        }
+      ]
+    },
+    {
+      "commands": [
         {
           "type": "next",
           "mode": "scene",
-          "next_target": ""
+          "next_target": "Tutorial2"
         }
       ]
     }

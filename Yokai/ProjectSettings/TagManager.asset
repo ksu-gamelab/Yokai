@@ -11,6 +11,7 @@ TagManager:
   - Clear_Tutorial
   - Clear_Tutorial1
   - PlayOn
+  - Story
   layers:
   - Default
   - TransparentFX

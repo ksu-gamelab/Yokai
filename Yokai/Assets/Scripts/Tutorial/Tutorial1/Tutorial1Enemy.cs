@@ -37,7 +37,7 @@ public class Tutorial1Enemy : EnemyBase
         switch (currentPhase)
         {
             case GamePhase.Tutorial1:
-                SceneManager.LoadScene("NovelTest");
+                SceneManager.LoadScene("Tutorial1");
                 break;
             case GamePhase.Tutorial2:
                 SceneManager.LoadScene("Tutorial2");
