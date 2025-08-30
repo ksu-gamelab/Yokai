@@ -2,12 +2,12 @@
   "items": [
     {
       "commands": [
-          {
+        {
           "type": "play_bgm",
           "bgm": "DarkBGM",
-          "bgm_volume": 0.8,
-          "fade": "in",
-          "fade_time": 1
+          "fade": "",
+          "fade_time": 1,
+          "bgm_volume": 1
         },
         {
           "type": "show_text",

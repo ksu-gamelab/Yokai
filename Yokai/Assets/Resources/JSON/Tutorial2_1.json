@@ -3,6 +3,13 @@
     {
       "commands": [
         {
+          "type": "play_bgm",
+          "bgm": "DarkBGM",
+          "fade": "",
+          "fade_time": 1,
+          "bgm_volume": 1
+        },
+        {
           "type": "show_text",
           "character": "ナギサ",
           "text": "す、すごい……一撃で……",
@@ -14,7 +21,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_23",
           "is_speaking": true,
           "replace": true
         },
@@ -22,7 +29,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu15",
           "is_speaking": false,
           "replace": true
         }
@@ -42,7 +49,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_23",
           "is_speaking": false,
           "replace": false
         },
@@ -50,7 +57,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu15",
           "is_speaking": true,
           "replace": false
         }
@@ -68,9 +75,17 @@
         },
         {
           "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu2_23",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "nagisa_tu_1",
+          "motion": "hiro_tu16",
           "is_speaking": true,
           "replace": false
         }
@@ -90,15 +105,15 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu_1",
+          "motion": "nagisa_tu2_24",
           "is_speaking": true,
           "replace": false
         },
         {
           "type": "show_character",
           "character": "hiro_Live2D",
-          "position": "center",
-          "motion": "nagisa_tu_1",
+          "position": "right",
+          "motion": "hiro_tu16",
           "is_speaking": false,
           "replace": false
         }

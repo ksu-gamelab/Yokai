@@ -23,6 +23,11 @@ public class ClearChecker : MonoBehaviour
             {
                 GameStateManager.Instance.IsScenario();
                 ScenarioController.Instance.ReloadScenario("Tutorial1_2");
+            } else if(GameStateManager.Instance.CurrentPhase==GamePhase.Tutorial2)
+            {
+                ScenarioController.Instance.ReloadScenario("Tutorial2_1");
+                GameStateManager.Instance.IsScenario();
+                
             }
         }
     }
