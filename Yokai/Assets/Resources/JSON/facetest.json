@@ -1,0 +1,1132 @@
+{
+  "items": [
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "N_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_1",
+          "is_speaking": true,
+          "replace": true
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_1",
+          "is_speaking": true,
+          "replace": true
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "N_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "N_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "N_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_4",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "N_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_5",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_5",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_4",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_5",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_5",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_6",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_6",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_6",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "smile_7",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_smile_7",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_7",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "hiro_smile_8",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_smile_8",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "anger_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_anger_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "anger_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_anger_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "anger_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_anger_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "anger_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_anger_4",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "nagisa_anger_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_5",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "left",
+          "motion": "",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "nagisa_anger_6",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_6",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "nagisa_anger_7",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_anger_7",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_4",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_5",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_5",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_6",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_6",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_6",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "sad_7",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_sad_7",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_7",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "hiro_sad_8",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_sad_8",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "surprise_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_surprise_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "surprise_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_surprise_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "surprise_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_surprise_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "surprise_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_surprise_4",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "surprise_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_surprise_5",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_5",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "nagisa_surprise_6",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_6",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "nagisa_surprise_7",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_surprise_7",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_1  horror_1",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_horror_1",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_2  horror_2",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_2",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_horror_2",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_3  horror_3",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_3",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_horror_3",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_4",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_4",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "nagisa_tu_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_5",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_5",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_6",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_6",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "bad_7    終わり",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_bad_7",
+          "is_speaking": true,
+          "replace": false
+        }
+      ]
+    }
+  ]
+}

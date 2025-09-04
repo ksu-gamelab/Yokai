@@ -3716,7 +3716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: debugMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: StorySystem
@@ -3724,7 +3724,7 @@ PrefabInstance:
       objectReference: {fileID: 663499243}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: storyFileName
-      value: Tutorial1
+      value: facetest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
