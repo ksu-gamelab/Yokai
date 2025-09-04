@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-8985109885190481170
+--- !u!1102 &-8940674165065219907
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_22
+  m_Name: nagisa_surprise_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,20 +20,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 408ff5f0f9e069b4f842db0df8b05200, type: 2}
+  m_Motion: {fileID: 7400000, guid: 42bbe37384c821843b0d05f929ebda78, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-7126098823288655765
+--- !u!1102 &-8134987328003512736
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_4
+  m_Name: nagisa_smile_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,20 +46,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1de030bb50705bc44b2759ee4a8f22f4, type: 2}
+  m_Motion: {fileID: 7400000, guid: c6758c5d321a85347b426178492f889d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-7049154240000198754
+--- !u!1102 &-7226867077259929582
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_1 0
+  m_Name: nagisa_smile_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,20 +72,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0ca60e1661c00dd4190bb651119e1795, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7cb72e0c76190c540bd534a2904b3d78, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-5807662991484883555
+--- !u!1102 &-5608824491266393135
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu5
+  m_Name: nagisa_N_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -98,33 +98,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a9a9c43e6109fe347857b51ee4af66d9, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-5276889022333303228
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_8
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2d354ad3e5b71a14c8bd6bf398ea7952, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3c9dbfa9ea1a7194f887a63b29959bc4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -143,98 +117,122 @@ AnimatorStateMachine:
     m_State: {fileID: 5420132587501239472}
     m_Position: {x: 90, y: 300, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3354618024368969274}
-    m_Position: {x: 210, y: 390, z: 0}
+    m_State: {fileID: 648819369358473725}
+    m_Position: {x: 332.41925, y: 513.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2080975152995219410}
-    m_Position: {x: 260, y: 420, z: 0}
+    m_State: {fileID: 8186257433845691816}
+    m_Position: {x: 342.41925, y: 523.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -10625588454184750}
-    m_Position: {x: 270, y: 430, z: 0}
+    m_State: {fileID: 1940483999822428709}
+    m_Position: {x: 352.41925, y: 533.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -331343255315042877}
-    m_Position: {x: 280, y: 440, z: 0}
+    m_State: {fileID: 8659403154603152458}
+    m_Position: {x: 362.41925, y: 543.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -5807662991484883555}
-    m_Position: {x: 290, y: 450, z: 0}
+    m_State: {fileID: -1818703982124105135}
+    m_Position: {x: 372.41925, y: 553.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5021641241080707428}
-    m_Position: {x: 300, y: 460, z: 0}
+    m_State: {fileID: 3870183354564331329}
+    m_Position: {x: 382.41925, y: 563.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -1464350521096018006}
-    m_Position: {x: 553.81854, y: 432.91296, z: 0}
+    m_State: {fileID: -3420000010552679410}
+    m_Position: {x: 392.41925, y: 573.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 9209897808150911919}
-    m_Position: {x: 563.81854, y: 442.91296, z: 0}
+    m_State: {fileID: 3369800718577984047}
+    m_Position: {x: 402.41925, y: 583.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1863058711405305500}
-    m_Position: {x: 573.81854, y: 452.91296, z: 0}
+    m_State: {fileID: 3042504911428554436}
+    m_Position: {x: 412.41925, y: 593.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -7126098823288655765}
-    m_Position: {x: 583.81854, y: 462.91296, z: 0}
+    m_State: {fileID: 6469460079129268098}
+    m_Position: {x: 422.41925, y: 603.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3189562839668538852}
-    m_Position: {x: 593.81854, y: 472.91296, z: 0}
+    m_State: {fileID: 158290508769792878}
+    m_Position: {x: 432.41925, y: 613.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 979055146703785897}
-    m_Position: {x: 603.81854, y: 482.91296, z: 0}
+    m_State: {fileID: 4332279851231491467}
+    m_Position: {x: 442.41925, y: 623.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3480247941777538773}
-    m_Position: {x: 613.81854, y: 492.91296, z: 0}
+    m_State: {fileID: 2097832985849149359}
+    m_Position: {x: 452.41925, y: 633.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -5276889022333303228}
-    m_Position: {x: 623.81854, y: 502.91296, z: 0}
+    m_State: {fileID: 2066926442327075412}
+    m_Position: {x: 462.41925, y: 643.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4824337128224145975}
-    m_Position: {x: 633.81854, y: 512.91296, z: 0}
+    m_State: {fileID: -1310364010737511051}
+    m_Position: {x: 472.41925, y: 653.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 8556237328722124729}
-    m_Position: {x: 643.81854, y: 522.91296, z: 0}
+    m_State: {fileID: 7029397566260710392}
+    m_Position: {x: 482.41925, y: 663.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -1294502879029369085}
-    m_Position: {x: 653.81854, y: 532.91296, z: 0}
+    m_State: {fileID: -3920646804417016134}
+    m_Position: {x: 492.41925, y: 673.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 3401478125681522339}
-    m_Position: {x: 663.81854, y: 542.91296, z: 0}
+    m_State: {fileID: -5608824491266393135}
+    m_Position: {x: 502.41925, y: 683.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3479062010915465053}
-    m_Position: {x: 673.81854, y: 552.91296, z: 0}
+    m_State: {fileID: 5628919628021966362}
+    m_Position: {x: 512.41925, y: 693.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 4683539045528358986}
-    m_Position: {x: 683.81854, y: 562.91296, z: 0}
+    m_State: {fileID: 2773572064376488640}
+    m_Position: {x: 522.41925, y: 703.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -2613140095711155132}
-    m_Position: {x: 693.81854, y: 572.91296, z: 0}
+    m_State: {fileID: 4317220259889254481}
+    m_Position: {x: 532.41925, y: 713.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 61811438556918100}
-    m_Position: {x: 703.81854, y: 582.91296, z: 0}
+    m_State: {fileID: 8628764738309366964}
+    m_Position: {x: 542.41925, y: 723.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 1314638915446558823}
-    m_Position: {x: 713.81854, y: 592.91296, z: 0}
+    m_State: {fileID: -2256112657366718966}
+    m_Position: {x: 552.41925, y: 733.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -3563252447275890570}
-    m_Position: {x: 723.81854, y: 602.91296, z: 0}
+    m_State: {fileID: -3368450417416756160}
+    m_Position: {x: 562.41925, y: 743.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -1922696927540821911}
-    m_Position: {x: 733.81854, y: 612.91296, z: 0}
+    m_State: {fileID: 5823941896303782876}
+    m_Position: {x: 572.41925, y: 753.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -4793570817342588950}
-    m_Position: {x: 743.81854, y: 622.91296, z: 0}
+    m_State: {fileID: -1213786849264753824}
+    m_Position: {x: 582.41925, y: 763.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 9012771844902117304}
-    m_Position: {x: 753.81854, y: 632.91296, z: 0}
+    m_State: {fileID: 3614680866849288462}
+    m_Position: {x: 592.41925, y: 773.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -8985109885190481170}
-    m_Position: {x: 763.81854, y: 642.91296, z: 0}
+    m_State: {fileID: -8134987328003512736}
+    m_Position: {x: 602.41925, y: 783.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -1837788692171036966}
-    m_Position: {x: 773.81854, y: 652.91296, z: 0}
+    m_State: {fileID: -197305240546841527}
+    m_Position: {x: 612.41925, y: 793.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5771013392149730276}
-    m_Position: {x: 783.81854, y: 662.91296, z: 0}
+    m_State: {fileID: 7811335425739262306}
+    m_Position: {x: 622.41925, y: 803.7241, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: -7049154240000198754}
-    m_Position: {x: 551.7962, y: 186.186, z: 0}
+    m_State: {fileID: -7226867077259929582}
+    m_Position: {x: 632.41925, y: 813.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1258616112488614327}
+    m_Position: {x: 642.41925, y: 823.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4301214729835810451}
+    m_Position: {x: 652.41925, y: 833.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 9074464882486540353}
+    m_Position: {x: 662.41925, y: 843.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -2156076671226333403}
+    m_Position: {x: 672.41925, y: 853.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8328375101430903116}
+    m_Position: {x: 682.41925, y: 863.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1193978985864508303}
+    m_Position: {x: 692.41925, y: 873.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8940674165065219907}
+    m_Position: {x: 702.41925, y: 883.7241, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -1845691924862818523}
+    m_Position: {x: 712.41925, y: 893.7241, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -246,14 +244,14 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5420132587501239472}
---- !u!1102 &-4793570817342588950
+--- !u!1102 &-3920646804417016134
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_20
+  m_Name: nagisa_N_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -266,20 +264,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ce0e50dae5408f844982d5086f033fc5, type: 2}
+  m_Motion: {fileID: 7400000, guid: bfd92a31842b4c344841d91687182fca, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3563252447275890570
+--- !u!1102 &-3420000010552679410
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_18
+  m_Name: nagisa_bad_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -292,20 +290,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 24c3035c2dcdc8d47a6300cd5ef5f34a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0b6f1f60002d3454f86b478713a7e77b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3479062010915465053
+--- !u!1102 &-3368450417416756160
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_13
+  m_Name: nagisa_sad_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -318,20 +316,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b0a2e1d1ef57a444f9dc9e0c1c8d02c6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8ab3dc207454ed1478cd5bf9b44d0a0d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3354618024368969274
+--- !u!1102 &-2256112657366718966
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu1
+  m_Name: nagisa_sad_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -344,20 +342,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3a4bdeeccb8ca1140b97b3bca94c9139, type: 2}
+  m_Motion: {fileID: 7400000, guid: f57ef821cb8f924449d73b7af852ab5a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2613140095711155132
+--- !u!1102 &-2156076671226333403
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_15
+  m_Name: nagisa_surprise_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -370,20 +368,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a90b4e53a570ed844a7b77c2875ffa77, type: 2}
+  m_Motion: {fileID: 7400000, guid: f1061595dad76004c806b13963320010, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2080975152995219410
+--- !u!1102 &-1845691924862818523
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2
+  m_Name: nagisa_surprise_7
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -396,20 +394,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 990f6080489a8024cbcc42c8a1845500, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6ec9608dc94826f4c8b46fe65b07b837, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-1922696927540821911
+--- !u!1102 &-1818703982124105135
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_19
+  m_Name: nagisa_anger_6
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -422,20 +420,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: af0a612cbb0bec34d9c60ca4243e0fce, type: 2}
+  m_Motion: {fileID: 7400000, guid: 089d747442d43cb43b8535f165daa39e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-1837788692171036966
+--- !u!1102 &-1310364010737511051
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_23
+  m_Name: nagisa_N_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -448,20 +446,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: be9c34166cf6032468bc1ddacf0eddf8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5c451caf97c14c6418dd99bd07066f01, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-1464350521096018006
+--- !u!1102 &-1213786849264753824
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_1
+  m_Name: nagisa_smile_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -474,59 +472,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c38c843617fab604b9e188068477beee, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-1294502879029369085
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_11
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 21b2f1ecaa30b8f4dbf49b7d86bac0c9, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &-331343255315042877
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu4
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 686f3cb47617a8441b66bc63e1acae7a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9a224ad5fab55f04e9246cb46b6688fd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -558,14 +504,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-10625588454184750
+--- !u!1102 &-197305240546841527
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu3
+  m_Name: nagisa_smile_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -578,7 +524,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 98d4c27b1895d2e4e8afc47c166587ac, type: 2}
+  m_Motion: {fileID: 7400000, guid: fc2698b5f2aa2fb4abbdd5077d6ae4d8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -624,14 +570,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &61811438556918100
+--- !u!1102 &158290508769792878
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_16
+  m_Name: nagisa_bad_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -644,20 +590,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cb6371f16b1926b4ab43c3c68bfd9446, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2846b0a828bb88c43854d6db380da67e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &979055146703785897
+--- !u!1102 &648819369358473725
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_6
+  m_Name: nagisa_anger_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -670,20 +616,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 508cee6ad61eedd4f95c922f11e1a7f0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 37ee3854ea160014493e0c15ae702421, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1314638915446558823
+--- !u!1102 &1193978985864508303
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_17
+  m_Name: nagisa_surprise_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -696,20 +642,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 92811a3970d595d419678cc5cb30c152, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0b814df1304f5934293ec8b040e02b08, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &1863058711405305500
+--- !u!1102 &1258616112488614327
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_3
+  m_Name: nagisa_smile_7
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -722,20 +668,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9a39ca91f54b3ce4cbca5e0d74112191, type: 2}
+  m_Motion: {fileID: 7400000, guid: 03d2e86cf5cdc8e49bce80d4e2b450f1, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &3189562839668538852
+--- !u!1102 &1940483999822428709
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_5
+  m_Name: nagisa_anger_4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -748,20 +694,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c4439f0ab5a953641aa2ebe554cebc83, type: 2}
+  m_Motion: {fileID: 7400000, guid: df80b5c49a2388f42b527445bac1275d, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &3401478125681522339
+--- !u!1102 &2066926442327075412
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_12
+  m_Name: nagisa_N_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -774,20 +720,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d3621c208ee41ab4d86324aef50d3b00, type: 2}
+  m_Motion: {fileID: 7400000, guid: e114322205ed1b647aae09d823c217dc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &3480247941777538773
+--- !u!1102 &2097832985849149359
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_7
+  m_Name: nagisa_bad_7
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -800,20 +746,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: df97354d790e60b4fae9e9f6b5e8f874, type: 2}
+  m_Motion: {fileID: 7400000, guid: ec23b91bce1d8cc43ad734068e109e83, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &4683539045528358986
+--- !u!1102 &2773572064376488640
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_14
+  m_Name: nagisa_sad_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -826,20 +772,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 855b089ea312da2439d89651d7b17928, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5d0234942d06f4346aa01055386133c2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &4824337128224145975
+--- !u!1102 &3042504911428554436
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_9
+  m_Name: nagisa_bad_3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -852,20 +798,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b5ed88c21e09bbe4495b1d64542c922b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 89615b61d81ed9547b05201eb4aa6861, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5021641241080707428
+--- !u!1102 &3369800718577984047
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu6
+  m_Name: nagisa_bad_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -878,7 +824,137 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 86232c6ad9561294486c431e33a6ca8f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7025576df69f9a24a93510267de36a1c, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &3614680866849288462
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_smile_2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 79ebc465a75adbf48845c967fd11e8c1, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &3870183354564331329
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_anger_7
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 7c25dc859b909154d8b4298d695c0141, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &4301214729835810451
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_surprise_1
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 28cb5b0a9cdc31845b8e0044cd03a963, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &4317220259889254481
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_sad_3
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 415f361f0e68a6948be59deea28ab083, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &4332279851231491467
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_bad_6
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: dfdccc8102190b541aca6c36e568aee5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -910,14 +986,14 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5771013392149730276
+--- !u!1102 &5628919628021966362
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_24
+  m_Name: nagisa_sad_1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -930,7 +1006,85 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bfe350588a33bf14e8d93f0eaaaedb7d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5a2f4250d1455c04cbac864e51bbd47b, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &5823941896303782876
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_sad_7
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: dddecd72949a0bb409b0659960bd2c70, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &6469460079129268098
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_bad_4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 1675533d973018246b6237fcacf41b2a, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &7029397566260710392
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_N_3
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: e6c2436e08423db43bd867dc92f17fde, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -958,14 +1112,14 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -200641840017473619}
---- !u!1102 &8556237328722124729
+--- !u!1102 &7811335425739262306
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_10
+  m_Name: nagisa_smile_5
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -978,7 +1132,111 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 67294161fce3503479a1fdb7c7bf221d, type: 2}
+  m_Motion: {fileID: 7400000, guid: 68535368cadf38441bb883e53a6e0cf5, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8186257433845691816
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_anger_2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: fcc96d0ed65959c4482891a753e0967c, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8328375101430903116
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_surprise_4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 029457235675aa6418346f14c18600ec, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8628764738309366964
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_sad_4
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 9982839d7b879d646825c6fb38dfd4b0, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8659403154603152458
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: nagisa_anger_5
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 51a88562eb8a07f4bab69bd7f4c06c3b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -996,14 +1254,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df377c5758f8974aaed292833ec3ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1102 &9012771844902117304
+--- !u!1102 &9074464882486540353
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_21
+  m_Name: nagisa_surprise_2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1016,33 +1274,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2118cfffb922e77468074e213e355908, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &9209897808150911919
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: nagisa_tu2_2
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cdda9cd1b25eb2f499ada7d478c9bfec, type: 2}
+  m_Motion: {fileID: 7400000, guid: c4cc635461f381841a6f153dcd2e405a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

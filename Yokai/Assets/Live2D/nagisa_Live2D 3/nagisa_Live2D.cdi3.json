@@ -1,0 +1,211 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "breath"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroup",
+			"Name": "eyeL_open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroup",
+			"Name": "eyeR_open"
+		},
+		{
+			"Id": "Param10",
+			"GroupId": "ParamGroup",
+			"Name": "eye_surprise"
+		},
+		{
+			"Id": "Param15",
+			"GroupId": "ParamGroup",
+			"Name": "eye_jito"
+		},
+		{
+			"Id": "Param5",
+			"GroupId": "ParamGroup",
+			"Name": "eye_doubt&mad"
+		},
+		{
+			"Id": "Param8",
+			"GroupId": "ParamGroup",
+			"Name": "eye_smaile"
+		},
+		{
+			"Id": "Param17",
+			"GroupId": "ParamGroup",
+			"Name": "eye_guru1"
+		},
+		{
+			"Id": "Param18",
+			"GroupId": "ParamGroup",
+			"Name": "eye_guru2"
+		},
+		{
+			"Id": "Param6",
+			"GroupId": "ParamGroup",
+			"Name": "eye_relax"
+		},
+		{
+			"Id": "Param19",
+			"GroupId": "ParamGroup",
+			"Name": "eye_tare"
+		},
+		{
+			"Id": "Param21",
+			"GroupId": "ParamGroup",
+			"Name": "eye_turi"
+		},
+		{
+			"Id": "Param",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_A&I"
+		},
+		{
+			"Id": "Param2",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_U&E"
+		},
+		{
+			"Id": "Param3",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_O&upset"
+		},
+		{
+			"Id": "Param4",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_close&wow"
+		},
+		{
+			"Id": "Param16",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_awawa"
+		},
+		{
+			"Id": "Param20",
+			"GroupId": "ParamGroup2",
+			"Name": "mou_mu"
+		},
+		{
+			"Id": "Param7",
+			"GroupId": "",
+			"Name": "blow_mad"
+		},
+		{
+			"Id": "Param11",
+			"GroupId": "",
+			"Name": "blow_sad"
+		},
+		{
+			"Id": "Param9",
+			"GroupId": "",
+			"Name": "sweat1"
+		},
+		{
+			"Id": "Param13",
+			"GroupId": "",
+			"Name": "sweat1"
+		},
+		{
+			"Id": "Param12",
+			"GroupId": "",
+			"Name": "tear"
+		},
+		{
+			"Id": "Param14",
+			"GroupId": "",
+			"Name": "pale"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "eye"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "mouse"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "ナギサ"
+		},
+		{
+			"Id": "Part2",
+			"Name": "顔"
+		},
+		{
+			"Id": "Part5",
+			"Name": "髪"
+		},
+		{
+			"Id": "Part6",
+			"Name": "体"
+		},
+		{
+			"Id": "Part9",
+			"Name": "アクセ"
+		},
+		{
+			"Id": "Part10",
+			"Name": "眉R"
+		},
+		{
+			"Id": "Part15",
+			"Name": "眉L"
+		},
+		{
+			"Id": "Part11",
+			"Name": "目R"
+		},
+		{
+			"Id": "Part16",
+			"Name": "目L"
+		},
+		{
+			"Id": "Part20",
+			"Name": "口"
+		},
+		{
+			"Id": "Part14",
+			"Name": "普通目R"
+		},
+		{
+			"Id": "Part24",
+			"Name": "ぐる目R"
+		},
+		{
+			"Id": "Part12",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part13",
+			"Name": "深刻目R"
+		},
+		{
+			"Id": "Part29",
+			"Name": "ぐる目L"
+		},
+		{
+			"Id": "Part17",
+			"Name": "じとー"
+		},
+		{
+			"Id": "Part19",
+			"Name": "普通目L"
+		},
+		{
+			"Id": "Part18",
+			"Name": "深刻目L"
+		}
+	]
+}
