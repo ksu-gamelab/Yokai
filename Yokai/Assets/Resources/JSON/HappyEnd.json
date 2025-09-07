@@ -1,0 +1,480 @@
+{
+  "items": [
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "みえたぞ、あそこがでぐちだ。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_N_2",
+          "is_speaking": false,
+          "replace": true
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_3",
+          "is_speaking": false,
+          "replace": true
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "これでやっと帰れる……",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        },
+        {
+          "type": "show_character",
+          "character": "nagisa_Live2D",
+          "position": "left",
+          "motion": "nagisa_tu_1",
+          "is_speaking": true,
+          "replace": false
+        },
+        {
+          "type": "show_character",
+          "character": "hiro_Live2D",
+          "position": "right",
+          "motion": "hiro_N_1",
+          "is_speaking": false,
+          "replace": false
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "ありがとうヒイロ、君がいなかったら私、ここまで来れなかったよ。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "なんの、おまえががんばったけっかだぞ！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "良かったらうちにも来てよ。ご馳走作るからさ。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "……。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "ヒイロ？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "ようかいは、ここからでてはいけないやくそくなんだ。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "…………。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……そっか。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……そうだったね。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "ナギサがいっても、われはもうひとりでへいきだぞ！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "ほんとに？泣かない？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "んー……。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "ないたりは、しないけど……",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "……ちょっとだけ、さみしくなるかもな",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……あはは、そうだね。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "……ナギサ。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "なに？",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "ありがとな。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        },
+        {
+          "type": "set_background",
+          "background": "Happy1"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "……ナギサといっしょにいられて、たのしかった。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……うん。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……じゃあ私、行くね。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ヒイロ",
+          "text": "うん。……じゃあな！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "こうして、",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "ヒイロとの不思議な冒険は幕を閉じた。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "後日、ヒイロが食べたいと言っていたクッキーを作ってあの出口に持っていった。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "けれど、あの時の出口らしきものは見つからなかった。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "仕方ないから、その辺にクッキーだけ置いて行った。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "……本当にもう会えないと思うと、やっぱり寂しい。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "ナギサ",
+          "text": "ヒイロ、元気にしてるといいな……。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_nagisa"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "もぐもぐ……",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "……！！……なんだこれ！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "さくさくで、あまくて、くちのなかでとけて……。",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "これが『おいしい』ってやつか！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "show_text",
+          "character": "？？？",
+          "text": "こんなおいしいもんつくれるなんて、ナギサはてんさいだな！",
+          "text_speed": 0.05,
+          "wait_for_click": true,
+          "text_ui": "fukidashi_hiro"
+        }
+      ]
+    },
+    {
+      "commands": [
+        {
+          "type": "set_background",
+          "background": "Happy2"
+        }
+      ]
+    }
+  ]
+}

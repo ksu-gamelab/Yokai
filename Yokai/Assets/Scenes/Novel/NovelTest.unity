@@ -3724,7 +3724,7 @@ PrefabInstance:
       objectReference: {fileID: 663499243}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: storyFileName
-      value: Tutorial2
+      value: HappyEnd
       objectReference: {fileID: 0}
     - target: {fileID: 8756695840575011811, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: m_SizeDelta.x
