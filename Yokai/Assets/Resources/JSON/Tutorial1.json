@@ -22,7 +22,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu1",
+          "motion": "nagisa_sad_1",
           "is_speaking": true,
           "replace": true
         },
@@ -42,7 +42,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu2",
+          "motion": "nagisa_sad_2",
           "is_speaking": true,
           "replace": false
         },
@@ -67,7 +67,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu3",
+          "motion": "nagisa_N_2",
           "is_speaking": true,
           "replace": false
         },
@@ -99,7 +99,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu4",
+          "motion": "nagisa_anger_3",
           "is_speaking": true,
           "replace": false
         }

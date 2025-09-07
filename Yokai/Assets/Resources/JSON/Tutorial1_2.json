@@ -21,7 +21,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu5",
+          "motion": "nagisa_surprise_1",
           "is_speaking": true,
           "replace": true
         }
@@ -41,7 +41,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "center",
-          "motion": "nagisa_tu6",
+          "motion": "nagisa_surprise_2",
           "is_speaking": true,
           "replace": false
         }

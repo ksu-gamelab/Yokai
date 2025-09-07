@@ -21,7 +21,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu2_23",
+          "motion": "nagisa_surprise_3",
           "is_speaking": true,
           "replace": true
         },
@@ -29,7 +29,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu15",
+          "motion": "hiro_smile_1",
           "is_speaking": false,
           "replace": true
         }
@@ -49,7 +49,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu2_23",
+          "motion": "",
           "is_speaking": false,
           "replace": false
         },
@@ -57,7 +57,7 @@
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu15",
+          "motion": "hiro_smile_5",
           "is_speaking": true,
           "replace": false
         }
@@ -77,15 +77,15 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu2_23",
-          "is_speaking": true,
+          "motion": "nagisa_anger_3",
+          "is_speaking": false,
           "replace": false
         },
         {
           "type": "show_character",
           "character": "hiro_Live2D",
           "position": "right",
-          "motion": "hiro_tu16",
+          "motion": "hiro_N_1",
           "is_speaking": true,
           "replace": false
         }
@@ -105,7 +105,7 @@
           "type": "show_character",
           "character": "nagisa_Live2D",
           "position": "left",
-          "motion": "nagisa_tu2_24",
+          "motion": "nagisa_N_3",
           "is_speaking": true,
           "replace": false
         },

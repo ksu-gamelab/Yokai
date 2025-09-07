@@ -3724,7 +3724,15 @@ PrefabInstance:
       objectReference: {fileID: 663499243}
     - target: {fileID: 6920454937313309648, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
       propertyPath: storyFileName
-      value: facetest
+      value: Tutorial2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756695840575011811, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756695840575011811, guid: d88fc9bdcabdabc42a71f98eae3a307e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 700
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
