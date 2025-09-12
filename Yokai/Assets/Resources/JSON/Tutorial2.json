@@ -185,7 +185,7 @@
         },
         {
           "type": "show_character",
-          "character": "hiro_Live2D",
+          "character": "null",
           "position": "center",
           "motion": "hiro_tu1",
           "is_speaking": true,
