@@ -209,7 +209,7 @@
           "position": "center",
           "motion": "nagisa_tu2_7",
           "is_speaking": true,
-          "replace": true
+          "replace": false
         }
       ]
     },
@@ -269,7 +269,7 @@
           "position": "center",
           "motion": "nagisa_tu2",
           "is_speaking": true,
-          "replace": true
+          "replace": false
         },
         {
           "type": "show_character",
@@ -297,7 +297,7 @@
           "position": "center",
           "motion": "nagisa_tu2_10",
           "is_speaking": true,
-          "replace": true
+          "replace": false
         }
       ]
     },
@@ -317,7 +317,7 @@
           "position": "center",
           "motion": "hiro_tu3",
           "is_speaking": true,
-          "replace": true
+          "replace": false
         }
       ]
     },
